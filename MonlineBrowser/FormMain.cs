@@ -143,6 +143,9 @@ namespace MonlineBrowser
                 progressBarDeckMonmusuSatiety1.Minimum = 0;
                 progressBarDeckMonmusuSatiety1.Maximum = satietyMax;
                 progressBarDeckMonmusuSatiety1.Value = satiety;
+
+                // 好物
+                pictureBoxDeckMonmusuLikeFood1.Image = UserDataUtil.GetMonmusuLikeFoodPicture(deckId, monmusuIndex);
             }
 
             // 2

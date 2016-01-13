@@ -119,6 +119,24 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の好物
+        /// <summary>
+        /// モン娘の好物を取得する
+        /// </summary>
+        /// <param name="cardMstId">マスターID</param>
+        /// <returns>モン娘の好物の値</returns>
+        public static Int32 GetMonmusuLikeFood(Int32 cardMstId)
+        {
+            CardMstData mstData = GetCardMstData(cardMstId);
+            if (mstData != null)
+            {
+                return mstData.likeFood;
+            }
+
+            return 0;
+        }
+        #endregion
+
         #region メッセージ
         /// <summary>
         /// メモリアルで表示するメッセージ情報を取得する

@@ -500,6 +500,37 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の好物
+        /// <summary>
+        /// モン娘の好物を画像で取得する
+        /// </summary>
+        /// <param name="deckId">デッキID</param>
+        /// <param name="index">デッキ内の順番</param>
+        /// <returns>モン娘の好物の画像</returns>
+        public static Bitmap GetMonmusuLikeFoodPicture(Int32 deckId, Int32 index)
+        {
+            Int32 cardId = GetCardId(deckId, index);
+            Bitmap picture = GetMonmusuLikeFoodPicture(cardId);
+
+            return picture;
+        }
+
+        /// <summary>
+        /// モン娘の好物を画像で取得する
+        /// </summary>
+        /// <param name="cardId">カードID</param>
+        /// <returns>モン娘の好物の画像</returns>
+        public static Bitmap GetMonmusuLikeFoodPicture(Int32 cardId)
+        {
+            Int32 cardMstId = GetCardMstId(cardId);
+            Int32 likeFood = DBMstUtil.GetMonmusuLikeFood(cardMstId);
+            ResourceUtil.FoodType foodType = (ResourceUtil.FoodType)likeFood;
+            Bitmap picture = ResourceUtil.GetPictureFoodType(foodType);
+
+            return picture;
+        }
+        #endregion
+
         #region レアリティの色
         private struct RarityNameColorData
         {

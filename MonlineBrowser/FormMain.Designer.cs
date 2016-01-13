@@ -61,8 +61,10 @@
             this.textBoxUrl = new System.Windows.Forms.TextBox();
             this.buttonNavi = new System.Windows.Forms.Button();
             this.buttonMaster = new System.Windows.Forms.Button();
+            this.pictureBoxDeckMonmusuLikeFood1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -116,11 +118,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(32, 638);
+            this.button1.Location = new System.Drawing.Point(32, 623);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 48);
             this.button1.TabIndex = 31;
@@ -217,9 +220,9 @@
             this.groupBox1.Controls.Add(this.labelDeckMonmusuName4);
             this.groupBox1.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(139, 624);
+            this.groupBox1.Location = new System.Drawing.Point(139, 609);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(675, 368);
+            this.groupBox1.Size = new System.Drawing.Size(665, 383);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "編成";
@@ -227,6 +230,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBoxDeckMonmusuLikeFood1);
             this.panel1.Controls.Add(this.labelDeckMonmusuName1);
             this.panel1.Controls.Add(this.labelDeckMonmusuHPValue1);
             this.panel1.Controls.Add(this.labelDeckMonmusuRarityName1);
@@ -243,18 +247,18 @@
             this.panel1.Controls.Add(this.labelDeckMonmusuTensionValue1);
             this.panel1.Location = new System.Drawing.Point(17, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(640, 48);
+            this.panel1.Size = new System.Drawing.Size(628, 48);
             this.panel1.TabIndex = 38;
             // 
             // labelDeckMonmusuHPValue1
             // 
-            this.labelDeckMonmusuHPValue1.AutoSize = true;
             this.labelDeckMonmusuHPValue1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuHPValue1.Location = new System.Drawing.Point(335, 10);
             this.labelDeckMonmusuHPValue1.Name = "labelDeckMonmusuHPValue1";
             this.labelDeckMonmusuHPValue1.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuHPValue1.TabIndex = 54;
-            this.labelDeckMonmusuHPValue1.Text = "100";
+            this.labelDeckMonmusuHPValue1.Text = "999";
+            this.labelDeckMonmusuHPValue1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelDeckMonmusuRarityName1
             // 
@@ -306,13 +310,13 @@
             // 
             // labelDeckMonmusuSatietyValue1
             // 
-            this.labelDeckMonmusuSatietyValue1.AutoSize = true;
             this.labelDeckMonmusuSatietyValue1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDeckMonmusuSatietyValue1.Location = new System.Drawing.Point(518, 9);
+            this.labelDeckMonmusuSatietyValue1.Location = new System.Drawing.Point(518, 10);
             this.labelDeckMonmusuSatietyValue1.Name = "labelDeckMonmusuSatietyValue1";
             this.labelDeckMonmusuSatietyValue1.Size = new System.Drawing.Size(54, 15);
             this.labelDeckMonmusuSatietyValue1.TabIndex = 51;
-            this.labelDeckMonmusuSatietyValue1.Text = "110/110";
+            this.labelDeckMonmusuSatietyValue1.Text = "999/999";
+            this.labelDeckMonmusuSatietyValue1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label7
             // 
@@ -322,12 +326,13 @@
             this.label7.Size = new System.Drawing.Size(30, 20);
             this.label7.TabIndex = 45;
             this.label7.Text = "Lv.";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label10.Location = new System.Drawing.Point(469, 9);
+            this.label10.Location = new System.Drawing.Point(469, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 15);
             this.label10.TabIndex = 50;
@@ -341,7 +346,7 @@
             this.labelDeckMonmusuLevelValue1.Size = new System.Drawing.Size(29, 20);
             this.labelDeckMonmusuLevelValue1.TabIndex = 46;
             this.labelDeckMonmusuLevelValue1.Text = "99";
-            this.labelDeckMonmusuLevelValue1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelDeckMonmusuLevelValue1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // progressBarDeckMonmusuSatiety1
             // 
@@ -357,7 +362,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label9.Location = new System.Drawing.Point(366, 9);
+            this.label9.Location = new System.Drawing.Point(366, 10);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 15);
             this.label9.TabIndex = 47;
@@ -365,13 +370,13 @@
             // 
             // labelDeckMonmusuTensionValue1
             // 
-            this.labelDeckMonmusuTensionValue1.AutoSize = true;
             this.labelDeckMonmusuTensionValue1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDeckMonmusuTensionValue1.Location = new System.Drawing.Point(437, 9);
+            this.labelDeckMonmusuTensionValue1.Location = new System.Drawing.Point(437, 10);
             this.labelDeckMonmusuTensionValue1.Name = "labelDeckMonmusuTensionValue1";
             this.labelDeckMonmusuTensionValue1.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuTensionValue1.TabIndex = 48;
-            this.labelDeckMonmusuTensionValue1.Text = "133";
+            this.labelDeckMonmusuTensionValue1.Text = "999";
+            this.labelDeckMonmusuTensionValue1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label5
             // 
@@ -472,6 +477,16 @@
             this.buttonMaster.UseVisualStyleBackColor = true;
             this.buttonMaster.Click += new System.EventHandler(this.OpenFormMaster);
             // 
+            // pictureBoxDeckMonmusuLikeFood1
+            // 
+            this.pictureBoxDeckMonmusuLikeFood1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood1.Location = new System.Drawing.Point(581, 7);
+            this.pictureBoxDeckMonmusuLikeFood1.Name = "pictureBoxDeckMonmusuLikeFood1";
+            this.pictureBoxDeckMonmusuLikeFood1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood1.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood1.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -484,6 +499,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Resizable = false;
             this.Text = "MonlineBrowser";
@@ -494,6 +510,7 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -534,6 +551,7 @@
         private System.Windows.Forms.TextBox textBoxUrl;
         private System.Windows.Forms.Button buttonNavi;
         private System.Windows.Forms.Button buttonMaster;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuLikeFood1;
     }
 }
 
