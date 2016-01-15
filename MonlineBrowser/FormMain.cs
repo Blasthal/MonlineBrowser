@@ -189,6 +189,10 @@ namespace MonlineBrowser
         #region WebBrowser
         private void DoNavigation(object sender, EventArgs e)
         {
+            // インターネット一時ファイルを削除する
+            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
+            System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
+
             //WebBrowserコントロールに指定URIを開かせる
             webBrowser1.Navigate(textBoxUrl.Text);
         }
@@ -209,11 +213,11 @@ namespace MonlineBrowser
                 return;
             }
 
-            // ★WebBrowserコントロールにゲーム画面を合わせる
+            // WebBrowserコントロールにゲーム画面を合わせる
             HtmlDocument doc = webBrowser1.Document;
             if (doc != null && doc.Body != null)
             {
-                // ★styleを埋め込む
+                // 不要な要素を消すstyleを埋め込む
                 HtmlElement elem = doc.CreateElement("style");
                 elem.SetAttribute("type", "text/css");
                 elem.InnerHtml =
