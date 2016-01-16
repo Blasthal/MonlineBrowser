@@ -36,6 +36,10 @@ namespace MonlineBrowser
         {
             InitializeComponent();
 
+            // インターネット一時ファイルを削除する
+            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
+            System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
+
             // モン娘情報を初期化する
             InitializeDeckMonmusuInfos();
 
@@ -189,11 +193,7 @@ namespace MonlineBrowser
         #region WebBrowser
         private void DoNavigation(object sender, EventArgs e)
         {
-            // インターネット一時ファイルを削除する
-            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
-            System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
-
-            //WebBrowserコントロールに指定URIを開かせる
+            // WebBrowserコントロールに指定URIを開かせる
             webBrowser1.Navigate(textBoxUrl.Text);
         }
 
