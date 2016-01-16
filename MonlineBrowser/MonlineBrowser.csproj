@@ -50,6 +50,9 @@
   <PropertyGroup>
     <StartupObject>MonlineBrowser.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Monline_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="antlr.runtime">
       <HintPath>..\packages\fluorinefx.1.2.4\lib\net40\antlr.runtime.dll</HintPath>
@@ -176,6 +179,7 @@
     <Content Include="Gateway.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <Content Include="Monline_Icon.ico" />
     <None Include="Resources\navigation[63].png" />
     <None Include="Resources\navigation[62].png" />
     <None Include="Resources\navigation[61].png" />
