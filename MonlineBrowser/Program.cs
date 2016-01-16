@@ -13,6 +13,14 @@ namespace MonlineBrowser
         [STAThread]
         static void Main()
         {
+            // 多重起動を抑制する
+            if (System.Diagnostics.Process.GetProcessesByName(
+                System.Diagnostics.Process.GetCurrentProcess().ProcessName).Length > 1)
+            {
+                MessageBox.Show("既に起動しています。");
+                return;
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
