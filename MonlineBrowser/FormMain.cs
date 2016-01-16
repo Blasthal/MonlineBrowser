@@ -36,10 +36,6 @@ namespace MonlineBrowser
         {
             InitializeComponent();
 
-            // インターネット一時ファイルを削除する
-            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
-            System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
-
             // モン娘情報を初期化する
             InitializeDeckMonmusuInfos();
 
@@ -149,6 +145,14 @@ namespace MonlineBrowser
 
             //Fiddlerを終了させる
             Fiddler.FiddlerApplication.Shutdown();
+
+            // インターネット一時ファイルを削除する
+            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
+            System.Diagnostics.Process process = System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
+            while(!process.HasExited)
+            {
+                process.WaitForExit(1000);
+            }
         }
 
         /// <summary>
