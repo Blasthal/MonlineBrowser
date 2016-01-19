@@ -35,6 +35,7 @@ namespace MonlineBrowser
         public FormMain()
         {
             InitializeComponent();
+            this.Focus();
 
             // モン娘情報を初期化する
             InitializeDeckMonmusuInfos();

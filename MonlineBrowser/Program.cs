@@ -17,7 +17,7 @@ namespace MonlineBrowser
             if (System.Diagnostics.Process.GetProcessesByName(
                 System.Diagnostics.Process.GetCurrentProcess().ProcessName).Length > 1)
             {
-                MessageBox.Show("既に起動しています。");
+                MessageBox.Show("既に起動しています。", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 

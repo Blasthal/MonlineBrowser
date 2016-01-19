@@ -78,6 +78,7 @@
     </Reference>
     <Reference Include="FluorineFx.ServiceBrowser">
       <HintPath>..\packages\fluorinefx.1.2.4\lib\net40\FluorineFx.ServiceBrowser.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
