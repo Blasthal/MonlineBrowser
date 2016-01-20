@@ -35,6 +35,9 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.treeViewGirlLevelMst = new System.Windows.Forms.TreeView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.treeViewCardMst = new System.Windows.Forms.TreeView();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,24 +48,27 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
             this.treeViewUserRefresh = new System.Windows.Forms.TreeView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.treeViewUserCard = new System.Windows.Forms.TreeView();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
-            this.treeViewCardMst = new System.Windows.Forms.TreeView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeViewItemMst
             // 
-            this.treeViewItemMst.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.treeViewItemMst.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.treeViewItemMst.Location = new System.Drawing.Point(3, 24);
             this.treeViewItemMst.Name = "treeViewItemMst";
             this.treeViewItemMst.Size = new System.Drawing.Size(333, 463);
@@ -70,6 +76,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage6);
@@ -129,122 +138,6 @@
             this.treeViewGirlLevelMst.Size = new System.Drawing.Size(333, 463);
             this.treeViewGirlLevelMst.TabIndex = 3;
             // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(365, 34);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(407, 516);
-            this.tabControl2.TabIndex = 5;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.treeViewUserItem);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(399, 490);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "item";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "ユーザーの所持アイテム情報";
-            // 
-            // treeViewUserItem
-            // 
-            this.treeViewUserItem.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.treeViewUserItem.Location = new System.Drawing.Point(3, 24);
-            this.treeViewUserItem.Name = "treeViewUserItem";
-            this.treeViewUserItem.Size = new System.Drawing.Size(393, 463);
-            this.treeViewUserItem.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.treeViewUserDeck);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(399, 490);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "deck";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 12);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "ユーザーのモン娘編成情報";
-            // 
-            // treeViewUserDeck
-            // 
-            this.treeViewUserDeck.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.treeViewUserDeck.Location = new System.Drawing.Point(3, 24);
-            this.treeViewUserDeck.Name = "treeViewUserDeck";
-            this.treeViewUserDeck.Size = new System.Drawing.Size(393, 463);
-            this.treeViewUserDeck.TabIndex = 1;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.label7);
-            this.tabPage5.Controls.Add(this.treeViewUserRefresh);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(399, 490);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "refresh";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 12);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "ユーザーのリフレッシュ情報";
-            // 
-            // treeViewUserRefresh
-            // 
-            this.treeViewUserRefresh.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.treeViewUserRefresh.Location = new System.Drawing.Point(3, 24);
-            this.treeViewUserRefresh.Name = "treeViewUserRefresh";
-            this.treeViewUserRefresh.Size = new System.Drawing.Size(393, 463);
-            this.treeViewUserRefresh.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 12);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "MasterData";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(363, 13);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "UserData";
-            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.label8);
@@ -274,6 +167,163 @@
             this.treeViewCardMst.Size = new System.Drawing.Size(333, 463);
             this.treeViewCardMst.TabIndex = 5;
             // 
+            // tabControl2
+            // 
+            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Location = new System.Drawing.Point(365, 34);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(407, 516);
+            this.tabControl2.TabIndex = 5;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.treeViewUserItem);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(399, 490);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "item";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "ユーザーの所持アイテム情報";
+            // 
+            // treeViewUserItem
+            // 
+            this.treeViewUserItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeViewUserItem.Location = new System.Drawing.Point(3, 24);
+            this.treeViewUserItem.Name = "treeViewUserItem";
+            this.treeViewUserItem.Size = new System.Drawing.Size(393, 463);
+            this.treeViewUserItem.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.treeViewUserDeck);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(399, 490);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "deck";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 12);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "ユーザーのモン娘編成情報";
+            // 
+            // treeViewUserDeck
+            // 
+            this.treeViewUserDeck.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeViewUserDeck.Location = new System.Drawing.Point(3, 24);
+            this.treeViewUserDeck.Name = "treeViewUserDeck";
+            this.treeViewUserDeck.Size = new System.Drawing.Size(393, 463);
+            this.treeViewUserDeck.TabIndex = 1;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.treeViewUserRefresh);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(399, 490);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "refresh";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 12);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "ユーザーのリフレッシュ情報";
+            // 
+            // treeViewUserRefresh
+            // 
+            this.treeViewUserRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeViewUserRefresh.Location = new System.Drawing.Point(3, 24);
+            this.treeViewUserRefresh.Name = "treeViewUserRefresh";
+            this.treeViewUserRefresh.Size = new System.Drawing.Size(393, 463);
+            this.treeViewUserRefresh.TabIndex = 6;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.label9);
+            this.tabPage7.Controls.Add(this.treeViewUserCard);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(399, 490);
+            this.tabPage7.TabIndex = 3;
+            this.tabPage7.Text = "card";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 12);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "ユーザーの所持カード情報";
+            // 
+            // treeViewUserCard
+            // 
+            this.treeViewUserCard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeViewUserCard.Location = new System.Drawing.Point(3, 24);
+            this.treeViewUserCard.Name = "treeViewUserCard";
+            this.treeViewUserCard.Size = new System.Drawing.Size(393, 463);
+            this.treeViewUserCard.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 12);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "MasterData";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(363, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "UserData";
+            // 
             // FormMasterViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -290,6 +340,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -297,8 +349,8 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +380,8 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TreeView treeViewCardMst;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TreeView treeViewUserCard;
     }
 }

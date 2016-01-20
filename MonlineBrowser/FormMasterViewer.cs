@@ -50,6 +50,7 @@ namespace MonlineBrowser
             UpdateUserItem();
             UpdateUserDeck();
             UpdateUserRefresh();
+            UpdateUserCard();
         }
 
         #region Master
@@ -197,8 +198,67 @@ namespace MonlineBrowser
                 ++count;
             }
         }
+
+        private void UpdateUserCard()
+        {
+            // 取得内容を確認する為にTreeViewを構築する
+            treeViewUserCard.Nodes.Clear();
+            TreeNode rootNode = treeViewUserCard.Nodes.Add("card");
+
+            int count = 0;
+            foreach (CardData data in UserData.Instance.CardDatas)
+            {
+                // 名前があると分かりやすいので探し出す
+                String dataNodeName = count.ToString();
+                dataNodeName += ":" + UserDataUtil.GetMonmusuName(data.cardId);
+                dataNodeName += "(cardId:" + data.cardId + ")";
+                dataNodeName += "(cardMstId:" + data.cardMstId + ")";
+
+                TreeNode dataNode = rootNode.Nodes.Add(dataNodeName);
+
+                dataNode.Nodes.Add("defenseBonus:" + data.defenseBonus.ToString());
+                dataNode.Nodes.Add("love:" + data.love.ToString());
+                dataNode.Nodes.Add("skill2Exp:" + data.skill2Exp.ToString());
+                dataNode.Nodes.Add("critical:" + data.critical.ToString());
+                dataNode.Nodes.Add("deckId:" + data.deckId.ToString());
+                dataNode.Nodes.Add("hp:" + data.hp.ToString());
+                dataNode.Nodes.Add("skill1ExpMaxForNextLevel:" + data.skill1ExpMaxForNextLevel.ToString());
+                dataNode.Nodes.Add("hpBonus:" + data.hpBonus.ToString());
+                dataNode.Nodes.Add("skill3ExpMaxForNextLevel:" + data.skill3ExpMaxForNextLevel.ToString());
+                dataNode.Nodes.Add("lostTime:" + data.lostTime.ToString());
+                dataNode.Nodes.Add("speedBonus:" + data.speedBonus.ToString());
+                dataNode.Nodes.Add("speed:" + data.speed.ToString());
+                dataNode.Nodes.Add("attackBonus:" + data.attackBonus.ToString());
+                dataNode.Nodes.Add("hpMax:" + data.hpMax.ToString());
+                dataNode.Nodes.Add("hit:" + data.hit.ToString());
+                dataNode.Nodes.Add("skill2Level:" + data.skill2Level.ToString());
+                dataNode.Nodes.Add("defense:" + data.defense.ToString());
+                dataNode.Nodes.Add("attack:" + data.attack.ToString());
+                dataNode.Nodes.Add("isLocked:" + data.isLocked.ToString());
+                dataNode.Nodes.Add("exp:" + data.exp.ToString());
+                dataNode.Nodes.Add("skill2ExpMaxForNextLevel:" + data.skill2ExpMaxForNextLevel.ToString());
+                dataNode.Nodes.Add("tension:" + data.tension.ToString());
+                dataNode.Nodes.Add("skill1Exp:" + data.skill1Exp.ToString());
+                dataNode.Nodes.Add("skill3Exp:" + data.skill3Exp.ToString());
+                dataNode.Nodes.Add("level:" + data.level.ToString());
+                dataNode.Nodes.Add("isLeader:" + data.isLeader.ToString());
+                dataNode.Nodes.Add("skill3Level:" + data.skill3Level.ToString());
+                dataNode.Nodes.Add("orderInDeck:" + data.orderInDeck.ToString());
+                dataNode.Nodes.Add("feelFull:" + data.feelFull.ToString());
+                dataNode.Nodes.Add("cardId:" + data.cardId.ToString());
+                dataNode.Nodes.Add("skill1Level:" + data.skill1Level.ToString());
+                dataNode.Nodes.Add("rebirthCount:" + data.rebirthCount.ToString());
+                dataNode.Nodes.Add("evasion:" + data.evasion.ToString());
+                dataNode.Nodes.Add("cardMstId:" + data.cardMstId.ToString());
+                dataNode.Nodes.Add("expMaxForNextLevel:" + data.expMaxForNextLevel.ToString());
+                dataNode.Nodes.Add("status:" + data.status.ToString());
+
+                ++count;
+            }
+        }
         #endregion
 
         #endregion
+
     }
 }
