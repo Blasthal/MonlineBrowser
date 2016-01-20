@@ -31,7 +31,14 @@ set PUBLISH_DIR=Publish\
 if NOT EXIST %PUBLISH_DIR% (
 mkdir %PUBLISH_DIR%
 )
-move %OUTPUT_DIR%%INPUT_FILE% %PUBLISH_DIR%
+
+set VERSION=1.0.0
+set VERSION_DIR=%PUBLISH_DIR%MonlineBrowser_ver%VERSION%
+if NOT EXIST %VERSION_DIR% (
+mkdir %VERSION_DIR%
+)
+
+move %OUTPUT_DIR%%INPUT_FILE% %VERSION_DIR%
 
 rem tempディレクトリを削除する
 if EXIST %TEMP_DIR% (
