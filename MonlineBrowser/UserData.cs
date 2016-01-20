@@ -236,7 +236,7 @@ namespace MonlineBrowser
                         Int32 findDataIndex = mCardDatas.FindIndex(
                             delegate(CardData inData)
                             {
-                                return (inData.cardMstId == parseData.cardMstId);
+                                return (inData.cardId == parseData.cardId);
                             }
                             );
                         if (0 <= findDataIndex)
