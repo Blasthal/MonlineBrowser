@@ -38,12 +38,26 @@ namespace MonlineBrowser
         /// <returns>カード情報。無い場合はnullを返す。</returns>
         public static CardData GetCardData(int cardId)
         {
-            CardData findData = UserData.Instance.CardDatas.Find(
-                delegate(CardData inData)
+            CardData findData = null;
+            if (0 < cardId)
+            {
+                findData = UserData.Instance.CardDatas.Find(
+                    delegate(CardData inData)
+                    {
+                        return (inData.cardId == cardId);
+                    }
+                    );
+
+                // nullの場合は出力する
+                if (findData == null)
                 {
-                    return (inData.cardId == cardId);
+                    String text = string.Empty;
+                    text = "CardData is null. cardId={0}";
+                    text = String.Format(text, cardId);
+
+                    System.Diagnostics.Debug.WriteLine(text);
                 }
-                );
+            }
 
             return findData;
         }
