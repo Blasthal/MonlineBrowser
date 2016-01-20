@@ -143,7 +143,7 @@
             this.webBrowser1.ScrollBarsEnabled = false;
             this.webBrowser1.Size = new System.Drawing.Size(960, 540);
             this.webBrowser1.TabIndex = 2;
-            this.webBrowser1.Url = new System.Uri("http://www.dmm.com/netgame/social/-/gadgets/=/app_id=365723/", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // labelDeckMonmusuName1
@@ -1160,7 +1160,6 @@
             this.textBoxUrl.Size = new System.Drawing.Size(455, 18);
             this.textBoxUrl.TabIndex = 39;
             this.textBoxUrl.Text = "http://www.dmm.com/netgame/social/-/gadgets/=/app_id=365723/";
-            this.textBoxUrl.Visible = false;
             // 
             // buttonNavi
             // 
@@ -1176,7 +1175,6 @@
             this.buttonNavi.TabIndex = 40;
             this.buttonNavi.Text = "Navi";
             this.buttonNavi.UseVisualStyleBackColor = true;
-            this.buttonNavi.Visible = false;
             this.buttonNavi.Click += new System.EventHandler(this.DoNavigation);
             // 
             // buttonMaster
@@ -1193,7 +1191,6 @@
             this.buttonMaster.TabIndex = 41;
             this.buttonMaster.Text = "Master";
             this.buttonMaster.UseVisualStyleBackColor = true;
-            this.buttonMaster.Visible = false;
             this.buttonMaster.Click += new System.EventHandler(this.OpenFormMaster);
             // 
             // FormMain

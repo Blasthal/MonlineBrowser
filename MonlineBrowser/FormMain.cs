@@ -37,6 +37,17 @@ namespace MonlineBrowser
             InitializeComponent();
             this.Focus();
 
+#if DEBUG
+#else
+            // Release時、Debug用の機能を呼び出すボタンは表示しない
+            this.textBoxUrl.Visible = false;
+            this.buttonNavi.Visible = false;
+            this.buttonMaster.Visible = false;
+
+            // 自動でURLを開く
+            DoNavigation(this, EventArgs.Empty);
+#endif
+
             // モン娘情報を初期化する
             InitializeDeckMonmusuInfos();
 
