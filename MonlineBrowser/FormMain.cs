@@ -6,12 +6,24 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace MonlineBrowser
 {
     public partial class FormMain : MetroFramework.Forms.MetroForm
     {
         #region Field
+        /// <summary>
+        /// スクリーンショットの情報
+        /// </summary>
+        struct ScreenshotInfo
+        {
+            public RadioButton extensionRadioButton;
+            public System.Drawing.Imaging.ImageFormat imageFormat;
+            public String extensionName;
+        }
+        ScreenshotInfo[] mScreenshotInfos = null;
+
         /// <summary>
         /// モン娘の情報
         /// </summary>
@@ -32,6 +44,9 @@ namespace MonlineBrowser
         DeckMonmusuInfo[] mDeckMonmusuInfos = new DeckMonmusuInfo[5];
         #endregion
 
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public FormMain()
         {
             InitializeComponent();
@@ -50,9 +65,26 @@ namespace MonlineBrowser
 
             // モン娘情報を初期化する
             InitializeDeckMonmusuInfos();
+            // スクリーンショット情報を初期化する
+            InitializeScreenshotInfos();
 
             // 一度更新しておく
             UpdateDeck(0);
+
+            // スクリーンショットの保存先が未記載なら、起動したパスを代入しておく
+            string screenshotPath = Properties.Settings.Default.ScreenshotPath;
+            if (screenshotPath == string.Empty)
+            {
+                Properties.Settings.Default.ScreenshotPath = Application.StartupPath;
+            }
+            textBoxScreenshotPath.Text = Properties.Settings.Default.ScreenshotPath;
+
+            // スクリーンショットの拡張子選択を初期化する
+            Int32 ssExtIndex = Properties.Settings.Default.ScreenshotExtensionIndex;
+            if (0 <= ssExtIndex && ssExtIndex < mScreenshotInfos.Length)
+            {
+                mScreenshotInfos[ssExtIndex].extensionRadioButton.Checked = true;
+            }
         }
 
         /// <summary>
@@ -132,6 +164,51 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[4].likeFood = pictureBoxDeckMonmusuLikeFood5;
         }
 
+        /// <summary>
+        /// スクリーンショットの情報を初期化する
+        /// </summary>
+        private void InitializeScreenshotInfos()
+        {
+            // インスタンスを作成する
+            mScreenshotInfos = new ScreenshotInfo[5];
+            for (int i = 0; i < mScreenshotInfos.Length; ++i)
+            {
+                mScreenshotInfos[i] = new ScreenshotInfo();
+            }
+
+            int index = -1;
+
+            // BMP
+            ++index;
+            mScreenshotInfos[index].extensionRadioButton = this.radioButtonScreenshotExtensionBmp;
+            mScreenshotInfos[index].extensionName = "bmp";
+            mScreenshotInfos[index].imageFormat = System.Drawing.Imaging.ImageFormat.Bmp;
+
+            // JPG
+            ++index;
+            mScreenshotInfos[index].extensionRadioButton = this.radioButtonScreenshotExtensionJpg;
+            mScreenshotInfos[index].extensionName = "jpg";
+            mScreenshotInfos[index].imageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+
+            // PNG
+            ++index;
+            mScreenshotInfos[index].extensionRadioButton = this.radioButtonScreenshotExtensionPng;
+            mScreenshotInfos[index].extensionName = "png";
+            mScreenshotInfos[index].imageFormat = System.Drawing.Imaging.ImageFormat.Png;
+
+            // GIF
+            ++index;
+            mScreenshotInfos[index].extensionRadioButton = this.radioButtonScreenshotExtensionGif;
+            mScreenshotInfos[index].extensionName = "gif";
+            mScreenshotInfos[index].imageFormat = System.Drawing.Imaging.ImageFormat.Gif;
+
+            // TIFF
+            ++index;
+            mScreenshotInfos[index].extensionRadioButton = this.radioButtonScreenshotExtensionTiff;
+            mScreenshotInfos[index].extensionName = "tiff";
+            mScreenshotInfos[index].imageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             // クライアントからレスポンスを送る前に呼ばれるイベント
@@ -161,9 +238,26 @@ namespace MonlineBrowser
             // インターネット一時ファイルを削除する
             // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
             System.Diagnostics.Process process = System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
+
+            // 設定を保存する
+            Properties.Settings.Default.ScreenshotPath = this.textBoxScreenshotPath.Text;
+
+            for (Int32 i = 0; i < mScreenshotInfos.Length; ++i)
+            {
+                ScreenshotInfo ssInfo = mScreenshotInfos[i];
+                if (ssInfo.extensionRadioButton.Checked)
+                {
+                    Properties.Settings.Default.ScreenshotExtensionIndex = i;
+                    break;
+                }
+            }
+
+            Properties.Settings.Default.Save();
+
+            // プロセスの終了を待つ
             while(!process.HasExited)
             {
-                process.WaitForExit(1000);
+                process.WaitForExit(100);
             }
         }
 
@@ -173,7 +267,7 @@ namespace MonlineBrowser
         /// <returns>現在選択中のデッキID。異常な場合は0を返す。</returns>
         public Int32 GetCurrentCheckDeckId()
         {
-            foreach (Control ctrl in groupBox1.Controls)
+            foreach (Control ctrl in panelFormation.Controls)
             {
                 if (ctrl.GetType() == typeof(RadioButton))
                 {
@@ -395,5 +489,156 @@ namespace MonlineBrowser
             }
         }
         #endregion
+
+        #region スクリーンショット
+        /// <summary>
+        /// スクリーンショットの保存先パスをダイアログで指定する
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonScreenshotPathDialog_Click(object sender, EventArgs e)
+        {
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+
+            // フォルダーを開く設定にする
+            dialog.IsFolderPicker = true;
+
+            // 読み取り専用フォルダとコントロールパネルは開かせない
+            dialog.EnsureReadOnly = false;
+            dialog.AllowNonFileSystemItems = false;
+
+            // 表示する最初のフォルダを指定する
+            dialog.DefaultDirectory = Application.StartupPath;
+            dialog.InitialDirectory = textBoxScreenshotPath.Text;
+
+            // 開く
+            dialog.Title = "スクリーンショットの保存先フォルダを選択";
+            CommonFileDialogResult result = dialog.ShowDialog();
+
+            // 決定したフォルダのパスを代入する
+            if (result == CommonFileDialogResult.Ok &&
+                dialog.FileName != String.Empty)
+            {
+                textBoxScreenshotPath.Text = dialog.FileName;
+            }
+        }
+
+
+        // ole32.dllのOleDrawを使用する(Const定義)
+        const int DVASPECT_CONTENT = 1;
+
+        // ole32.dllのOleDrawを使用する(DllImport定義)
+        [System.Runtime.InteropServices.DllImport("ole32.dll")]
+        extern static int OleDraw(
+            IntPtr pUnk,
+            int dwAspect,
+            IntPtr hdcDraw,
+            ref Rectangle lprcBounds);
+
+        private void buttonScreenShot_Click(object sender, EventArgs e)
+        {
+            // WebBrowserのサイズ(WEBページのサイズ)に合わせてBitmap生成
+            Bitmap bmp = new Bitmap(webBrowser1.Width, webBrowser1.Height);
+
+            // BitmapのGraphicsを取得
+            Graphics gra = Graphics.FromImage(bmp);
+
+            // BitmapのGraphicsのHdcを取得
+            IntPtr hdc = gra.GetHdc();
+
+            // WebBrowser(WEBページ)のオブジェクト取得
+            IntPtr web =
+                System.Runtime.InteropServices.Marshal.GetIUnknownForObject(
+                webBrowser1.ActiveXInstance);
+
+            // WebBrowser(WEBページ)のイメージをBitmapにコピー
+            Rectangle rect = new Rectangle(0, 0, bmp.Width, bmp.Height);
+            OleDraw(web, DVASPECT_CONTENT, hdc, ref rect);
+
+            // WebBrowser(WEBページ)のオブジェクト使用終了
+            System.Runtime.InteropServices.Marshal.Release(web);
+
+            // BitmapのGraphicsの使用終了
+            gra.Dispose();
+
+            // Bitmapを保存する
+            if (textBoxScreenshotPath.Text == String.Empty)
+            {
+                // パスが空欄の場合、exeと同じディレクトリを自動で代入する
+                textBoxScreenshotPath.Text = Application.StartupPath;
+            }
+
+            String savePath = textBoxScreenshotPath.Text;
+            if (savePath.Last() != '\\')
+            {
+                savePath += '\\';
+            }
+            if (System.IO.Directory.Exists(savePath))
+            {
+                // ファイル名を追加する
+                savePath += "Monline_" + DateTime.Now.ToString("yyyyMMddHHmmss");
+
+                // 拡張子を追加する
+                String extName = "jpg";
+                System.Drawing.Imaging.ImageFormat imgFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+                for (Int32 i = 0; i < mScreenshotInfos.Length; ++i)
+                {
+                    ScreenshotInfo ssInfo = mScreenshotInfos[i];
+                    if (ssInfo.extensionRadioButton.Checked)
+                    {
+                        extName = ssInfo.extensionName;
+                        imgFormat = ssInfo.imageFormat;
+                        break;
+                    }
+                }
+                savePath += "." + extName;
+
+                // 保存する
+                bmp.Save(savePath, imgFormat);
+            }
+        }
+
+        #endregion
+
+        #region パネル変更
+        private enum DataPanel
+        {
+            FORMATION,
+            CONFIG,
+        }
+
+        /// <summary>
+        /// 表示するパネルを変更する
+        /// </summary>
+        /// <param name="eDataPanel">パネルの種類</param>
+        private void ChangeVisiblePanel(DataPanel eDataPanel)
+        {
+            Panel[] panels = new Panel[]
+            {
+                this.panelFormation,
+                this.panelConfig,
+            };
+
+            // 一旦全てを非表示にする
+            for (Int32 i = 0; i < panels.Length; ++i)
+            {
+                panels[i].Visible = false;
+            }
+
+            // 対象のパネルだけを表示する
+            panels[(int)eDataPanel].Visible = true;
+        }
+
+        private void buttonFormation_Click(object sender, EventArgs e)
+        {
+            ChangeVisiblePanel(DataPanel.FORMATION);
+        }
+
+        private void buttonConfig_Click(object sender, EventArgs e)
+        {
+            ChangeVisiblePanel(DataPanel.CONFIG);
+        }
+        #endregion
+
     }
 }

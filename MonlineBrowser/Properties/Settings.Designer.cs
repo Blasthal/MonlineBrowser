@@ -22,5 +22,29 @@ namespace MonlineBrowser.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ScreenshotPath {
+            get {
+                return ((string)(this["ScreenshotPath"]));
+            }
+            set {
+                this["ScreenshotPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int ScreenshotExtensionIndex {
+            get {
+                return ((int)(this["ScreenshotExtensionIndex"]));
+            }
+            set {
+                this["ScreenshotExtensionIndex"] = value;
+            }
+        }
     }
 }
