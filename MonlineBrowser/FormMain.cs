@@ -598,6 +598,20 @@ namespace MonlineBrowser
             }
         }
 
+        private void buttonScreenshotPathExlorer_Click(object sender, EventArgs e)
+        {
+            // フォルダをエクスプローラーで開く
+            String path = textBoxScreenshotPath.Text;
+            if (System.IO.Directory.Exists(path))
+            {
+                System.Diagnostics.Process.Start(path);
+            }
+            else
+            {
+                System.Diagnostics.Process.Start(Application.StartupPath);
+            }
+        }
+
         #endregion
 
         #region パネル変更

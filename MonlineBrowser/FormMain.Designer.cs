@@ -123,17 +123,18 @@
             this.label14 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuTensionValue2 = new System.Windows.Forms.Label();
             this.panelConfig = new System.Windows.Forms.Panel();
+            this.radioButtonScreenshotExtensionTiff = new System.Windows.Forms.RadioButton();
+            this.radioButtonScreenshotExtensionGif = new System.Windows.Forms.RadioButton();
+            this.radioButtonScreenshotExtensionPng = new System.Windows.Forms.RadioButton();
+            this.radioButtonScreenshotExtensionJpg = new System.Windows.Forms.RadioButton();
+            this.radioButtonScreenshotExtensionBmp = new System.Windows.Forms.RadioButton();
             this.buttonScreenshotPathDialog = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxScreenshotPath = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelCommonInfo = new System.Windows.Forms.Panel();
-            this.radioButtonScreenshotExtensionBmp = new System.Windows.Forms.RadioButton();
-            this.radioButtonScreenshotExtensionJpg = new System.Windows.Forms.RadioButton();
-            this.radioButtonScreenshotExtensionPng = new System.Windows.Forms.RadioButton();
-            this.radioButtonScreenshotExtensionGif = new System.Windows.Forms.RadioButton();
-            this.radioButtonScreenshotExtensionTiff = new System.Windows.Forms.RadioButton();
+            this.buttonScreenshotPathExlorer = new System.Windows.Forms.Button();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
@@ -1306,6 +1307,7 @@
             // panelConfig
             // 
             this.panelConfig.AutoScroll = true;
+            this.panelConfig.Controls.Add(this.buttonScreenshotPathExlorer);
             this.panelConfig.Controls.Add(this.radioButtonScreenshotExtensionTiff);
             this.panelConfig.Controls.Add(this.radioButtonScreenshotExtensionGif);
             this.panelConfig.Controls.Add(this.radioButtonScreenshotExtensionPng);
@@ -1315,10 +1317,87 @@
             this.panelConfig.Controls.Add(this.label6);
             this.panelConfig.Controls.Add(this.textBoxScreenshotPath);
             this.panelConfig.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelConfig.Location = new System.Drawing.Point(139, 660);
+            this.panelConfig.Location = new System.Drawing.Point(139, 663);
             this.panelConfig.Name = "panelConfig";
             this.panelConfig.Size = new System.Drawing.Size(853, 320);
             this.panelConfig.TabIndex = 59;
+            // 
+            // radioButtonScreenshotExtensionTiff
+            // 
+            this.radioButtonScreenshotExtensionTiff.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonScreenshotExtensionTiff.AutoSize = true;
+            this.radioButtonScreenshotExtensionTiff.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
+            this.radioButtonScreenshotExtensionTiff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.radioButtonScreenshotExtensionTiff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonScreenshotExtensionTiff.ForeColor = System.Drawing.Color.White;
+            this.radioButtonScreenshotExtensionTiff.Location = new System.Drawing.Point(189, 41);
+            this.radioButtonScreenshotExtensionTiff.Name = "radioButtonScreenshotExtensionTiff";
+            this.radioButtonScreenshotExtensionTiff.Size = new System.Drawing.Size(41, 24);
+            this.radioButtonScreenshotExtensionTiff.TabIndex = 7;
+            this.radioButtonScreenshotExtensionTiff.Text = "TIFF";
+            this.radioButtonScreenshotExtensionTiff.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonScreenshotExtensionGif
+            // 
+            this.radioButtonScreenshotExtensionGif.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonScreenshotExtensionGif.AutoSize = true;
+            this.radioButtonScreenshotExtensionGif.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
+            this.radioButtonScreenshotExtensionGif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.radioButtonScreenshotExtensionGif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonScreenshotExtensionGif.ForeColor = System.Drawing.Color.White;
+            this.radioButtonScreenshotExtensionGif.Location = new System.Drawing.Point(148, 41);
+            this.radioButtonScreenshotExtensionGif.Name = "radioButtonScreenshotExtensionGif";
+            this.radioButtonScreenshotExtensionGif.Size = new System.Drawing.Size(35, 24);
+            this.radioButtonScreenshotExtensionGif.TabIndex = 6;
+            this.radioButtonScreenshotExtensionGif.Text = "GIF";
+            this.radioButtonScreenshotExtensionGif.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonScreenshotExtensionPng
+            // 
+            this.radioButtonScreenshotExtensionPng.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonScreenshotExtensionPng.AutoSize = true;
+            this.radioButtonScreenshotExtensionPng.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
+            this.radioButtonScreenshotExtensionPng.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.radioButtonScreenshotExtensionPng.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonScreenshotExtensionPng.ForeColor = System.Drawing.Color.White;
+            this.radioButtonScreenshotExtensionPng.Location = new System.Drawing.Point(102, 41);
+            this.radioButtonScreenshotExtensionPng.Name = "radioButtonScreenshotExtensionPng";
+            this.radioButtonScreenshotExtensionPng.Size = new System.Drawing.Size(40, 24);
+            this.radioButtonScreenshotExtensionPng.TabIndex = 5;
+            this.radioButtonScreenshotExtensionPng.Text = "PNG";
+            this.radioButtonScreenshotExtensionPng.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonScreenshotExtensionJpg
+            // 
+            this.radioButtonScreenshotExtensionJpg.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonScreenshotExtensionJpg.AutoSize = true;
+            this.radioButtonScreenshotExtensionJpg.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
+            this.radioButtonScreenshotExtensionJpg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.radioButtonScreenshotExtensionJpg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonScreenshotExtensionJpg.ForeColor = System.Drawing.Color.White;
+            this.radioButtonScreenshotExtensionJpg.Location = new System.Drawing.Point(57, 41);
+            this.radioButtonScreenshotExtensionJpg.Name = "radioButtonScreenshotExtensionJpg";
+            this.radioButtonScreenshotExtensionJpg.Size = new System.Drawing.Size(39, 24);
+            this.radioButtonScreenshotExtensionJpg.TabIndex = 4;
+            this.radioButtonScreenshotExtensionJpg.Text = "JPG";
+            this.radioButtonScreenshotExtensionJpg.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonScreenshotExtensionBmp
+            // 
+            this.radioButtonScreenshotExtensionBmp.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonScreenshotExtensionBmp.AutoSize = true;
+            this.radioButtonScreenshotExtensionBmp.Checked = true;
+            this.radioButtonScreenshotExtensionBmp.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
+            this.radioButtonScreenshotExtensionBmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.radioButtonScreenshotExtensionBmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonScreenshotExtensionBmp.ForeColor = System.Drawing.Color.White;
+            this.radioButtonScreenshotExtensionBmp.Location = new System.Drawing.Point(5, 41);
+            this.radioButtonScreenshotExtensionBmp.Name = "radioButtonScreenshotExtensionBmp";
+            this.radioButtonScreenshotExtensionBmp.Size = new System.Drawing.Size(41, 24);
+            this.radioButtonScreenshotExtensionBmp.TabIndex = 3;
+            this.radioButtonScreenshotExtensionBmp.TabStop = true;
+            this.radioButtonScreenshotExtensionBmp.Text = "BMP";
+            this.radioButtonScreenshotExtensionBmp.UseVisualStyleBackColor = true;
             // 
             // buttonScreenshotPathDialog
             // 
@@ -1326,7 +1405,7 @@
             this.buttonScreenshotPathDialog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.buttonScreenshotPathDialog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonScreenshotPathDialog.ForeColor = System.Drawing.Color.White;
-            this.buttonScreenshotPathDialog.Location = new System.Drawing.Point(660, 27);
+            this.buttonScreenshotPathDialog.Location = new System.Drawing.Point(651, 14);
             this.buttonScreenshotPathDialog.Name = "buttonScreenshotPathDialog";
             this.buttonScreenshotPathDialog.Size = new System.Drawing.Size(59, 24);
             this.buttonScreenshotPathDialog.TabIndex = 2;
@@ -1338,7 +1417,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 13);
+            this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 12);
             this.label6.TabIndex = 1;
@@ -1346,7 +1425,7 @@
             // 
             // textBoxScreenshotPath
             // 
-            this.textBoxScreenshotPath.Location = new System.Drawing.Point(14, 29);
+            this.textBoxScreenshotPath.Location = new System.Drawing.Point(5, 16);
             this.textBoxScreenshotPath.Name = "textBoxScreenshotPath";
             this.textBoxScreenshotPath.Size = new System.Drawing.Size(640, 19);
             this.textBoxScreenshotPath.TabIndex = 0;
@@ -1387,81 +1466,19 @@
             this.panelCommonInfo.Size = new System.Drawing.Size(960, 48);
             this.panelCommonInfo.TabIndex = 58;
             // 
-            // radioButtonScreenshotExtensionBmp
+            // buttonScreenshotPathExlorer
             // 
-            this.radioButtonScreenshotExtensionBmp.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonScreenshotExtensionBmp.AutoSize = true;
-            this.radioButtonScreenshotExtensionBmp.Checked = true;
-            this.radioButtonScreenshotExtensionBmp.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
-            this.radioButtonScreenshotExtensionBmp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.radioButtonScreenshotExtensionBmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonScreenshotExtensionBmp.ForeColor = System.Drawing.Color.White;
-            this.radioButtonScreenshotExtensionBmp.Location = new System.Drawing.Point(14, 54);
-            this.radioButtonScreenshotExtensionBmp.Name = "radioButtonScreenshotExtensionBmp";
-            this.radioButtonScreenshotExtensionBmp.Size = new System.Drawing.Size(41, 24);
-            this.radioButtonScreenshotExtensionBmp.TabIndex = 3;
-            this.radioButtonScreenshotExtensionBmp.Text = "BMP";
-            this.radioButtonScreenshotExtensionBmp.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonScreenshotExtensionJpg
-            // 
-            this.radioButtonScreenshotExtensionJpg.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonScreenshotExtensionJpg.AutoSize = true;
-            this.radioButtonScreenshotExtensionJpg.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
-            this.radioButtonScreenshotExtensionJpg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.radioButtonScreenshotExtensionJpg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonScreenshotExtensionJpg.ForeColor = System.Drawing.Color.White;
-            this.radioButtonScreenshotExtensionJpg.Location = new System.Drawing.Point(61, 54);
-            this.radioButtonScreenshotExtensionJpg.Name = "radioButtonScreenshotExtensionJpg";
-            this.radioButtonScreenshotExtensionJpg.Size = new System.Drawing.Size(39, 24);
-            this.radioButtonScreenshotExtensionJpg.TabIndex = 4;
-            this.radioButtonScreenshotExtensionJpg.Text = "JPG";
-            this.radioButtonScreenshotExtensionJpg.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonScreenshotExtensionPng
-            // 
-            this.radioButtonScreenshotExtensionPng.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonScreenshotExtensionPng.AutoSize = true;
-            this.radioButtonScreenshotExtensionPng.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
-            this.radioButtonScreenshotExtensionPng.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.radioButtonScreenshotExtensionPng.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonScreenshotExtensionPng.ForeColor = System.Drawing.Color.White;
-            this.radioButtonScreenshotExtensionPng.Location = new System.Drawing.Point(106, 54);
-            this.radioButtonScreenshotExtensionPng.Name = "radioButtonScreenshotExtensionPng";
-            this.radioButtonScreenshotExtensionPng.Size = new System.Drawing.Size(40, 24);
-            this.radioButtonScreenshotExtensionPng.TabIndex = 5;
-            this.radioButtonScreenshotExtensionPng.Text = "PNG";
-            this.radioButtonScreenshotExtensionPng.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonScreenshotExtensionGif
-            // 
-            this.radioButtonScreenshotExtensionGif.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonScreenshotExtensionGif.AutoSize = true;
-            this.radioButtonScreenshotExtensionGif.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
-            this.radioButtonScreenshotExtensionGif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.radioButtonScreenshotExtensionGif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonScreenshotExtensionGif.ForeColor = System.Drawing.Color.White;
-            this.radioButtonScreenshotExtensionGif.Location = new System.Drawing.Point(152, 54);
-            this.radioButtonScreenshotExtensionGif.Name = "radioButtonScreenshotExtensionGif";
-            this.radioButtonScreenshotExtensionGif.Size = new System.Drawing.Size(35, 24);
-            this.radioButtonScreenshotExtensionGif.TabIndex = 6;
-            this.radioButtonScreenshotExtensionGif.Text = "GIF";
-            this.radioButtonScreenshotExtensionGif.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonScreenshotExtensionTiff
-            // 
-            this.radioButtonScreenshotExtensionTiff.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButtonScreenshotExtensionTiff.AutoSize = true;
-            this.radioButtonScreenshotExtensionTiff.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
-            this.radioButtonScreenshotExtensionTiff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.radioButtonScreenshotExtensionTiff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonScreenshotExtensionTiff.ForeColor = System.Drawing.Color.White;
-            this.radioButtonScreenshotExtensionTiff.Location = new System.Drawing.Point(193, 54);
-            this.radioButtonScreenshotExtensionTiff.Name = "radioButtonScreenshotExtensionTiff";
-            this.radioButtonScreenshotExtensionTiff.Size = new System.Drawing.Size(41, 24);
-            this.radioButtonScreenshotExtensionTiff.TabIndex = 7;
-            this.radioButtonScreenshotExtensionTiff.Text = "TIFF";
-            this.radioButtonScreenshotExtensionTiff.UseVisualStyleBackColor = true;
+            this.buttonScreenshotPathExlorer.AutoSize = true;
+            this.buttonScreenshotPathExlorer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.buttonScreenshotPathExlorer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonScreenshotPathExlorer.ForeColor = System.Drawing.Color.White;
+            this.buttonScreenshotPathExlorer.Location = new System.Drawing.Point(716, 13);
+            this.buttonScreenshotPathExlorer.Name = "buttonScreenshotPathExlorer";
+            this.buttonScreenshotPathExlorer.Size = new System.Drawing.Size(59, 24);
+            this.buttonScreenshotPathExlorer.TabIndex = 8;
+            this.buttonScreenshotPathExlorer.Text = "開く";
+            this.buttonScreenshotPathExlorer.UseVisualStyleBackColor = true;
+            this.buttonScreenshotPathExlorer.Click += new System.EventHandler(this.buttonScreenshotPathExlorer_Click);
             // 
             // FormMain
             // 
@@ -1619,6 +1636,7 @@
         private System.Windows.Forms.RadioButton radioButtonScreenshotExtensionBmp;
         private System.Windows.Forms.RadioButton radioButtonScreenshotExtensionGif;
         private System.Windows.Forms.RadioButton radioButtonScreenshotExtensionTiff;
+        private System.Windows.Forms.Button buttonScreenshotPathExlorer;
     }
 }
 
