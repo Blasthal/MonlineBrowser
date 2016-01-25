@@ -49,6 +49,27 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region アイテム
+        /// <summary>
+        /// itemMstIdに対応した画像を取得する
+        /// </summary>
+        /// <param name="itemMstId">マスターID</param>
+        /// <returns>アイテムの画像</returns>
+        public static Bitmap GetPictureItem(Int32 itemMstId)
+        {
+            Bitmap bitmap = null;
+            switch (itemMstId)
+            {
+                    // TODO:各種ケース
+
+                default:
+                    break;
+            }
+
+            return bitmap;
+        }
+        #endregion
+
         #endregion
     }
 }

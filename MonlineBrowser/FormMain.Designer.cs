@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
@@ -38,7 +40,6 @@
             this.panelFormation = new System.Windows.Forms.Panel();
             this.radioButtonDeck5 = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuLikeFood5 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue5 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName5 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.radioButtonDeck4 = new System.Windows.Forms.RadioButton();
             this.radioButtonDeck3 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuLikeFood4 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName4 = new System.Windows.Forms.Label();
@@ -74,7 +74,6 @@
             this.radioButtonDeck1 = new System.Windows.Forms.RadioButton();
             this.radioButtonDeck2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuLikeFood1 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuName1 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuHPValue1 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRarityName1 = new System.Windows.Forms.Label();
@@ -90,7 +89,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuTensionValue1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuLikeFood3 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName3 = new System.Windows.Forms.Label();
@@ -107,7 +105,6 @@
             this.labelDeckMonmusuTensionValue3 = new System.Windows.Forms.Label();
             this.labelGroupName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuLikeFood2 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName2 = new System.Windows.Forms.Label();
@@ -123,6 +120,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuTensionValue2 = new System.Windows.Forms.Label();
             this.panelConfig = new System.Windows.Forms.Panel();
+            this.buttonScreenshotPathExlorer = new System.Windows.Forms.Button();
             this.radioButtonScreenshotExtensionTiff = new System.Windows.Forms.RadioButton();
             this.radioButtonScreenshotExtensionGif = new System.Windows.Forms.RadioButton();
             this.radioButtonScreenshotExtensionPng = new System.Windows.Forms.RadioButton();
@@ -134,20 +132,33 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelCommonInfo = new System.Windows.Forms.Panel();
-            this.buttonScreenshotPathExlorer = new System.Windows.Forms.Button();
+            this.panelItem = new System.Windows.Forms.Panel();
+            this.dataGridViewItem = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
+            this.buttonItem = new System.Windows.Forms.Button();
+            this.pictureBoxDeckMonmusuLikeFood5 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood2 = new System.Windows.Forms.PictureBox();
+            this.ColumnItemImage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ColumnItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
             this.panelConfig.SuspendLayout();
             this.panelCommonInfo.SuspendLayout();
+            this.panelItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -312,16 +323,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(628, 48);
             this.panel5.TabIndex = 59;
-            // 
-            // pictureBoxDeckMonmusuLikeFood5
-            // 
-            this.pictureBoxDeckMonmusuLikeFood5.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood5.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood5.Name = "pictureBoxDeckMonmusuLikeFood5";
-            this.pictureBoxDeckMonmusuLikeFood5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood5.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood5.TabStop = false;
             // 
             // labelDeckMonmusuHPValue5
             // 
@@ -533,16 +534,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(628, 48);
             this.panel4.TabIndex = 58;
-            // 
-            // pictureBoxDeckMonmusuLikeFood4
-            // 
-            this.pictureBoxDeckMonmusuLikeFood4.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood4.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood4.Name = "pictureBoxDeckMonmusuLikeFood4";
-            this.pictureBoxDeckMonmusuLikeFood4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood4.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood4.TabStop = false;
             // 
             // labelDeckMonmusuHPValue4
             // 
@@ -756,16 +747,6 @@
             this.panel1.Size = new System.Drawing.Size(628, 48);
             this.panel1.TabIndex = 38;
             // 
-            // pictureBoxDeckMonmusuLikeFood1
-            // 
-            this.pictureBoxDeckMonmusuLikeFood1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood1.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood1.Name = "pictureBoxDeckMonmusuLikeFood1";
-            this.pictureBoxDeckMonmusuLikeFood1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood1.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood1.TabStop = false;
-            // 
             // labelDeckMonmusuName1
             // 
             this.labelDeckMonmusuName1.AutoSize = true;
@@ -942,16 +923,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(628, 48);
             this.panel3.TabIndex = 57;
-            // 
-            // pictureBoxDeckMonmusuLikeFood3
-            // 
-            this.pictureBoxDeckMonmusuLikeFood3.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood3.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood3.Name = "pictureBoxDeckMonmusuLikeFood3";
-            this.pictureBoxDeckMonmusuLikeFood3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood3.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood3.TabStop = false;
             // 
             // labelDeckMonmusuHPValue3
             // 
@@ -1141,16 +1112,6 @@
             this.panel2.Size = new System.Drawing.Size(628, 48);
             this.panel2.TabIndex = 56;
             // 
-            // pictureBoxDeckMonmusuLikeFood2
-            // 
-            this.pictureBoxDeckMonmusuLikeFood2.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood2.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood2.Name = "pictureBoxDeckMonmusuLikeFood2";
-            this.pictureBoxDeckMonmusuLikeFood2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood2.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood2.TabStop = false;
-            // 
             // labelDeckMonmusuHPValue2
             // 
             this.labelDeckMonmusuHPValue2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -1322,6 +1283,20 @@
             this.panelConfig.Size = new System.Drawing.Size(853, 320);
             this.panelConfig.TabIndex = 59;
             // 
+            // buttonScreenshotPathExlorer
+            // 
+            this.buttonScreenshotPathExlorer.AutoSize = true;
+            this.buttonScreenshotPathExlorer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.buttonScreenshotPathExlorer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonScreenshotPathExlorer.ForeColor = System.Drawing.Color.White;
+            this.buttonScreenshotPathExlorer.Location = new System.Drawing.Point(716, 13);
+            this.buttonScreenshotPathExlorer.Name = "buttonScreenshotPathExlorer";
+            this.buttonScreenshotPathExlorer.Size = new System.Drawing.Size(59, 24);
+            this.buttonScreenshotPathExlorer.TabIndex = 8;
+            this.buttonScreenshotPathExlorer.Text = "開く";
+            this.buttonScreenshotPathExlorer.UseVisualStyleBackColor = true;
+            this.buttonScreenshotPathExlorer.Click += new System.EventHandler(this.buttonScreenshotPathExlorer_Click);
+            // 
             // radioButtonScreenshotExtensionTiff
             // 
             this.radioButtonScreenshotExtensionTiff.Appearance = System.Windows.Forms.Appearance.Button;
@@ -1466,25 +1441,161 @@
             this.panelCommonInfo.Size = new System.Drawing.Size(960, 48);
             this.panelCommonInfo.TabIndex = 58;
             // 
-            // buttonScreenshotPathExlorer
+            // panelItem
             // 
-            this.buttonScreenshotPathExlorer.AutoSize = true;
-            this.buttonScreenshotPathExlorer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.buttonScreenshotPathExlorer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonScreenshotPathExlorer.ForeColor = System.Drawing.Color.White;
-            this.buttonScreenshotPathExlorer.Location = new System.Drawing.Point(716, 13);
-            this.buttonScreenshotPathExlorer.Name = "buttonScreenshotPathExlorer";
-            this.buttonScreenshotPathExlorer.Size = new System.Drawing.Size(59, 24);
-            this.buttonScreenshotPathExlorer.TabIndex = 8;
-            this.buttonScreenshotPathExlorer.Text = "開く";
-            this.buttonScreenshotPathExlorer.UseVisualStyleBackColor = true;
-            this.buttonScreenshotPathExlorer.Click += new System.EventHandler(this.buttonScreenshotPathExlorer_Click);
+            this.panelItem.AutoScroll = true;
+            this.panelItem.Controls.Add(this.dataGridViewItem);
+            this.panelItem.Controls.Add(this.label16);
+            this.panelItem.ForeColor = System.Drawing.Color.Firebrick;
+            this.panelItem.Location = new System.Drawing.Point(139, 663);
+            this.panelItem.Name = "panelItem";
+            this.panelItem.Size = new System.Drawing.Size(853, 320);
+            this.panelItem.TabIndex = 60;
+            // 
+            // dataGridViewItem
+            // 
+            this.dataGridViewItem.AllowUserToAddRows = false;
+            this.dataGridViewItem.AllowUserToDeleteRows = false;
+            this.dataGridViewItem.AllowUserToResizeColumns = false;
+            this.dataGridViewItem.AllowUserToResizeRows = false;
+            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnItemImage,
+            this.ColumnItemName,
+            this.ColumnItemNum});
+            this.dataGridViewItem.EnableHeadersVisualStyles = false;
+            this.dataGridViewItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.dataGridViewItem.Location = new System.Drawing.Point(3, 18);
+            this.dataGridViewItem.MultiSelect = false;
+            this.dataGridViewItem.Name = "dataGridViewItem";
+            this.dataGridViewItem.ReadOnly = true;
+            this.dataGridViewItem.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewItem.RowTemplate.Height = 21;
+            this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewItem.Size = new System.Drawing.Size(256, 299);
+            this.dataGridViewItem.TabIndex = 3;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 3);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 12);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "所持品一覧";
+            // 
+            // buttonItem
+            // 
+            this.buttonItem.BackColor = System.Drawing.Color.Transparent;
+            this.buttonItem.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonItem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.buttonItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonItem.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.buttonItem.ForeColor = System.Drawing.Color.White;
+            this.buttonItem.Location = new System.Drawing.Point(32, 717);
+            this.buttonItem.Name = "buttonItem";
+            this.buttonItem.Size = new System.Drawing.Size(101, 48);
+            this.buttonItem.TabIndex = 61;
+            this.buttonItem.Text = "アイテム";
+            this.buttonItem.UseVisualStyleBackColor = false;
+            this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
+            // 
+            // pictureBoxDeckMonmusuLikeFood5
+            // 
+            this.pictureBoxDeckMonmusuLikeFood5.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood5.Location = new System.Drawing.Point(581, 7);
+            this.pictureBoxDeckMonmusuLikeFood5.Name = "pictureBoxDeckMonmusuLikeFood5";
+            this.pictureBoxDeckMonmusuLikeFood5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood5.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood5.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood4
+            // 
+            this.pictureBoxDeckMonmusuLikeFood4.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood4.Location = new System.Drawing.Point(581, 7);
+            this.pictureBoxDeckMonmusuLikeFood4.Name = "pictureBoxDeckMonmusuLikeFood4";
+            this.pictureBoxDeckMonmusuLikeFood4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood4.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood4.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood1
+            // 
+            this.pictureBoxDeckMonmusuLikeFood1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood1.Location = new System.Drawing.Point(581, 7);
+            this.pictureBoxDeckMonmusuLikeFood1.Name = "pictureBoxDeckMonmusuLikeFood1";
+            this.pictureBoxDeckMonmusuLikeFood1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood1.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood1.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood3
+            // 
+            this.pictureBoxDeckMonmusuLikeFood3.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood3.Location = new System.Drawing.Point(581, 7);
+            this.pictureBoxDeckMonmusuLikeFood3.Name = "pictureBoxDeckMonmusuLikeFood3";
+            this.pictureBoxDeckMonmusuLikeFood3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood3.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood3.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood2
+            // 
+            this.pictureBoxDeckMonmusuLikeFood2.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood2.Location = new System.Drawing.Point(581, 7);
+            this.pictureBoxDeckMonmusuLikeFood2.Name = "pictureBoxDeckMonmusuLikeFood2";
+            this.pictureBoxDeckMonmusuLikeFood2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood2.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood2.TabStop = false;
+            // 
+            // ColumnItemImage
+            // 
+            this.ColumnItemImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnItemImage.HeaderText = "絵";
+            this.ColumnItemImage.Name = "ColumnItemImage";
+            this.ColumnItemImage.ReadOnly = true;
+            this.ColumnItemImage.Visible = false;
+            this.ColumnItemImage.Width = 22;
+            // 
+            // ColumnItemName
+            // 
+            this.ColumnItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnItemName.HeaderText = "名前";
+            this.ColumnItemName.Name = "ColumnItemName";
+            this.ColumnItemName.ReadOnly = true;
+            this.ColumnItemName.Width = 53;
+            // 
+            // ColumnItemNum
+            // 
+            this.ColumnItemNum.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnItemNum.HeaderText = "所持数";
+            this.ColumnItemNum.Name = "ColumnItemNum";
+            this.ColumnItemNum.ReadOnly = true;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 1024);
+            this.Controls.Add(this.buttonItem);
+            this.Controls.Add(this.panelItem);
             this.Controls.Add(this.panelConfig);
             this.Controls.Add(this.panelCommonInfo);
             this.Controls.Add(this.panelFormation);
@@ -1506,23 +1617,26 @@
             this.panelFormation.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).EndInit();
             this.panelConfig.ResumeLayout(false);
             this.panelConfig.PerformLayout();
             this.panelCommonInfo.ResumeLayout(false);
             this.panelCommonInfo.PerformLayout();
+            this.panelItem.ResumeLayout(false);
+            this.panelItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1637,6 +1751,13 @@
         private System.Windows.Forms.RadioButton radioButtonScreenshotExtensionGif;
         private System.Windows.Forms.RadioButton radioButtonScreenshotExtensionTiff;
         private System.Windows.Forms.Button buttonScreenshotPathExlorer;
+        private System.Windows.Forms.Panel panelItem;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView dataGridViewItem;
+        private System.Windows.Forms.Button buttonItem;
+        private System.Windows.Forms.DataGridViewImageColumn ColumnItemImage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnItemNum;
     }
 }
 

@@ -89,11 +89,16 @@ namespace MonlineBrowser
                         UserData.Instance.Parse(bodyAsObj);
 
                         // デッキ表示を更新する
+                        // 別スレッドなのでinvokeが必要になる
                         Int32 deckId = form.GetCurrentCheckDeckId();
                         if (0 < deckId)
                         {
                             form.Invoke(new FormMain.UpdateDeckDele(form.UpdateDeck), deckId);
                         }
+
+                        // 道具情報を更新する
+                        // 別スレッドなのでinvokeが必要になる
+                        form.Invoke(new FormMain.UpdateItemDele(form.UpdateItem));
                     }
                 }
             }

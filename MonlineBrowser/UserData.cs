@@ -74,51 +74,57 @@ namespace MonlineBrowser
             Object itemObj = null;
             if (asObject.TryGetValue("item", out itemObj) && itemObj != null)
             {
-                // 配列の時と、そうでない時があるので検知する
+                // 配列の時とそうでない時の両方に対応する
+                Object[] itemObjs = null;
                 Type varType = itemObj.GetType();
                 if (varType == typeof(FluorineFx.ASObject))
                 {
-                    // 単体の時
-                    FluorineFx.ASObject asObj = itemObj as FluorineFx.ASObject;
-                    if (asObj != null)
-                    {
-                        ItemData data = new ItemData();
-                        data.Parse(asObj);
-
-                        // 既出なら上書きする
-                        ItemData existData = mItemDatas.Find(
-                            delegate(ItemData inData)
-                            {
-                                return inData.itemMstId == data.itemMstId;
-                            }
-                        );
-                        if (existData != null)
-                        {
-                            existData = data;
-                        }
-                        // 新出なら追加する
-                        else
-                        {
-                            mItemDatas.Add(data);
-                        }
-                    }
+                    itemObjs = new FluorineFx.ASObject[1];
+                    itemObjs[0] = (FluorineFx.ASObject)itemObj;
                 }
                 else if (varType == typeof(Object[]))
                 {
-                    // 配列の時
-                    Object[] itemObjs = (Object[])itemObj;
-                    if (itemObjs != null)
-                    {
-                        mItemDatas.Clear();
-                        for (int i = 0; i < itemObjs.Length; ++i)
+                    itemObjs = (Object[])itemObj;
+                }
+
+                for (int i = 0; i < itemObjs.Length; ++i)
+                {
+                    FluorineFx.ASObject asObj = itemObjs[i] as FluorineFx.ASObject;
+
+                    ItemData data = new ItemData();
+                    data.Parse(asObj);
+
+                    // 既出なら上書きする
+                    Int32 findDataIndex = mItemDatas.FindIndex(
+                        delegate(ItemData inData)
                         {
-                            FluorineFx.ASObject asObj = itemObjs[i] as FluorineFx.ASObject;
-
-                            ItemData data = new ItemData();
-                            data.Parse(asObj);
-
-                            mItemDatas.Add(data);
+                            return inData.itemMstId == data.itemMstId;
                         }
+                    );
+                    if (0 <= findDataIndex)
+                    {
+                        // お使いから帰ってきた場合、増加値が返る。
+                        // ひとまずこの判断をmiscの情報があるかどうかで行うことにする。
+                        Object miscObj = null;
+                        if (asObject.TryGetValue("misc", out miscObj) && miscObj != null)
+                        {
+                            FluorineFx.ASObject miscAsObj = (FluorineFx.ASObject)miscObj;
+                            Int32 finishType = -1;
+                            AMFUtil.GetInt32Value(miscAsObj, "finishType", out finishType);
+                            if (finishType == 0)    // お使いから帰ってくると0が入っている
+                            {
+                                mItemDatas[findDataIndex].itemCount += data.itemCount;
+                            }
+                        }
+                        else
+                        {
+                            mItemDatas[findDataIndex] = data;
+                        }
+                    }
+                    // 新出なら追加する
+                    else
+                    {
+                        mItemDatas.Add(data);
                     }
                 }
             }

@@ -46,6 +46,23 @@ namespace MonlineBrowser
 
             return findData;
         }
+
+        /// <summary>
+        /// アイテムのマスター情報を取得する
+        /// </summary>
+        /// <param name="itemMstId">マスターID</param>
+        /// <returns>アイテムのマスター情報</returns>
+        public static ItemMstData GetItemData(Int32 itemMstId)
+        {
+            ItemMstData findData = DBItemMst.ItemMstDatas.Find(
+                delegate(ItemMstData inData)
+                {
+                    return (inData.itemMstId == itemMstId);
+                }
+                );
+
+            return findData;
+        }
         #endregion
 
         #region モン娘の名前
@@ -197,6 +214,23 @@ namespace MonlineBrowser
 
         #endregion
 
+        #region アイテム
+        /// <summary>
+        /// アイテム名を取得する
+        /// </summary>
+        /// <param name="itemMstId"></param>
+        /// <returns></returns>
+        public static String GetItemName(Int32 itemMstId)
+        {
+            ItemMstData findData = DBMstUtil.GetItemData(itemMstId);
+            if (findData != null)
+            {
+                return findData.name;
+            }
+
+            return "-----";
+        }
+        #endregion
 
         #endregion
     }

@@ -68,8 +68,11 @@ namespace MonlineBrowser
             // スクリーンショット情報を初期化する
             InitializeScreenshotInfos();
 
-            // 一度更新しておく
+            // 編成情報を更新する。初期化用。
             UpdateDeck(0);
+
+            // 初期表示するパネルを編成情報にする
+            ChangeVisiblePanel(DataPanel.FORMATION);
 
             // スクリーンショットの保存先が未記載なら、起動したパスを代入しておく
             string screenshotPath = Properties.Settings.Default.ScreenshotPath;
@@ -293,6 +296,7 @@ namespace MonlineBrowser
         }
 
         public delegate void UpdateDeckDele(Int32 deckId);
+        public delegate void UpdateItemDele();
 
         private void FiddlerApplication_AfterSessionComplete(Fiddler.Session oSession)
         {
@@ -490,6 +494,32 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region アイテム
+        public void UpdateItem()
+        {
+            if (0 < UserData.Instance.ItemDatas.Count)
+            {
+                dataGridViewItem.Rows.Clear();
+
+                for (int i = 0; i < UserData.Instance.ItemDatas.Count; ++i)
+                {
+                    ItemData data = UserData.Instance.ItemDatas[i];
+
+                    // 行を追加する
+                    DataGridViewRow row = new DataGridViewRow();
+                    row.CreateCells(dataGridViewItem);
+                    Int32 rowIndex = dataGridViewItem.Rows.Add(row);
+
+                    // 行の追加後に情報を入れる
+                    // DataGridViewから取得しないと2行目以降でインデックスエラーが出る
+                    dataGridViewItem["ColumnItemImage", rowIndex].Value = ResourceUtil.GetPictureItem(data.itemMstId);
+                    dataGridViewItem["ColumnItemName", rowIndex].Value = DBMstUtil.GetItemName(data.itemMstId);
+                    dataGridViewItem["ColumnItemNum", rowIndex].Value = data.itemCount.ToString();
+                }
+            }
+        }
+        #endregion
+
         #region スクリーンショット
         /// <summary>
         /// スクリーンショットの保存先パスをダイアログで指定する
@@ -611,13 +641,17 @@ namespace MonlineBrowser
                 System.Diagnostics.Process.Start(Application.StartupPath);
             }
         }
-
         #endregion
 
         #region パネル変更
+        /// <summary>
+        /// パネルの種類。
+        /// 要素を増減させる時は、使用している箇所も対応させること。
+        /// </summary>
         private enum DataPanel
         {
             FORMATION,
+            ITEM,
             CONFIG,
         }
 
@@ -630,6 +664,7 @@ namespace MonlineBrowser
             Panel[] panels = new Panel[]
             {
                 this.panelFormation,
+                this.panelItem,
                 this.panelConfig,
             };
 
@@ -652,6 +687,12 @@ namespace MonlineBrowser
         {
             ChangeVisiblePanel(DataPanel.CONFIG);
         }
+
+        private void buttonItem_Click(object sender, EventArgs e)
+        {
+            ChangeVisiblePanel(DataPanel.ITEM);
+        }
+
         #endregion
 
     }
