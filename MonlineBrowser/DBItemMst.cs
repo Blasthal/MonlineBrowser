@@ -11,6 +11,28 @@ namespace MonlineBrowser
     static class DBItemMst
     {
         /// <summary>
+        /// アイテムのタグ
+        /// </summary>
+        public enum ItemTag
+        {
+            VEGETABLE,
+            MEAT,
+            BREAD,
+
+            COUNT,
+        }
+
+        /// <summary>
+        /// アイテムのタグに対応したマスターID
+        /// </summary>
+        private static readonly Int32[] ItemMstIds = new Int32[(Int32)ItemTag.COUNT]
+        {
+            20001,
+            20002,
+            20003,
+        };
+
+        /// <summary>
         /// ItemMstのリスト
         /// </summary>
         public static readonly List<ItemMstData> ItemMstDatas = new List<ItemMstData>();
@@ -56,5 +78,16 @@ namespace MonlineBrowser
 
             return data;
         }
+
+        /// <summary>
+        /// アイテムのタグに対応したマスターIDを取得する
+        /// </summary>
+        /// <param name="itemKind">アイテムの種類</param>
+        /// <returns>アイテムのマスターID</returns>
+        public static Int32 GetItemMstId(ItemTag itemTag)
+        {
+            return ItemMstIds[(Int32)itemTag];
+        }
+
     }
 }

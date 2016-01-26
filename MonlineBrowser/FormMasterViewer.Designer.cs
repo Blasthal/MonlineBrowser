@@ -53,6 +53,9 @@
             this.treeViewUserCard = new System.Windows.Forms.TreeView();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.treeViewUserPlayer = new System.Windows.Forms.TreeView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -62,6 +65,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeViewItemMst
@@ -176,6 +180,7 @@
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Location = new System.Drawing.Point(365, 34);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -324,6 +329,37 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "UserData";
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.label10);
+            this.tabPage8.Controls.Add(this.treeViewUserPlayer);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(399, 490);
+            this.tabPage8.TabIndex = 4;
+            this.tabPage8.Text = "player";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(126, 12);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "ユーザーのプレイヤー情報";
+            // 
+            // treeViewUserPlayer
+            // 
+            this.treeViewUserPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeViewUserPlayer.Location = new System.Drawing.Point(3, 24);
+            this.treeViewUserPlayer.Name = "treeViewUserPlayer";
+            this.treeViewUserPlayer.Size = new System.Drawing.Size(393, 463);
+            this.treeViewUserPlayer.TabIndex = 8;
+            // 
             // FormMasterViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -351,6 +387,8 @@
             this.tabPage5.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,5 +421,8 @@
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TreeView treeViewUserCard;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TreeView treeViewUserPlayer;
     }
 }

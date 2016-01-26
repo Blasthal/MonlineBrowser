@@ -55,6 +55,15 @@ namespace MonlineBrowser
             get { return mCardDatas; }
         }
         private List<CardData> mCardDatas = new List<CardData>();
+
+        /// <summary>
+        /// プレイヤー情報
+        /// </summary>
+        public PlayerData PlayerData
+        {
+            get { return mPlayerData; }
+        }
+        private PlayerData mPlayerData = new PlayerData();
         #endregion
 
         /// <summary>
@@ -66,6 +75,7 @@ namespace MonlineBrowser
             ParseDeck(bodyAsObject);
             ParseRefresh(bodyAsObject);
             ParseCard(bodyAsObject);
+            ParsePlayer(bodyAsObject);
             // ADD:
         }
 
@@ -104,7 +114,9 @@ namespace MonlineBrowser
                     if (0 <= findDataIndex)
                     {
                         // お使いから帰ってきた場合、増加値が返る。
+                        // 結果の値はプレイヤー情報に入っているので、ここでは処理しない。
                         // ひとまずこの判断をmiscの情報があるかどうかで行うことにする。
+                        bool isOverride = true;
                         Object miscObj = null;
                         if (asObject.TryGetValue("misc", out miscObj) && miscObj != null)
                         {
@@ -113,10 +125,11 @@ namespace MonlineBrowser
                             AMFUtil.GetInt32Value(miscAsObj, "finishType", out finishType);
                             if (finishType == 0)    // お使いから帰ってくると0が入っている
                             {
-                                mItemDatas[findDataIndex].itemCount += data.itemCount;
+                                isOverride = false;
                             }
                         }
-                        else
+
+                        if (isOverride)
                         {
                             mItemDatas[findDataIndex] = data;
                         }
@@ -265,6 +278,41 @@ namespace MonlineBrowser
                     }
                     );
             }
+        }
+
+        private void ParsePlayer(FluorineFx.ASObject asObject)
+        {
+            Object playerObj = null;
+            if (asObject.TryGetValue("player", out playerObj) && playerObj != null)
+            {
+                Type varType = playerObj.GetType();
+                if (varType == typeof(FluorineFx.ASObject))
+                {
+                    FluorineFx.ASObject asObj = (FluorineFx.ASObject)playerObj;
+                    if (asObj != null)
+                    {
+                        PlayerData playerData = new PlayerData();
+                        playerData.Parse(asObj);
+
+                        // 1つなので常に上書きする
+                        mPlayerData = playerData;
+
+                        // ユーザー情報にも保持されている値に反映する
+                        ApplyToUserData();
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// ユーザー情報に値を反映する。
+        /// 主に食材の値を正しくするために必要。
+        /// </summary>
+        private void ApplyToUserData()
+        {
+            UserDataUtil.SetItemCountByTag(DBItemMst.ItemTag.MEAT, mPlayerData.meat);
+            UserDataUtil.SetItemCountByTag(DBItemMst.ItemTag.VEGETABLE, mPlayerData.vegetable);
+            UserDataUtil.SetItemCountByTag(DBItemMst.ItemTag.BREAD, mPlayerData.bread);
         }
     }
 }

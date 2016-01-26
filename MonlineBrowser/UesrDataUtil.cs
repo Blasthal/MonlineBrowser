@@ -589,6 +589,35 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region アイテム
+        /// <summary>
+        /// タグを指定して所持数を変更する
+        /// </summary>
+        /// <param name="itemTag">アイテムのタグ</param>
+        public static void SetItemCountByTag(DBItemMst.ItemTag itemTag, Int32 count)
+        {
+            // マスターIDを取得する
+            Int32 itemMstId = 0;
+            itemMstId = DBItemMst.GetItemMstId(itemTag);
+            if (itemMstId == 0)
+            {
+                return;
+            }
+
+            // データを参照して値を変更する
+            Int32 findIndex = UserData.Instance.ItemDatas.FindIndex(
+                delegate(ItemData inData)
+                {
+                    return (inData.itemMstId == itemMstId);
+                }
+                );
+            if (0 <= findIndex)
+            {
+                UserData.Instance.ItemDatas[findIndex].itemCount = count;
+            }
+        }
+        #endregion
+
         #endregion
     }
 }

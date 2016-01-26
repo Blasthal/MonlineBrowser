@@ -51,6 +51,7 @@ namespace MonlineBrowser
             UpdateUserDeck();
             UpdateUserRefresh();
             UpdateUserCard();
+            UpdateUserPlayer();
         }
 
         #region Master
@@ -148,6 +149,8 @@ namespace MonlineBrowser
 
                 ++count;
             }
+
+            rootNode.Expand();
         }
 
         private void UpdateUserDeck()
@@ -173,6 +176,8 @@ namespace MonlineBrowser
 
                 ++count;
             }
+
+            rootNode.Expand();
         }
 
         private void UpdateUserRefresh()
@@ -197,6 +202,8 @@ namespace MonlineBrowser
 
                 ++count;
             }
+
+            rootNode.Expand();
         }
 
         private void UpdateUserCard()
@@ -255,6 +262,57 @@ namespace MonlineBrowser
 
                 ++count;
             }
+
+            rootNode.Expand();
+        }
+
+        private void UpdateUserPlayer()
+        {
+            // データが無いなら処理しない
+            PlayerData data = UserData.Instance.PlayerData;
+            if (data == null)
+            {
+                return;
+            }
+
+            // 取得内容を確認する為にTreeViewを構築する
+            treeViewUserPlayer.Nodes.Clear();
+            TreeNode rootNode = treeViewUserPlayer.Nodes.Add("player");
+
+            rootNode.Nodes.Add("volumeSe:" + data.volumeSe);
+            rootNode.Nodes.Add("attackBoost:" + data.attackBoost.ToString());
+            rootNode.Nodes.Add("isMute:" + data.isMute.ToString());
+            rootNode.Nodes.Add("foodRecoverMax:" + data.foodRecoverMax.ToString());
+            rootNode.Nodes.Add("stamina:" + data.stamina.ToString());
+            rootNode.Nodes.Add("vegitable:" + data.vegetable.ToString());
+            rootNode.Nodes.Add("meatLostTime:" + data.meatLostTime);
+            rootNode.Nodes.Add("foodMax:" + data.foodMax.ToString());
+            rootNode.Nodes.Add("exp:" + data.exp.ToString());
+            rootNode.Nodes.Add("battleWinCount:" + data.battleWinCount.ToString());
+            rootNode.Nodes.Add("vegitableLostTime:" + data.vegitableLostTime);
+            rootNode.Nodes.Add("playerId:" + data.playerId.ToString());
+            rootNode.Nodes.Add("outingSuccessCount:" + data.outingSuccessCount.ToString());
+            rootNode.Nodes.Add("bread:" + data.bread.ToString());
+            rootNode.Nodes.Add("volumeVoice:" + data.volumeVoice);
+            rootNode.Nodes.Add("isLeave:" + data.isLeave.ToString());
+            rootNode.Nodes.Add("level:" + data.level.ToString());
+            rootNode.Nodes.Add("start:" + data.start);
+            rootNode.Nodes.Add("volumeBgm:" + data.volumeBgm);
+            rootNode.Nodes.Add("breadLostTime:" + data.breadLostTime);
+            rootNode.Nodes.Add("userId:" + data.userId.ToString());
+            rootNode.Nodes.Add("ruby:" + data.ruby.ToString());
+            rootNode.Nodes.Add("cardMax:" + data.cardMax.ToString());
+            rootNode.Nodes.Add("expBoost:" + data.expBoost.ToString());
+            rootNode.Nodes.Add("outingCount:" + data.outingCount.ToString());
+            rootNode.Nodes.Add("name:" + data.name);
+            rootNode.Nodes.Add("meat:" + data.meat.ToString());
+            rootNode.Nodes.Add("defenseBoost:" + data.defenseBoost.ToString());
+            rootNode.Nodes.Add("jobCount:" + data.jobCount.ToString());
+            rootNode.Nodes.Add("battleCount:" + data.battleCount.ToString());
+            rootNode.Nodes.Add("tutorialState:" + data.tutorialState.ToString());
+            rootNode.Nodes.Add("expMaxForNextLevel:" + data.expMaxForNextLevel.ToString());
+
+            rootNode.Expand();
         }
         #endregion
 
