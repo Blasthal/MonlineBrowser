@@ -9,6 +9,18 @@ namespace MonlineBrowser
     class FiddlerUtil
     {
         /// <summary>
+        /// オブジェクトのキー名の種類。
+        /// キー名は小文字に変換して検索するので留意。
+        /// </summary>
+        public enum KeyNameType
+        {
+            PLAYER,
+            DECK,
+            ITEM,
+            // ADD
+        }
+
+        /// <summary>
         /// リクエスト前に処理する
         /// </summary>
         /// <param name="oSession">セッション情報</param>
@@ -88,20 +100,79 @@ namespace MonlineBrowser
 
                         UserData.Instance.Parse(bodyAsObj);
 
+                        
+                        // プレイヤー情報の表示を更新する
+                        if (IsExistObject(bodyAsObj, KeyNameType.PLAYER))
+                        {
+                            form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePlayerName));
+                            form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePlayerLevel));
+                            form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePlayerExp));
+                            form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePossessionMeal));
+                        }
+
                         // デッキ表示を更新する
                         // 別スレッドなのでinvokeが必要になる
-                        Int32 deckId = form.GetCurrentCheckDeckId();
-                        if (0 < deckId)
+                        if (IsExistObject(bodyAsObj, KeyNameType.DECK))
                         {
-                            form.Invoke(new FormMain.UpdateDeckDele(form.UpdateDeck), deckId);
+                            Int32 deckId = form.GetCurrentCheckDeckId();
+                            if (0 < deckId)
+                            {
+                                form.Invoke(new FormMain.UpdateDelegate1(form.UpdateDeck), deckId);
+                            }
                         }
 
                         // 道具情報を更新する
                         // 別スレッドなのでinvokeが必要になる
-                        form.Invoke(new FormMain.UpdateItemDele(form.UpdateItem));
+                        if (IsExistObject(bodyAsObj, KeyNameType.PLAYER) ||
+                            IsExistObject(bodyAsObj, KeyNameType.ITEM))
+                        {
+                            form.Invoke(new FormMain.UpdateDelegate0(form.UpdateItem));
+                        }
                     }
                 }
             }
         }
+
+        /// <summary>
+        /// ActionScriptObjectの直下にある指定のキー名のオブジェクトを取得する
+        /// 無い場合はnullが入る
+        /// </summary>
+        /// <param name="asObject">対象先オブジェクト</param>
+        /// <param name="keyName">キー名</param>
+        /// <param name="obj">取得先オブジェクト</param>
+        /// <returns>オブジェクトがある場合はtrue、無い場合はfalseを返す</returns>
+        public static bool TryGetObject(FluorineFx.ASObject asObject, String keyName, out Object obj)
+        {
+            obj = null;
+            if (asObject.TryGetValue(keyName, out obj))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// ActionScriptObjectの直下にある指定のキー名のオブジェクトがあるかどうかを取得する
+        /// </summary>
+        /// <param name="asObject">対象先オブジェクト</param>
+        /// <param name="keyName">キー名</param>
+        /// <returns>オブジェクトがある場合はtrue、無い場合はfalseを返す</returns>
+        public static bool IsExistObject(FluorineFx.ASObject asObject, String keyName)
+        {
+            Object obj = null;
+            bool isExist = TryGetObject(asObject, keyName, out obj);
+
+            return isExist;
+        }
+
+        public static bool IsExistObject(FluorineFx.ASObject asObject, KeyNameType keyName)
+        {
+            String text = keyName.ToString();
+            text = text.ToLower();
+
+            return IsExistObject(asObject, text);
+        }
+
     }
 }

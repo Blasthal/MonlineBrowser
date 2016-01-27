@@ -51,6 +51,7 @@ namespace MonlineBrowser
         {
             InitializeComponent();
             this.Focus();
+            this.DoubleBuffered = true;
 
 #if DEBUG
 #else
@@ -68,9 +69,13 @@ namespace MonlineBrowser
             // スクリーンショット情報を初期化する
             InitializeScreenshotInfos();
 
+            // 基本情報を更新する
+            UpdatePlayerName();
+            UpdatePlayerLevel();
+            UpdatePlayerExp();
+            UpdatePossessionMeal();
             // 編成情報を更新する。初期化用。
             UpdateDeck(0);
-
             // 初期表示するパネルを編成情報にする
             ChangeVisiblePanel(DataPanel.FORMATION);
 
@@ -295,8 +300,8 @@ namespace MonlineBrowser
             FiddlerUtil.BeforeRequest(oSession);
         }
 
-        public delegate void UpdateDeckDele(Int32 deckId);
-        public delegate void UpdateItemDele();
+        public delegate void UpdateDelegate0();
+        public delegate void UpdateDelegate1(Int32 var1);
 
         private void FiddlerApplication_AfterSessionComplete(Fiddler.Session oSession)
         {
@@ -347,6 +352,51 @@ namespace MonlineBrowser
                     doc.Window.ScrollTo(30, 16);
                 }
             }
+        }
+        #endregion
+
+        #region 基本情報
+        /// <summary>
+        /// プレイヤー名の標示を更新する
+        /// </summary>
+        public void UpdatePlayerName()
+        {
+            String text = UserData.Instance.PlayerData.name;
+            if (text == null)
+            {
+                text = "----------------";
+            }
+            labelPlayerName.Text = text;
+        }
+
+        /// <summary>
+        /// プレイヤーレベルの表示を更新する
+        /// </summary>
+        public void UpdatePlayerLevel()
+        {
+            labelPlayerLevel.Text = UserData.Instance.PlayerData.level.ToString();
+        }
+
+        /// <summary>
+        /// プレイヤーの経験値の表示を更新する
+        /// </summary>
+        public void UpdatePlayerExp()
+        {
+            Int64 nowExp = (Int64)UserData.Instance.PlayerData.exp;
+            Int64 nextExp = (Int64)(UserData.Instance.PlayerData.expMaxForNextLevel + nowExp);
+            
+            String text = String.Format("{0}/{1}", nowExp, nextExp);
+            labelPlayerExp.Text = text;
+        }
+
+        /// <summary>
+        /// プレイヤーの所持食材の表示を更新する
+        /// </summary>
+        public void UpdatePossessionMeal()
+        {
+            labelMeatCount.Text = UserData.Instance.PlayerData.meat.ToString();
+            labelVegetableCount.Text = UserData.Instance.PlayerData.vegetable.ToString();
+            labelBreadCount.Text = UserData.Instance.PlayerData.bread.ToString();
         }
         #endregion
 
@@ -495,6 +545,9 @@ namespace MonlineBrowser
         #endregion
 
         #region アイテム
+        /// <summary>
+        /// 所持アイテム一覧の表示を更新する
+        /// </summary>
         public void UpdateItem()
         {
             if (0 < UserData.Instance.ItemDatas.Count)
