@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
@@ -153,6 +153,8 @@
             this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label16 = new System.Windows.Forms.Label();
             this.buttonItem = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.labelRuby = new System.Windows.Forms.Label();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
@@ -171,6 +173,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -1472,7 +1475,7 @@
             this.labelVegetableCount.AutoSize = true;
             this.labelVegetableCount.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelVegetableCount.ForeColor = System.Drawing.Color.White;
-            this.labelVegetableCount.Location = new System.Drawing.Point(569, 14);
+            this.labelVegetableCount.Location = new System.Drawing.Point(561, 2);
             this.labelVegetableCount.Name = "labelVegetableCount";
             this.labelVegetableCount.Size = new System.Drawing.Size(76, 20);
             this.labelVegetableCount.TabIndex = 56;
@@ -1484,7 +1487,7 @@
             this.labelMeatCount.AutoSize = true;
             this.labelMeatCount.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelMeatCount.ForeColor = System.Drawing.Color.White;
-            this.labelMeatCount.Location = new System.Drawing.Point(449, 14);
+            this.labelMeatCount.Location = new System.Drawing.Point(441, 2);
             this.labelMeatCount.Name = "labelMeatCount";
             this.labelMeatCount.Size = new System.Drawing.Size(76, 20);
             this.labelMeatCount.TabIndex = 57;
@@ -1493,6 +1496,8 @@
             // 
             // panelCommonInfo
             // 
+            this.panelCommonInfo.Controls.Add(this.labelRuby);
+            this.panelCommonInfo.Controls.Add(this.pictureBox4);
             this.panelCommonInfo.Controls.Add(this.labelPlayerExp);
             this.panelCommonInfo.Controls.Add(this.label5);
             this.panelCommonInfo.Controls.Add(this.labelPlayerLevel);
@@ -1573,9 +1578,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::MonlineBrowser.Properties.Resources.FoodType_3;
-            this.pictureBox3.Location = new System.Drawing.Point(659, 8);
+            this.pictureBox3.Location = new System.Drawing.Point(659, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 61;
             this.pictureBox3.TabStop = false;
@@ -1583,9 +1588,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MonlineBrowser.Properties.Resources.FoodType_2;
-            this.pictureBox2.Location = new System.Drawing.Point(419, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(419, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 60;
             this.pictureBox2.TabStop = false;
@@ -1595,7 +1600,7 @@
             this.labelBreadCount.AutoSize = true;
             this.labelBreadCount.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelBreadCount.ForeColor = System.Drawing.Color.White;
-            this.labelBreadCount.Location = new System.Drawing.Point(689, 14);
+            this.labelBreadCount.Location = new System.Drawing.Point(681, 2);
             this.labelBreadCount.Name = "labelBreadCount";
             this.labelBreadCount.Size = new System.Drawing.Size(76, 20);
             this.labelBreadCount.TabIndex = 59;
@@ -1605,9 +1610,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBox1.Location = new System.Drawing.Point(539, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(539, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
@@ -1633,13 +1638,13 @@
             this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnItemImage,
@@ -1653,10 +1658,10 @@
             this.dataGridViewItem.ReadOnly = true;
             this.dataGridViewItem.RowHeadersVisible = false;
             this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewItem.RowTemplate.Height = 21;
             this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewItem.Size = new System.Drawing.Size(256, 299);
@@ -1711,6 +1716,28 @@
             this.buttonItem.UseVisualStyleBackColor = false;
             this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MonlineBrowser.Properties.Resources.Ruby;
+            this.pictureBox4.Location = new System.Drawing.Point(419, 24);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 67;
+            this.pictureBox4.TabStop = false;
+            // 
+            // labelRuby
+            // 
+            this.labelRuby.AutoSize = true;
+            this.labelRuby.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelRuby.ForeColor = System.Drawing.Color.White;
+            this.labelRuby.Location = new System.Drawing.Point(441, 26);
+            this.labelRuby.Name = "labelRuby";
+            this.labelRuby.Size = new System.Drawing.Size(46, 20);
+            this.labelRuby.TabIndex = 68;
+            this.labelRuby.Text = "[234";
+            this.labelRuby.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1762,6 +1789,7 @@
             this.panelItem.ResumeLayout(false);
             this.panelItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1892,6 +1920,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelPlayerLevel;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label labelRuby;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

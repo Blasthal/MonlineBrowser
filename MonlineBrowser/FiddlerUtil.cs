@@ -108,6 +108,7 @@ namespace MonlineBrowser
                             form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePlayerLevel));
                             form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePlayerExp));
                             form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePossessionMeal));
+                            form.Invoke(new FormMain.UpdateDelegate0(form.UpdatePossessionRuby));
                         }
 
                         // デッキ表示を更新する

@@ -190,6 +190,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Monline_Icon.ico" />
+    <None Include="Resources\navigation[64].png" />
     <None Include="Resources\navigation[63].png" />
     <None Include="Resources\navigation[62].png" />
     <None Include="Resources\navigation[61].png" />

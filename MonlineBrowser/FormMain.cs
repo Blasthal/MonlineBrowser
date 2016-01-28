@@ -74,6 +74,7 @@ namespace MonlineBrowser
             UpdatePlayerLevel();
             UpdatePlayerExp();
             UpdatePossessionMeal();
+            UpdatePossessionRuby();
             // 編成情報を更新する。初期化用。
             UpdateDeck(0);
             // 初期表示するパネルを編成情報にする
@@ -397,6 +398,14 @@ namespace MonlineBrowser
             labelMeatCount.Text = UserData.Instance.PlayerData.meat.ToString();
             labelVegetableCount.Text = UserData.Instance.PlayerData.vegetable.ToString();
             labelBreadCount.Text = UserData.Instance.PlayerData.bread.ToString();
+        }
+
+        /// <summary>
+        /// プレイヤーの所持ルビーの表示を更新する
+        /// </summary>
+        public void UpdatePossessionRuby()
+        {
+            labelRuby.Text = UserData.Instance.PlayerData.ruby.ToString();
         }
         #endregion
 
