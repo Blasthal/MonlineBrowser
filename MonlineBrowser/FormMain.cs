@@ -14,6 +14,14 @@ namespace MonlineBrowser
     {
         #region Field
         /// <summary>
+        /// WebBrowser上のゲーム画面の位置
+        /// X 30:X座標
+        /// Y 40:DMMのヘッダー
+        /// Y 36:空白部分
+        /// </summary>
+        Point mGamePositionInWeb = new Point(30, 40 + 36);
+
+        /// <summary>
         /// スクリーンショットの情報
         /// </summary>
         struct ScreenshotInfo
@@ -51,7 +59,6 @@ namespace MonlineBrowser
         {
             InitializeComponent();
             this.Focus();
-            this.DoubleBuffered = true;
 
 #if DEBUG
 #else
@@ -245,8 +252,7 @@ namespace MonlineBrowser
             Fiddler.FiddlerApplication.Shutdown();
 
             // インターネット一時ファイルを削除する
-            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
-            System.Diagnostics.Process process = System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
+            System.Diagnostics.Process process = ClearTemporaryFiles(false);
 
             // 設定を保存する
             Properties.Settings.Default.ScreenshotPath = this.textBoxScreenshotPath.Text;
@@ -264,10 +270,30 @@ namespace MonlineBrowser
             Properties.Settings.Default.Save();
 
             // プロセスの終了を待つ
-            while(!process.HasExited)
+            while (!process.HasExited)
             {
                 process.WaitForExit(100);
             }
+        }
+
+        /// <summary>
+        /// インターネット一時ファイルを削除します。
+        /// これを行わないと、二回目以降のFlashの再生が行われず進行しなくなります。
+        /// </summary>
+        private System.Diagnostics.Process ClearTemporaryFiles(bool isWaitFinish)
+        {
+            // これを行わないと、二回目以降Flashの再生が行われず進行しなくなる。
+            System.Diagnostics.Process process = System.Diagnostics.Process.Start("RunDll32", "InetCpl.cpl,ClearMyTracksByProcess 8");
+
+            if (isWaitFinish)
+            {
+                while (!process.HasExited)
+                {
+                    process.WaitForExit(100);
+                }
+            }
+
+            return process;
         }
 
         /// <summary>
@@ -313,6 +339,9 @@ namespace MonlineBrowser
         #region WebBrowser
         private void DoNavigation(object sender, EventArgs e)
         {
+            // 一時ファイルを削除する
+            ClearTemporaryFiles(true);
+
             // WebBrowserコントロールに指定URIを開かせる
             webBrowser1.Navigate(textBoxUrl.Text);
         }
@@ -338,20 +367,18 @@ namespace MonlineBrowser
             if (doc != null && doc.Body != null)
             {
                 // 不要な要素を消すstyleを埋め込む
-                HtmlElement elem = doc.CreateElement("style");
-                elem.SetAttribute("type", "text/css");
-                elem.InnerHtml =
-                    ".clearfix{display:none;}" +
-                    ".naviapp{display:none;}" +
-                    "#foot{display:none;}";
+                // どちらにしろ表示位置をずらして当て込むので処理しないでおく
+                //HtmlElement elem = doc.CreateElement("style");
+                //elem.SetAttribute("type", "text/css");
+                //elem.InnerHtml =
+                //    ".clearfix{display:none;}" +
+                //    ".naviapp{display:none;}" +
+                //    "#foot{display:none;}";
 
-                doc.Body.InsertAdjacentElement(HtmlElementInsertionOrientation.BeforeEnd, elem);
+                //doc.Body.InsertAdjacentElement(HtmlElementInsertionOrientation.BeforeEnd, elem);
 
-                // 消すのが難しい部分は残して、スクロールで対応する。
-                if (doc.Window != null)
-                {
-                    doc.Window.ScrollTo(30, 16);
-                }
+                // WebBrowserのWindow位置をスクロールする
+                ScrollWebWindowToGame();
             }
         }
         #endregion
@@ -757,5 +784,23 @@ namespace MonlineBrowser
 
         #endregion
 
+        #region ゲーム画面位置修正
+        /// <summary>
+        /// WebBrowserのWindow位置をゲーム画面にスクロールします
+        /// </summary>
+        private void ScrollWebWindowToGame()
+        {
+            HtmlDocument doc = webBrowser1.Document;
+            if (doc != null)
+            {
+                doc.Window.ScrollTo(mGamePositionInWeb);
+            }
+        }
+
+        private void buttonModifyWebPosition_Click(object sender, EventArgs e)
+        {
+            ScrollWebWindowToGame();
+        }
+        #endregion
     }
 }

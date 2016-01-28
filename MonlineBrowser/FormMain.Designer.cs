@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
@@ -137,6 +137,8 @@
             this.labelVegetableCount = new System.Windows.Forms.Label();
             this.labelMeatCount = new System.Windows.Forms.Label();
             this.panelCommonInfo = new System.Windows.Forms.Panel();
+            this.labelRuby = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelPlayerExp = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.labelPlayerLevel = new System.Windows.Forms.Label();
@@ -153,8 +155,8 @@
             this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label16 = new System.Windows.Forms.Label();
             this.buttonItem = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.labelRuby = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonModifyWebPosition = new System.Windows.Forms.Button();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
@@ -168,12 +170,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
             this.panelConfig.SuspendLayout();
             this.panelCommonInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -307,7 +309,7 @@
             this.radioButtonDeck5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonDeck5.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.radioButtonDeck5.ForeColor = System.Drawing.Color.White;
-            this.radioButtonDeck5.Location = new System.Drawing.Point(222, 0);
+            this.radioButtonDeck5.Location = new System.Drawing.Point(208, 0);
             this.radioButtonDeck5.Name = "radioButtonDeck5";
             this.radioButtonDeck5.Size = new System.Drawing.Size(26, 27);
             this.radioButtonDeck5.TabIndex = 44;
@@ -334,7 +336,7 @@
             this.panel5.Controls.Add(this.label30);
             this.panel5.Controls.Add(this.labelDeckMonmusuTensionValue5);
             this.panel5.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.panel5.Location = new System.Drawing.Point(14, 266);
+            this.panel5.Location = new System.Drawing.Point(0, 266);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(628, 48);
             this.panel5.TabIndex = 59;
@@ -511,7 +513,7 @@
             this.radioButtonDeck4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonDeck4.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.radioButtonDeck4.ForeColor = System.Drawing.Color.White;
-            this.radioButtonDeck4.Location = new System.Drawing.Point(170, 0);
+            this.radioButtonDeck4.Location = new System.Drawing.Point(156, 0);
             this.radioButtonDeck4.Name = "radioButtonDeck4";
             this.radioButtonDeck4.Size = new System.Drawing.Size(26, 27);
             this.radioButtonDeck4.TabIndex = 43;
@@ -528,7 +530,7 @@
             this.radioButtonDeck3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonDeck3.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.radioButtonDeck3.ForeColor = System.Drawing.Color.White;
-            this.radioButtonDeck3.Location = new System.Drawing.Point(118, 0);
+            this.radioButtonDeck3.Location = new System.Drawing.Point(104, 0);
             this.radioButtonDeck3.Name = "radioButtonDeck3";
             this.radioButtonDeck3.Size = new System.Drawing.Size(26, 27);
             this.radioButtonDeck3.TabIndex = 37;
@@ -555,7 +557,7 @@
             this.panel4.Controls.Add(this.labelDeckMonmusuName4);
             this.panel4.Controls.Add(this.labelDeckMonmusuTensionValue4);
             this.panel4.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.panel4.Location = new System.Drawing.Point(14, 212);
+            this.panel4.Location = new System.Drawing.Point(0, 212);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(628, 48);
             this.panel4.TabIndex = 58;
@@ -733,7 +735,7 @@
             this.radioButtonDeck1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonDeck1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.radioButtonDeck1.ForeColor = System.Drawing.Color.White;
-            this.radioButtonDeck1.Location = new System.Drawing.Point(14, 0);
+            this.radioButtonDeck1.Location = new System.Drawing.Point(0, 0);
             this.radioButtonDeck1.Name = "radioButtonDeck1";
             this.radioButtonDeck1.Size = new System.Drawing.Size(26, 27);
             this.radioButtonDeck1.TabIndex = 34;
@@ -751,7 +753,7 @@
             this.radioButtonDeck2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonDeck2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.radioButtonDeck2.ForeColor = System.Drawing.Color.White;
-            this.radioButtonDeck2.Location = new System.Drawing.Point(66, 0);
+            this.radioButtonDeck2.Location = new System.Drawing.Point(52, 0);
             this.radioButtonDeck2.Name = "radioButtonDeck2";
             this.radioButtonDeck2.Size = new System.Drawing.Size(26, 27);
             this.radioButtonDeck2.TabIndex = 36;
@@ -777,7 +779,7 @@
             this.panel1.Controls.Add(this.progressBarDeckMonmusuSatiety1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.labelDeckMonmusuTensionValue1);
-            this.panel1.Location = new System.Drawing.Point(14, 50);
+            this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(628, 48);
             this.panel1.TabIndex = 38;
@@ -964,7 +966,7 @@
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.labelDeckMonmusuTensionValue3);
             this.panel3.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.panel3.Location = new System.Drawing.Point(14, 158);
+            this.panel3.Location = new System.Drawing.Point(0, 158);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(628, 48);
             this.panel3.TabIndex = 57;
@@ -1138,7 +1140,7 @@
             this.labelGroupName.BackColor = System.Drawing.Color.Transparent;
             this.labelGroupName.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelGroupName.ForeColor = System.Drawing.Color.White;
-            this.labelGroupName.Location = new System.Drawing.Point(11, 30);
+            this.labelGroupName.Location = new System.Drawing.Point(-3, 30);
             this.labelGroupName.Name = "labelGroupName";
             this.labelGroupName.Size = new System.Drawing.Size(76, 17);
             this.labelGroupName.TabIndex = 35;
@@ -1162,7 +1164,7 @@
             this.panel2.Controls.Add(this.labelDeckMonmusuName2);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.labelDeckMonmusuTensionValue2);
-            this.panel2.Location = new System.Drawing.Point(14, 104);
+            this.panel2.Location = new System.Drawing.Point(0, 104);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(628, 48);
             this.panel2.TabIndex = 56;
@@ -1333,6 +1335,8 @@
             // panelConfig
             // 
             this.panelConfig.AutoScroll = true;
+            this.panelConfig.Controls.Add(this.buttonModifyWebPosition);
+            this.panelConfig.Controls.Add(this.label1);
             this.panelConfig.Controls.Add(this.buttonScreenshotPathExlorer);
             this.panelConfig.Controls.Add(this.radioButtonScreenshotExtensionTiff);
             this.panelConfig.Controls.Add(this.radioButtonScreenshotExtensionGif);
@@ -1515,6 +1519,28 @@
             this.panelCommonInfo.Size = new System.Drawing.Size(960, 48);
             this.panelCommonInfo.TabIndex = 58;
             // 
+            // labelRuby
+            // 
+            this.labelRuby.AutoSize = true;
+            this.labelRuby.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelRuby.ForeColor = System.Drawing.Color.White;
+            this.labelRuby.Location = new System.Drawing.Point(441, 26);
+            this.labelRuby.Name = "labelRuby";
+            this.labelRuby.Size = new System.Drawing.Size(46, 20);
+            this.labelRuby.TabIndex = 68;
+            this.labelRuby.Text = "[234";
+            this.labelRuby.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MonlineBrowser.Properties.Resources.Ruby;
+            this.pictureBox4.Location = new System.Drawing.Point(419, 24);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 67;
+            this.pictureBox4.TabStop = false;
+            // 
             // labelPlayerExp
             // 
             this.labelPlayerExp.AutoSize = true;
@@ -1638,13 +1664,13 @@
             this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnItemImage,
@@ -1658,10 +1684,10 @@
             this.dataGridViewItem.ReadOnly = true;
             this.dataGridViewItem.RowHeadersVisible = false;
             this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewItem.RowTemplate.Height = 21;
             this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewItem.Size = new System.Drawing.Size(256, 299);
@@ -1716,27 +1742,29 @@
             this.buttonItem.UseVisualStyleBackColor = false;
             this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
-            // pictureBox4
+            // label1
             // 
-            this.pictureBox4.Image = global::MonlineBrowser.Properties.Resources.Ruby;
-            this.pictureBox4.Location = new System.Drawing.Point(419, 24);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 67;
-            this.pictureBox4.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(272, 12);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "※ゲーム画面の表示位置がずれている時に押してください";
             // 
-            // labelRuby
+            // buttonModifyWebPosition
             // 
-            this.labelRuby.AutoSize = true;
-            this.labelRuby.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelRuby.ForeColor = System.Drawing.Color.White;
-            this.labelRuby.Location = new System.Drawing.Point(441, 26);
-            this.labelRuby.Name = "labelRuby";
-            this.labelRuby.Size = new System.Drawing.Size(46, 20);
-            this.labelRuby.TabIndex = 68;
-            this.labelRuby.Text = "[234";
-            this.labelRuby.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonModifyWebPosition.AutoSize = true;
+            this.buttonModifyWebPosition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.buttonModifyWebPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModifyWebPosition.ForeColor = System.Drawing.Color.White;
+            this.buttonModifyWebPosition.Location = new System.Drawing.Point(5, 104);
+            this.buttonModifyWebPosition.Name = "buttonModifyWebPosition";
+            this.buttonModifyWebPosition.Size = new System.Drawing.Size(65, 24);
+            this.buttonModifyWebPosition.TabIndex = 10;
+            this.buttonModifyWebPosition.Text = "位置修正";
+            this.buttonModifyWebPosition.UseVisualStyleBackColor = true;
+            this.buttonModifyWebPosition.Click += new System.EventHandler(this.buttonModifyWebPosition_Click);
             // 
             // FormMain
             // 
@@ -1783,13 +1811,13 @@
             this.panelConfig.PerformLayout();
             this.panelCommonInfo.ResumeLayout(false);
             this.panelCommonInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelItem.ResumeLayout(false);
             this.panelItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1922,6 +1950,8 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label labelRuby;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button buttonModifyWebPosition;
+        private System.Windows.Forms.Label label1;
     }
 }
 
