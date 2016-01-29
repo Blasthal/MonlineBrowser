@@ -15,6 +15,7 @@ namespace MonlineBrowser
         public enum KeyNameType
         {
             PLAYER,
+            CARD,
             DECK,
             ITEM,
             // ADD
@@ -113,7 +114,8 @@ namespace MonlineBrowser
 
                         // デッキ表示を更新する
                         // 別スレッドなのでinvokeが必要になる
-                        if (IsExistObject(bodyAsObj, KeyNameType.DECK))
+                        if (IsExistObject(bodyAsObj, KeyNameType.CARD) ||
+                            IsExistObject(bodyAsObj, KeyNameType.DECK))
                         {
                             Int32 deckId = form.GetCurrentCheckDeckId();
                             if (0 < deckId)
