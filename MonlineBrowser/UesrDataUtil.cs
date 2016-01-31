@@ -19,7 +19,7 @@ namespace MonlineBrowser
         /// </summary>
         /// <param name="deckId">デッキID</param>
         /// <returns>デッキ情報。無い場合はnullを返す</returns>
-        public static DeckData GetDeckData(int deckId)
+        public static DeckData GetDeckData(Int32 deckId)
         {
             DeckData findData = UserData.Instance.DeckDatas.Find(
                 delegate(DeckData inData)
@@ -36,7 +36,7 @@ namespace MonlineBrowser
         /// </summary>
         /// <param name="cardId">カードID</param>
         /// <returns>カード情報。無い場合はnullを返す。</returns>
-        public static CardData GetCardData(int cardId)
+        public static CardData GetCardData(Int32 cardId)
         {
             CardData findData = null;
             if (0 < cardId)
@@ -136,7 +136,7 @@ namespace MonlineBrowser
         /// <param name="deckId">デッキID</param>
         /// <param name="index">モン娘の順番</param>
         /// <returns>モン娘の名前。無い場合は"-----"を返す</returns>
-        public static String GetMonmusuName(int deckId, Int32 index)
+        public static String GetMonmusuName(Int32 deckId, Int32 index)
         {
             String name = "-----";
 
@@ -198,6 +198,60 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の限界突破回数
+        /// <summary>
+        /// モン娘の限界突破回数を取得する
+        /// </summary>
+        /// <param name="deckId">デッキID</param>
+        /// <param name="index">デッキ内の順番</param>
+        /// <returns>モン娘の限界突破回数</returns>
+        public static Int32 GetMonmusuRebirthCount(Int32 deckId, Int32 index)
+        {
+            Int32 rebirthCount = 0;
+
+            DeckData findDeckData = GetDeckData(deckId);
+            if (findDeckData != null)
+            {
+                switch (index)
+                {
+                    case 0: rebirthCount = GetMonmusuRebirthCount(findDeckData.cardId1); break;
+                    case 1: rebirthCount = GetMonmusuRebirthCount(findDeckData.cardId2); break;
+                    case 2: rebirthCount = GetMonmusuRebirthCount(findDeckData.cardId3); break;
+                    case 3: rebirthCount = GetMonmusuRebirthCount(findDeckData.cardId4); break;
+                    case 4: rebirthCount = GetMonmusuRebirthCount(findDeckData.cardId5); break;
+                }
+            }
+
+            return rebirthCount;
+        }
+
+        /// <summary>
+        /// モン娘の限界突破回数を取得する
+        /// </summary>
+        /// <param name="cardId">カードID</param>
+        /// <returns>モン娘の限界突破回数</returns>
+        public static Int32 GetMonmusuRebirthCount(Int32 cardId)
+        {
+            Int32 rebirthCount = 0;
+
+            // ユーザーのカード情報を探す
+            CardData findData = UserData.Instance.CardDatas.Find(
+                delegate(CardData inData)
+                {
+                    return (inData.cardId == cardId);
+                }
+                );
+            if (findData == null)
+            {
+                return rebirthCount;
+            }
+
+            rebirthCount = findData.rebirthCount;
+
+            return rebirthCount;
+        }
+        #endregion
+
         #region モン娘のレベル
         /// <summary>
         /// モン娘のレベルを取得する
@@ -205,7 +259,7 @@ namespace MonlineBrowser
         /// <param name="deckId">デッキID</param>
         /// <param name="index">デッキ内の順番</param>
         /// <returns>モン娘のレベルを返す。モン娘が見つからない場合、0を返す。</returns>
-        public static Int32 GetMonmusuLevel(int deckId, Int32 index)
+        public static Int32 GetMonmusuLevel(Int32 deckId, Int32 index)
         {
             Int32 level = 0;
 
@@ -260,7 +314,7 @@ namespace MonlineBrowser
         /// <param name="deckId">デッキID</param>
         /// <param name="index">デッキ内の順番</param>
         /// <returns>モン娘のテンションを返す。モン娘が見つからない場合、0を返す。</returns>
-        public static Int32 GetMonmusuTension(int deckId, Int32 index)
+        public static Int32 GetMonmusuTension(Int32 deckId, Int32 index)
         {
             Int32 tension = 0;
 

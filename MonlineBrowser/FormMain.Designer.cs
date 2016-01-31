@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
@@ -126,12 +126,6 @@
             this.labelDeckMonmusuTensionValue2 = new System.Windows.Forms.Label();
             this.panelConfig = new System.Windows.Forms.Panel();
             this.buttonModifyWebPosition = new System.Windows.Forms.Button();
-            this.panelItem = new System.Windows.Forms.Panel();
-            this.dataGridViewItem = new System.Windows.Forms.DataGridView();
-            this.ColumnItemImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ColumnItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonScreenshotPathExlorer = new System.Windows.Forms.Button();
             this.radioButtonScreenshotExtensionTiff = new System.Windows.Forms.RadioButton();
@@ -142,9 +136,16 @@
             this.buttonScreenshotPathDialog = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxScreenshotPath = new System.Windows.Forms.TextBox();
+            this.panelItem = new System.Windows.Forms.Panel();
+            this.dataGridViewItem = new System.Windows.Forms.DataGridView();
+            this.ColumnItemImage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ColumnItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label16 = new System.Windows.Forms.Label();
             this.labelVegetableCount = new System.Windows.Forms.Label();
             this.labelMeatCount = new System.Windows.Forms.Label();
             this.panelCommonInfo = new System.Windows.Forms.Panel();
+            this.pictureBoxDeckMonmusuRebirth11 = new System.Windows.Forms.PictureBox();
             this.labelRuby = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelPlayerExp = new System.Windows.Forms.Label();
@@ -157,6 +158,20 @@
             this.labelBreadCount = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonItem = new System.Windows.Forms.Button();
+            this.pictureBoxDeckMonmusuRebirth12 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth13 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth23 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth22 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth21 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth33 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth32 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth31 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth43 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth42 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth41 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth53 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth52 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth51 = new System.Windows.Forms.PictureBox();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
@@ -172,10 +187,25 @@
             this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.panelCommonInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -320,6 +350,9 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.pictureBoxDeckMonmusuRebirth53);
+            this.panel5.Controls.Add(this.pictureBoxDeckMonmusuRebirth52);
+            this.panel5.Controls.Add(this.pictureBoxDeckMonmusuRebirth51);
             this.panel5.Controls.Add(this.pictureBoxDeckMonmusuLikeFood5);
             this.panel5.Controls.Add(this.labelDeckMonmusuHPValue5);
             this.panel5.Controls.Add(this.label21);
@@ -430,7 +463,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(8, 14);
+            this.label27.Location = new System.Drawing.Point(8, 20);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(30, 20);
             this.label27.TabIndex = 45;
@@ -453,7 +486,7 @@
             this.labelDeckMonmusuLevelValue5.AutoSize = true;
             this.labelDeckMonmusuLevelValue5.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.labelDeckMonmusuLevelValue5.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuLevelValue5.Location = new System.Drawing.Point(34, 14);
+            this.labelDeckMonmusuLevelValue5.Location = new System.Drawing.Point(34, 20);
             this.labelDeckMonmusuLevelValue5.Name = "labelDeckMonmusuLevelValue5";
             this.labelDeckMonmusuLevelValue5.Size = new System.Drawing.Size(29, 20);
             this.labelDeckMonmusuLevelValue5.TabIndex = 46;
@@ -541,6 +574,9 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.pictureBoxDeckMonmusuRebirth43);
+            this.panel4.Controls.Add(this.pictureBoxDeckMonmusuRebirth42);
+            this.panel4.Controls.Add(this.pictureBoxDeckMonmusuRebirth41);
             this.panel4.Controls.Add(this.pictureBoxDeckMonmusuLikeFood4);
             this.panel4.Controls.Add(this.labelDeckMonmusuHPValue4);
             this.panel4.Controls.Add(this.label3);
@@ -651,7 +687,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(8, 14);
+            this.label17.Location = new System.Drawing.Point(8, 20);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(30, 20);
             this.label17.TabIndex = 45;
@@ -674,7 +710,7 @@
             this.labelDeckMonmusuLevelValue4.AutoSize = true;
             this.labelDeckMonmusuLevelValue4.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.labelDeckMonmusuLevelValue4.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuLevelValue4.Location = new System.Drawing.Point(34, 14);
+            this.labelDeckMonmusuLevelValue4.Location = new System.Drawing.Point(34, 20);
             this.labelDeckMonmusuLevelValue4.Name = "labelDeckMonmusuLevelValue4";
             this.labelDeckMonmusuLevelValue4.Size = new System.Drawing.Size(29, 20);
             this.labelDeckMonmusuLevelValue4.TabIndex = 46;
@@ -764,7 +800,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBoxDeckMonmusuRebirth13);
+            this.panel1.Controls.Add(this.pictureBoxDeckMonmusuRebirth12);
             this.panel1.Controls.Add(this.pictureBoxDeckMonmusuLikeFood1);
+            this.panel1.Controls.Add(this.pictureBoxDeckMonmusuRebirth11);
             this.panel1.Controls.Add(this.labelDeckMonmusuName1);
             this.panel1.Controls.Add(this.labelDeckMonmusuHPValue1);
             this.panel1.Controls.Add(this.labelDeckMonmusuRarityName1);
@@ -885,7 +924,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(8, 14);
+            this.label7.Location = new System.Drawing.Point(8, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 20);
             this.label7.TabIndex = 45;
@@ -908,7 +947,7 @@
             this.labelDeckMonmusuLevelValue1.AutoSize = true;
             this.labelDeckMonmusuLevelValue1.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.labelDeckMonmusuLevelValue1.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuLevelValue1.Location = new System.Drawing.Point(34, 14);
+            this.labelDeckMonmusuLevelValue1.Location = new System.Drawing.Point(34, 20);
             this.labelDeckMonmusuLevelValue1.Name = "labelDeckMonmusuLevelValue1";
             this.labelDeckMonmusuLevelValue1.Size = new System.Drawing.Size(29, 20);
             this.labelDeckMonmusuLevelValue1.TabIndex = 46;
@@ -950,6 +989,9 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.pictureBoxDeckMonmusuRebirth33);
+            this.panel3.Controls.Add(this.pictureBoxDeckMonmusuRebirth32);
+            this.panel3.Controls.Add(this.pictureBoxDeckMonmusuRebirth31);
             this.panel3.Controls.Add(this.pictureBoxDeckMonmusuLikeFood3);
             this.panel3.Controls.Add(this.labelDeckMonmusuHPValue3);
             this.panel3.Controls.Add(this.label2);
@@ -1060,7 +1102,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(8, 14);
+            this.label13.Location = new System.Drawing.Point(8, 20);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 20);
             this.label13.TabIndex = 45;
@@ -1083,7 +1125,7 @@
             this.labelDeckMonmusuLevelValue3.AutoSize = true;
             this.labelDeckMonmusuLevelValue3.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.labelDeckMonmusuLevelValue3.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuLevelValue3.Location = new System.Drawing.Point(34, 14);
+            this.labelDeckMonmusuLevelValue3.Location = new System.Drawing.Point(34, 20);
             this.labelDeckMonmusuLevelValue3.Name = "labelDeckMonmusuLevelValue3";
             this.labelDeckMonmusuLevelValue3.Size = new System.Drawing.Size(29, 20);
             this.labelDeckMonmusuLevelValue3.TabIndex = 46;
@@ -1149,6 +1191,9 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBoxDeckMonmusuRebirth23);
+            this.panel2.Controls.Add(this.pictureBoxDeckMonmusuRebirth22);
+            this.panel2.Controls.Add(this.pictureBoxDeckMonmusuRebirth21);
             this.panel2.Controls.Add(this.pictureBoxDeckMonmusuLikeFood2);
             this.panel2.Controls.Add(this.labelDeckMonmusuHPValue2);
             this.panel2.Controls.Add(this.label4);
@@ -1258,7 +1303,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(8, 14);
+            this.label8.Location = new System.Drawing.Point(8, 20);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 20);
             this.label8.TabIndex = 45;
@@ -1281,7 +1326,7 @@
             this.labelDeckMonmusuLevelValue2.AutoSize = true;
             this.labelDeckMonmusuLevelValue2.Font = new System.Drawing.Font("Meiryo UI", 12F);
             this.labelDeckMonmusuLevelValue2.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuLevelValue2.Location = new System.Drawing.Point(34, 14);
+            this.labelDeckMonmusuLevelValue2.Location = new System.Drawing.Point(34, 20);
             this.labelDeckMonmusuLevelValue2.Name = "labelDeckMonmusuLevelValue2";
             this.labelDeckMonmusuLevelValue2.Size = new System.Drawing.Size(29, 20);
             this.labelDeckMonmusuLevelValue2.TabIndex = 46;
@@ -1346,7 +1391,7 @@
             this.panelConfig.Controls.Add(this.label6);
             this.panelConfig.Controls.Add(this.textBoxScreenshotPath);
             this.panelConfig.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelConfig.Location = new System.Drawing.Point(107, 663);
+            this.panelConfig.Location = new System.Drawing.Point(907, 663);
             this.panelConfig.Name = "panelConfig";
             this.panelConfig.Size = new System.Drawing.Size(800, 314);
             this.panelConfig.TabIndex = 59;
@@ -1364,88 +1409,6 @@
             this.buttonModifyWebPosition.Text = "位置修正";
             this.buttonModifyWebPosition.UseVisualStyleBackColor = true;
             this.buttonModifyWebPosition.Click += new System.EventHandler(this.buttonModifyWebPosition_Click);
-            // 
-            // panelItem
-            // 
-            this.panelItem.Controls.Add(this.dataGridViewItem);
-            this.panelItem.Controls.Add(this.label16);
-            this.panelItem.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelItem.Location = new System.Drawing.Point(107, 663);
-            this.panelItem.Name = "panelItem";
-            this.panelItem.Size = new System.Drawing.Size(800, 314);
-            this.panelItem.TabIndex = 60;
-            // 
-            // dataGridViewItem
-            // 
-            this.dataGridViewItem.AllowUserToAddRows = false;
-            this.dataGridViewItem.AllowUserToDeleteRows = false;
-            this.dataGridViewItem.AllowUserToResizeColumns = false;
-            this.dataGridViewItem.AllowUserToResizeRows = false;
-            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnItemImage,
-            this.ColumnItemName,
-            this.ColumnItemNum});
-            this.dataGridViewItem.EnableHeadersVisualStyles = false;
-            this.dataGridViewItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.dataGridViewItem.Location = new System.Drawing.Point(3, 18);
-            this.dataGridViewItem.MultiSelect = false;
-            this.dataGridViewItem.Name = "dataGridViewItem";
-            this.dataGridViewItem.ReadOnly = true;
-            this.dataGridViewItem.RowHeadersVisible = false;
-            this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewItem.RowTemplate.Height = 21;
-            this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewItem.Size = new System.Drawing.Size(256, 283);
-            this.dataGridViewItem.TabIndex = 3;
-            // 
-            // ColumnItemImage
-            // 
-            this.ColumnItemImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnItemImage.HeaderText = "絵";
-            this.ColumnItemImage.Name = "ColumnItemImage";
-            this.ColumnItemImage.ReadOnly = true;
-            this.ColumnItemImage.Visible = false;
-            // 
-            // ColumnItemName
-            // 
-            this.ColumnItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnItemName.HeaderText = "名前";
-            this.ColumnItemName.Name = "ColumnItemName";
-            this.ColumnItemName.ReadOnly = true;
-            this.ColumnItemName.Width = 53;
-            // 
-            // ColumnItemNum
-            // 
-            this.ColumnItemNum.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnItemNum.HeaderText = "所持数";
-            this.ColumnItemNum.Name = "ColumnItemNum";
-            this.ColumnItemNum.ReadOnly = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(3, 3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 12);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "所持品一覧";
             // 
             // label1
             // 
@@ -1579,6 +1542,88 @@
             this.textBoxScreenshotPath.Size = new System.Drawing.Size(640, 19);
             this.textBoxScreenshotPath.TabIndex = 0;
             // 
+            // panelItem
+            // 
+            this.panelItem.Controls.Add(this.dataGridViewItem);
+            this.panelItem.Controls.Add(this.label16);
+            this.panelItem.ForeColor = System.Drawing.Color.Firebrick;
+            this.panelItem.Location = new System.Drawing.Point(907, 663);
+            this.panelItem.Name = "panelItem";
+            this.panelItem.Size = new System.Drawing.Size(800, 314);
+            this.panelItem.TabIndex = 60;
+            // 
+            // dataGridViewItem
+            // 
+            this.dataGridViewItem.AllowUserToAddRows = false;
+            this.dataGridViewItem.AllowUserToDeleteRows = false;
+            this.dataGridViewItem.AllowUserToResizeColumns = false;
+            this.dataGridViewItem.AllowUserToResizeRows = false;
+            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnItemImage,
+            this.ColumnItemName,
+            this.ColumnItemNum});
+            this.dataGridViewItem.EnableHeadersVisualStyles = false;
+            this.dataGridViewItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.dataGridViewItem.Location = new System.Drawing.Point(3, 18);
+            this.dataGridViewItem.MultiSelect = false;
+            this.dataGridViewItem.Name = "dataGridViewItem";
+            this.dataGridViewItem.ReadOnly = true;
+            this.dataGridViewItem.RowHeadersVisible = false;
+            this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewItem.RowTemplate.Height = 21;
+            this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewItem.Size = new System.Drawing.Size(256, 283);
+            this.dataGridViewItem.TabIndex = 3;
+            // 
+            // ColumnItemImage
+            // 
+            this.ColumnItemImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnItemImage.HeaderText = "絵";
+            this.ColumnItemImage.Name = "ColumnItemImage";
+            this.ColumnItemImage.ReadOnly = true;
+            this.ColumnItemImage.Visible = false;
+            // 
+            // ColumnItemName
+            // 
+            this.ColumnItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnItemName.HeaderText = "名前";
+            this.ColumnItemName.Name = "ColumnItemName";
+            this.ColumnItemName.ReadOnly = true;
+            this.ColumnItemName.Width = 53;
+            // 
+            // ColumnItemNum
+            // 
+            this.ColumnItemNum.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnItemNum.HeaderText = "所持数";
+            this.ColumnItemNum.Name = "ColumnItemNum";
+            this.ColumnItemNum.ReadOnly = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 3);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 12);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "所持品一覧";
+            // 
             // labelVegetableCount
             // 
             this.labelVegetableCount.AutoSize = true;
@@ -1623,6 +1668,16 @@
             this.panelCommonInfo.Name = "panelCommonInfo";
             this.panelCommonInfo.Size = new System.Drawing.Size(914, 48);
             this.panelCommonInfo.TabIndex = 58;
+            // 
+            // pictureBoxDeckMonmusuRebirth11
+            // 
+            this.pictureBoxDeckMonmusuRebirth11.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth11.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth11.Name = "pictureBoxDeckMonmusuRebirth11";
+            this.pictureBoxDeckMonmusuRebirth11.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth11.TabIndex = 56;
+            this.pictureBoxDeckMonmusuRebirth11.TabStop = false;
             // 
             // labelRuby
             // 
@@ -1764,6 +1819,146 @@
             this.buttonItem.UseVisualStyleBackColor = false;
             this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
+            // pictureBoxDeckMonmusuRebirth12
+            // 
+            this.pictureBoxDeckMonmusuRebirth12.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth12.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth12.Name = "pictureBoxDeckMonmusuRebirth12";
+            this.pictureBoxDeckMonmusuRebirth12.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth12.TabIndex = 69;
+            this.pictureBoxDeckMonmusuRebirth12.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth13
+            // 
+            this.pictureBoxDeckMonmusuRebirth13.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth13.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth13.Name = "pictureBoxDeckMonmusuRebirth13";
+            this.pictureBoxDeckMonmusuRebirth13.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth13.TabIndex = 70;
+            this.pictureBoxDeckMonmusuRebirth13.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth23
+            // 
+            this.pictureBoxDeckMonmusuRebirth23.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth23.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth23.Name = "pictureBoxDeckMonmusuRebirth23";
+            this.pictureBoxDeckMonmusuRebirth23.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth23.TabIndex = 73;
+            this.pictureBoxDeckMonmusuRebirth23.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth22
+            // 
+            this.pictureBoxDeckMonmusuRebirth22.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth22.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth22.Name = "pictureBoxDeckMonmusuRebirth22";
+            this.pictureBoxDeckMonmusuRebirth22.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth22.TabIndex = 72;
+            this.pictureBoxDeckMonmusuRebirth22.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth21
+            // 
+            this.pictureBoxDeckMonmusuRebirth21.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth21.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth21.Name = "pictureBoxDeckMonmusuRebirth21";
+            this.pictureBoxDeckMonmusuRebirth21.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth21.TabIndex = 71;
+            this.pictureBoxDeckMonmusuRebirth21.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth33
+            // 
+            this.pictureBoxDeckMonmusuRebirth33.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth33.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth33.Name = "pictureBoxDeckMonmusuRebirth33";
+            this.pictureBoxDeckMonmusuRebirth33.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth33.TabIndex = 76;
+            this.pictureBoxDeckMonmusuRebirth33.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth32
+            // 
+            this.pictureBoxDeckMonmusuRebirth32.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth32.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth32.Name = "pictureBoxDeckMonmusuRebirth32";
+            this.pictureBoxDeckMonmusuRebirth32.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth32.TabIndex = 75;
+            this.pictureBoxDeckMonmusuRebirth32.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth31
+            // 
+            this.pictureBoxDeckMonmusuRebirth31.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth31.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth31.Name = "pictureBoxDeckMonmusuRebirth31";
+            this.pictureBoxDeckMonmusuRebirth31.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth31.TabIndex = 74;
+            this.pictureBoxDeckMonmusuRebirth31.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth43
+            // 
+            this.pictureBoxDeckMonmusuRebirth43.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth43.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth43.Name = "pictureBoxDeckMonmusuRebirth43";
+            this.pictureBoxDeckMonmusuRebirth43.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth43.TabIndex = 79;
+            this.pictureBoxDeckMonmusuRebirth43.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth42
+            // 
+            this.pictureBoxDeckMonmusuRebirth42.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth42.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth42.Name = "pictureBoxDeckMonmusuRebirth42";
+            this.pictureBoxDeckMonmusuRebirth42.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth42.TabIndex = 78;
+            this.pictureBoxDeckMonmusuRebirth42.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth41
+            // 
+            this.pictureBoxDeckMonmusuRebirth41.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth41.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth41.Name = "pictureBoxDeckMonmusuRebirth41";
+            this.pictureBoxDeckMonmusuRebirth41.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth41.TabIndex = 77;
+            this.pictureBoxDeckMonmusuRebirth41.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth53
+            // 
+            this.pictureBoxDeckMonmusuRebirth53.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth53.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth53.Name = "pictureBoxDeckMonmusuRebirth53";
+            this.pictureBoxDeckMonmusuRebirth53.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth53.TabIndex = 79;
+            this.pictureBoxDeckMonmusuRebirth53.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth52
+            // 
+            this.pictureBoxDeckMonmusuRebirth52.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth52.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth52.Name = "pictureBoxDeckMonmusuRebirth52";
+            this.pictureBoxDeckMonmusuRebirth52.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth52.TabIndex = 78;
+            this.pictureBoxDeckMonmusuRebirth52.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth51
+            // 
+            this.pictureBoxDeckMonmusuRebirth51.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth51.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth51.Name = "pictureBoxDeckMonmusuRebirth51";
+            this.pictureBoxDeckMonmusuRebirth51.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth51.TabIndex = 77;
+            this.pictureBoxDeckMonmusuRebirth51.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1812,10 +2007,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.panelCommonInfo.ResumeLayout(false);
             this.panelCommonInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1950,6 +2160,21 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button buttonModifyWebPosition;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth11;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth13;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth12;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth23;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth22;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth21;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth53;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth52;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth51;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth43;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth42;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth41;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth33;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth32;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth31;
     }
 }
 

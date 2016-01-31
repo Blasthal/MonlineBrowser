@@ -70,6 +70,25 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region 限界突破
+        /// <summary>
+        /// 限界突破しているかどうかの表示画像を取得する
+        /// </summary>
+        /// <param name="isRebirth">限界突破しているかどうか</param>
+        /// <returns>対応した画像</returns>
+        public static Bitmap GetPictureRebirth(bool isRebirth)
+        {
+            if (isRebirth)
+            {
+                return Properties.Resources.RebirthOn;
+            }
+            else
+            {
+                return Properties.Resources.RebirthOff;
+            }
+        }
+        #endregion
+
         #endregion
     }
 }

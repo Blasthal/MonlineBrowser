@@ -93,6 +93,26 @@ namespace MonlineBrowser.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap RebirthOff {
+            get {
+                object obj = ResourceManager.GetObject("RebirthOff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap RebirthOn {
+            get {
+                object obj = ResourceManager.GetObject("RebirthOn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap Ruby {
             get {
                 object obj = ResourceManager.GetObject("Ruby", resourceCulture);

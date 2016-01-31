@@ -37,6 +37,7 @@ namespace MonlineBrowser
         /// </summary>
         struct DeckMonmusuInfo
         {
+            public PictureBox[] rebirths;
             public Label level;
             public Label rarity;
             public Label name;
@@ -48,6 +49,11 @@ namespace MonlineBrowser
             public Label satietyValue;
             public ProgressBar satietyBar;
             public PictureBox likeFood;
+
+            public void Initialize()
+            {
+                rebirths = new PictureBox[3];
+            }
         }
         DeckMonmusuInfo[] mDeckMonmusuInfos = new DeckMonmusuInfo[5];
         #endregion
@@ -112,9 +118,13 @@ namespace MonlineBrowser
             for (int i = 0; i < mDeckMonmusuInfos.Length; ++i)
             {
                 mDeckMonmusuInfos[i] = new DeckMonmusuInfo();
+                mDeckMonmusuInfos[i].Initialize();
             }
 
             // 1体目
+            mDeckMonmusuInfos[0].rebirths[0] = pictureBoxDeckMonmusuRebirth11;
+            mDeckMonmusuInfos[0].rebirths[1] = pictureBoxDeckMonmusuRebirth12;
+            mDeckMonmusuInfos[0].rebirths[2] = pictureBoxDeckMonmusuRebirth13;
             mDeckMonmusuInfos[0].level = labelDeckMonmusuLevelValue1;
             mDeckMonmusuInfos[0].rarity = labelDeckMonmusuRarityName1;
             mDeckMonmusuInfos[0].name = labelDeckMonmusuName1;
@@ -128,6 +138,9 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[0].likeFood = pictureBoxDeckMonmusuLikeFood1;
 
             // 2体目
+            mDeckMonmusuInfos[1].rebirths[0] = pictureBoxDeckMonmusuRebirth21;
+            mDeckMonmusuInfos[1].rebirths[1] = pictureBoxDeckMonmusuRebirth22;
+            mDeckMonmusuInfos[1].rebirths[2] = pictureBoxDeckMonmusuRebirth23;
             mDeckMonmusuInfos[1].level = labelDeckMonmusuLevelValue2;
             mDeckMonmusuInfos[1].rarity = labelDeckMonmusuRarityName2;
             mDeckMonmusuInfos[1].name = labelDeckMonmusuName2;
@@ -141,6 +154,9 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[1].likeFood = pictureBoxDeckMonmusuLikeFood2;
 
             // 3体目
+            mDeckMonmusuInfos[2].rebirths[0] = pictureBoxDeckMonmusuRebirth31;
+            mDeckMonmusuInfos[2].rebirths[1] = pictureBoxDeckMonmusuRebirth32;
+            mDeckMonmusuInfos[2].rebirths[2] = pictureBoxDeckMonmusuRebirth33;
             mDeckMonmusuInfos[2].level = labelDeckMonmusuLevelValue3;
             mDeckMonmusuInfos[2].rarity = labelDeckMonmusuRarityName3;
             mDeckMonmusuInfos[2].name = labelDeckMonmusuName3;
@@ -154,6 +170,9 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[2].likeFood = pictureBoxDeckMonmusuLikeFood3;
 
             // 4体目
+            mDeckMonmusuInfos[3].rebirths[0] = pictureBoxDeckMonmusuRebirth41;
+            mDeckMonmusuInfos[3].rebirths[1] = pictureBoxDeckMonmusuRebirth42;
+            mDeckMonmusuInfos[3].rebirths[2] = pictureBoxDeckMonmusuRebirth43;
             mDeckMonmusuInfos[3].level = labelDeckMonmusuLevelValue4;
             mDeckMonmusuInfos[3].rarity = labelDeckMonmusuRarityName4;
             mDeckMonmusuInfos[3].name = labelDeckMonmusuName4;
@@ -167,6 +186,9 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[3].likeFood = pictureBoxDeckMonmusuLikeFood4;
 
             // 5体目
+            mDeckMonmusuInfos[4].rebirths[0] = pictureBoxDeckMonmusuRebirth51;
+            mDeckMonmusuInfos[4].rebirths[1] = pictureBoxDeckMonmusuRebirth52;
+            mDeckMonmusuInfos[4].rebirths[2] = pictureBoxDeckMonmusuRebirth53;
             mDeckMonmusuInfos[4].level = labelDeckMonmusuLevelValue5;
             mDeckMonmusuInfos[4].rarity = labelDeckMonmusuRarityName5;
             mDeckMonmusuInfos[4].name = labelDeckMonmusuName5;
@@ -445,6 +467,22 @@ namespace MonlineBrowser
         public void UpdateDeckMonmusu(Int32 deckId, Int32 monmusuIndex)
         {
             DeckMonmusuInfo info = mDeckMonmusuInfos[monmusuIndex];
+
+            // 限界突破
+            if (info.rebirths != null)
+            {
+                Int32 rebirthCount = UserDataUtil.GetMonmusuRebirthCount(deckId, monmusuIndex);
+                for (Int32 i = 0; i < info.rebirths.Length; ++i)
+                {
+                    PictureBox pic = info.rebirths[i];
+                    if (pic != null)
+                    {
+                        bool isRebirth = (i < rebirthCount);
+                        Image rebirthImgOn = ResourceUtil.GetPictureRebirth(isRebirth);
+                        pic.Image = rebirthImgOn;
+                    }
+                }
+            }
 
             // レアリティ
             if (info.rarity != null)
