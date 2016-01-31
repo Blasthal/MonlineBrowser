@@ -40,6 +40,9 @@
             this.panelFormation = new System.Windows.Forms.Panel();
             this.radioButtonDeck5 = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBoxDeckMonmusuRebirth53 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth52 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth51 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDeckMonmusuLikeFood5 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue5 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -58,6 +61,9 @@
             this.radioButtonDeck4 = new System.Windows.Forms.RadioButton();
             this.radioButtonDeck3 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBoxDeckMonmusuRebirth43 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth42 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth41 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDeckMonmusuLikeFood4 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -76,7 +82,10 @@
             this.radioButtonDeck1 = new System.Windows.Forms.RadioButton();
             this.radioButtonDeck2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxDeckMonmusuRebirth13 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth12 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDeckMonmusuLikeFood1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth11 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuName1 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuHPValue1 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRarityName1 = new System.Windows.Forms.Label();
@@ -92,6 +101,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuTensionValue1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBoxDeckMonmusuRebirth33 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth32 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth31 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDeckMonmusuLikeFood3 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -109,6 +121,9 @@
             this.labelDeckMonmusuTensionValue3 = new System.Windows.Forms.Label();
             this.labelGroupName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBoxDeckMonmusuRebirth23 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth22 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth21 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDeckMonmusuLikeFood2 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -145,7 +160,6 @@
             this.labelVegetableCount = new System.Windows.Forms.Label();
             this.labelMeatCount = new System.Windows.Forms.Label();
             this.panelCommonInfo = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuRebirth11 = new System.Windows.Forms.PictureBox();
             this.labelRuby = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelPlayerExp = new System.Windows.Forms.Label();
@@ -158,54 +172,40 @@
             this.labelBreadCount = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonItem = new System.Windows.Forms.Button();
-            this.pictureBoxDeckMonmusuRebirth12 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth13 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth23 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth22 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth21 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth33 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth32 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth31 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth43 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth42 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth41 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth53 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth52 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth51 = new System.Windows.Forms.PictureBox();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
             this.panelConfig.SuspendLayout();
             this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.panelCommonInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -373,6 +373,36 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(628, 48);
             this.panel5.TabIndex = 59;
+            // 
+            // pictureBoxDeckMonmusuRebirth53
+            // 
+            this.pictureBoxDeckMonmusuRebirth53.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth53.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth53.Name = "pictureBoxDeckMonmusuRebirth53";
+            this.pictureBoxDeckMonmusuRebirth53.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth53.TabIndex = 79;
+            this.pictureBoxDeckMonmusuRebirth53.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth52
+            // 
+            this.pictureBoxDeckMonmusuRebirth52.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth52.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth52.Name = "pictureBoxDeckMonmusuRebirth52";
+            this.pictureBoxDeckMonmusuRebirth52.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth52.TabIndex = 78;
+            this.pictureBoxDeckMonmusuRebirth52.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth51
+            // 
+            this.pictureBoxDeckMonmusuRebirth51.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth51.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth51.Name = "pictureBoxDeckMonmusuRebirth51";
+            this.pictureBoxDeckMonmusuRebirth51.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth51.TabIndex = 77;
+            this.pictureBoxDeckMonmusuRebirth51.TabStop = false;
             // 
             // pictureBoxDeckMonmusuLikeFood5
             // 
@@ -597,6 +627,36 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(628, 48);
             this.panel4.TabIndex = 58;
+            // 
+            // pictureBoxDeckMonmusuRebirth43
+            // 
+            this.pictureBoxDeckMonmusuRebirth43.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth43.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth43.Name = "pictureBoxDeckMonmusuRebirth43";
+            this.pictureBoxDeckMonmusuRebirth43.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth43.TabIndex = 79;
+            this.pictureBoxDeckMonmusuRebirth43.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth42
+            // 
+            this.pictureBoxDeckMonmusuRebirth42.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth42.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth42.Name = "pictureBoxDeckMonmusuRebirth42";
+            this.pictureBoxDeckMonmusuRebirth42.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth42.TabIndex = 78;
+            this.pictureBoxDeckMonmusuRebirth42.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth41
+            // 
+            this.pictureBoxDeckMonmusuRebirth41.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth41.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth41.Name = "pictureBoxDeckMonmusuRebirth41";
+            this.pictureBoxDeckMonmusuRebirth41.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth41.TabIndex = 77;
+            this.pictureBoxDeckMonmusuRebirth41.TabStop = false;
             // 
             // pictureBoxDeckMonmusuLikeFood4
             // 
@@ -823,6 +883,26 @@
             this.panel1.Size = new System.Drawing.Size(628, 48);
             this.panel1.TabIndex = 38;
             // 
+            // pictureBoxDeckMonmusuRebirth13
+            // 
+            this.pictureBoxDeckMonmusuRebirth13.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth13.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth13.Name = "pictureBoxDeckMonmusuRebirth13";
+            this.pictureBoxDeckMonmusuRebirth13.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth13.TabIndex = 70;
+            this.pictureBoxDeckMonmusuRebirth13.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth12
+            // 
+            this.pictureBoxDeckMonmusuRebirth12.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth12.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth12.Name = "pictureBoxDeckMonmusuRebirth12";
+            this.pictureBoxDeckMonmusuRebirth12.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth12.TabIndex = 69;
+            this.pictureBoxDeckMonmusuRebirth12.TabStop = false;
+            // 
             // pictureBoxDeckMonmusuLikeFood1
             // 
             this.pictureBoxDeckMonmusuLikeFood1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
@@ -832,6 +912,16 @@
             this.pictureBoxDeckMonmusuLikeFood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxDeckMonmusuLikeFood1.TabIndex = 55;
             this.pictureBoxDeckMonmusuLikeFood1.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth11
+            // 
+            this.pictureBoxDeckMonmusuRebirth11.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth11.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth11.Name = "pictureBoxDeckMonmusuRebirth11";
+            this.pictureBoxDeckMonmusuRebirth11.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth11.TabIndex = 56;
+            this.pictureBoxDeckMonmusuRebirth11.TabStop = false;
             // 
             // labelDeckMonmusuName1
             // 
@@ -1012,6 +1102,36 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(628, 48);
             this.panel3.TabIndex = 57;
+            // 
+            // pictureBoxDeckMonmusuRebirth33
+            // 
+            this.pictureBoxDeckMonmusuRebirth33.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth33.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth33.Name = "pictureBoxDeckMonmusuRebirth33";
+            this.pictureBoxDeckMonmusuRebirth33.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth33.TabIndex = 76;
+            this.pictureBoxDeckMonmusuRebirth33.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth32
+            // 
+            this.pictureBoxDeckMonmusuRebirth32.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth32.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth32.Name = "pictureBoxDeckMonmusuRebirth32";
+            this.pictureBoxDeckMonmusuRebirth32.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth32.TabIndex = 75;
+            this.pictureBoxDeckMonmusuRebirth32.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth31
+            // 
+            this.pictureBoxDeckMonmusuRebirth31.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth31.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth31.Name = "pictureBoxDeckMonmusuRebirth31";
+            this.pictureBoxDeckMonmusuRebirth31.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth31.TabIndex = 74;
+            this.pictureBoxDeckMonmusuRebirth31.TabStop = false;
             // 
             // pictureBoxDeckMonmusuLikeFood3
             // 
@@ -1214,6 +1334,36 @@
             this.panel2.Size = new System.Drawing.Size(628, 48);
             this.panel2.TabIndex = 56;
             // 
+            // pictureBoxDeckMonmusuRebirth23
+            // 
+            this.pictureBoxDeckMonmusuRebirth23.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth23.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth23.Name = "pictureBoxDeckMonmusuRebirth23";
+            this.pictureBoxDeckMonmusuRebirth23.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth23.TabIndex = 73;
+            this.pictureBoxDeckMonmusuRebirth23.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth22
+            // 
+            this.pictureBoxDeckMonmusuRebirth22.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth22.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth22.Name = "pictureBoxDeckMonmusuRebirth22";
+            this.pictureBoxDeckMonmusuRebirth22.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth22.TabIndex = 72;
+            this.pictureBoxDeckMonmusuRebirth22.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth21
+            // 
+            this.pictureBoxDeckMonmusuRebirth21.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth21.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth21.Name = "pictureBoxDeckMonmusuRebirth21";
+            this.pictureBoxDeckMonmusuRebirth21.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth21.TabIndex = 71;
+            this.pictureBoxDeckMonmusuRebirth21.TabStop = false;
+            // 
             // pictureBoxDeckMonmusuLikeFood2
             // 
             this.pictureBoxDeckMonmusuLikeFood2.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
@@ -1391,7 +1541,7 @@
             this.panelConfig.Controls.Add(this.label6);
             this.panelConfig.Controls.Add(this.textBoxScreenshotPath);
             this.panelConfig.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelConfig.Location = new System.Drawing.Point(907, 663);
+            this.panelConfig.Location = new System.Drawing.Point(107, 663);
             this.panelConfig.Name = "panelConfig";
             this.panelConfig.Size = new System.Drawing.Size(800, 314);
             this.panelConfig.TabIndex = 59;
@@ -1547,7 +1697,7 @@
             this.panelItem.Controls.Add(this.dataGridViewItem);
             this.panelItem.Controls.Add(this.label16);
             this.panelItem.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelItem.Location = new System.Drawing.Point(907, 663);
+            this.panelItem.Location = new System.Drawing.Point(107, 663);
             this.panelItem.Name = "panelItem";
             this.panelItem.Size = new System.Drawing.Size(800, 314);
             this.panelItem.TabIndex = 60;
@@ -1668,16 +1818,6 @@
             this.panelCommonInfo.Name = "panelCommonInfo";
             this.panelCommonInfo.Size = new System.Drawing.Size(914, 48);
             this.panelCommonInfo.TabIndex = 58;
-            // 
-            // pictureBoxDeckMonmusuRebirth11
-            // 
-            this.pictureBoxDeckMonmusuRebirth11.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth11.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth11.Name = "pictureBoxDeckMonmusuRebirth11";
-            this.pictureBoxDeckMonmusuRebirth11.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth11.TabIndex = 56;
-            this.pictureBoxDeckMonmusuRebirth11.TabStop = false;
             // 
             // labelRuby
             // 
@@ -1819,146 +1959,6 @@
             this.buttonItem.UseVisualStyleBackColor = false;
             this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
-            // pictureBoxDeckMonmusuRebirth12
-            // 
-            this.pictureBoxDeckMonmusuRebirth12.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth12.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth12.Name = "pictureBoxDeckMonmusuRebirth12";
-            this.pictureBoxDeckMonmusuRebirth12.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth12.TabIndex = 69;
-            this.pictureBoxDeckMonmusuRebirth12.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth13
-            // 
-            this.pictureBoxDeckMonmusuRebirth13.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth13.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth13.Name = "pictureBoxDeckMonmusuRebirth13";
-            this.pictureBoxDeckMonmusuRebirth13.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth13.TabIndex = 70;
-            this.pictureBoxDeckMonmusuRebirth13.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth23
-            // 
-            this.pictureBoxDeckMonmusuRebirth23.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth23.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth23.Name = "pictureBoxDeckMonmusuRebirth23";
-            this.pictureBoxDeckMonmusuRebirth23.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth23.TabIndex = 73;
-            this.pictureBoxDeckMonmusuRebirth23.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth22
-            // 
-            this.pictureBoxDeckMonmusuRebirth22.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth22.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth22.Name = "pictureBoxDeckMonmusuRebirth22";
-            this.pictureBoxDeckMonmusuRebirth22.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth22.TabIndex = 72;
-            this.pictureBoxDeckMonmusuRebirth22.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth21
-            // 
-            this.pictureBoxDeckMonmusuRebirth21.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth21.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth21.Name = "pictureBoxDeckMonmusuRebirth21";
-            this.pictureBoxDeckMonmusuRebirth21.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth21.TabIndex = 71;
-            this.pictureBoxDeckMonmusuRebirth21.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth33
-            // 
-            this.pictureBoxDeckMonmusuRebirth33.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth33.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth33.Name = "pictureBoxDeckMonmusuRebirth33";
-            this.pictureBoxDeckMonmusuRebirth33.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth33.TabIndex = 76;
-            this.pictureBoxDeckMonmusuRebirth33.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth32
-            // 
-            this.pictureBoxDeckMonmusuRebirth32.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth32.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth32.Name = "pictureBoxDeckMonmusuRebirth32";
-            this.pictureBoxDeckMonmusuRebirth32.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth32.TabIndex = 75;
-            this.pictureBoxDeckMonmusuRebirth32.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth31
-            // 
-            this.pictureBoxDeckMonmusuRebirth31.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth31.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth31.Name = "pictureBoxDeckMonmusuRebirth31";
-            this.pictureBoxDeckMonmusuRebirth31.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth31.TabIndex = 74;
-            this.pictureBoxDeckMonmusuRebirth31.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth43
-            // 
-            this.pictureBoxDeckMonmusuRebirth43.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth43.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth43.Name = "pictureBoxDeckMonmusuRebirth43";
-            this.pictureBoxDeckMonmusuRebirth43.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth43.TabIndex = 79;
-            this.pictureBoxDeckMonmusuRebirth43.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth42
-            // 
-            this.pictureBoxDeckMonmusuRebirth42.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth42.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth42.Name = "pictureBoxDeckMonmusuRebirth42";
-            this.pictureBoxDeckMonmusuRebirth42.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth42.TabIndex = 78;
-            this.pictureBoxDeckMonmusuRebirth42.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth41
-            // 
-            this.pictureBoxDeckMonmusuRebirth41.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth41.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth41.Name = "pictureBoxDeckMonmusuRebirth41";
-            this.pictureBoxDeckMonmusuRebirth41.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth41.TabIndex = 77;
-            this.pictureBoxDeckMonmusuRebirth41.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth53
-            // 
-            this.pictureBoxDeckMonmusuRebirth53.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth53.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth53.Name = "pictureBoxDeckMonmusuRebirth53";
-            this.pictureBoxDeckMonmusuRebirth53.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth53.TabIndex = 79;
-            this.pictureBoxDeckMonmusuRebirth53.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth52
-            // 
-            this.pictureBoxDeckMonmusuRebirth52.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth52.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth52.Name = "pictureBoxDeckMonmusuRebirth52";
-            this.pictureBoxDeckMonmusuRebirth52.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth52.TabIndex = 78;
-            this.pictureBoxDeckMonmusuRebirth52.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth51
-            // 
-            this.pictureBoxDeckMonmusuRebirth51.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth51.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth51.Name = "pictureBoxDeckMonmusuRebirth51";
-            this.pictureBoxDeckMonmusuRebirth51.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth51.TabIndex = 77;
-            this.pictureBoxDeckMonmusuRebirth51.TabStop = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1987,18 +1987,33 @@
             this.panelFormation.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).EndInit();
             this.panelConfig.ResumeLayout(false);
             this.panelConfig.PerformLayout();
@@ -2007,25 +2022,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.panelCommonInfo.ResumeLayout(false);
             this.panelCommonInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
