@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
@@ -125,6 +125,14 @@
             this.label14 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuTensionValue2 = new System.Windows.Forms.Label();
             this.panelConfig = new System.Windows.Forms.Panel();
+            this.buttonModifyWebPosition = new System.Windows.Forms.Button();
+            this.panelItem = new System.Windows.Forms.Panel();
+            this.dataGridViewItem = new System.Windows.Forms.DataGridView();
+            this.ColumnItemImage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ColumnItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonScreenshotPathExlorer = new System.Windows.Forms.Button();
             this.radioButtonScreenshotExtensionTiff = new System.Windows.Forms.RadioButton();
             this.radioButtonScreenshotExtensionGif = new System.Windows.Forms.RadioButton();
@@ -148,15 +156,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelBreadCount = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelItem = new System.Windows.Forms.Panel();
-            this.dataGridViewItem = new System.Windows.Forms.DataGridView();
-            this.ColumnItemImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ColumnItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnItemNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label16 = new System.Windows.Forms.Label();
             this.buttonItem = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonModifyWebPosition = new System.Windows.Forms.Button();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
@@ -169,19 +169,19 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
             this.panelConfig.SuspendLayout();
+            this.panelItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.panelCommonInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
             // 
             this.webBrowser1.AllowWebBrowserDrop = false;
-            this.webBrowser1.Location = new System.Drawing.Point(32, 63);
+            this.webBrowser1.Location = new System.Drawing.Point(0, 63);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
@@ -199,7 +199,7 @@
             this.buttonFormation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFormation.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.buttonFormation.ForeColor = System.Drawing.Color.White;
-            this.buttonFormation.Location = new System.Drawing.Point(32, 663);
+            this.buttonFormation.Location = new System.Drawing.Point(0, 663);
             this.buttonFormation.Name = "buttonFormation";
             this.buttonFormation.Size = new System.Drawing.Size(101, 48);
             this.buttonFormation.TabIndex = 31;
@@ -257,7 +257,7 @@
             this.buttonScreenShot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonScreenShot.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.buttonScreenShot.ForeColor = System.Drawing.Color.White;
-            this.buttonScreenShot.Location = new System.Drawing.Point(912, 0);
+            this.buttonScreenShot.Location = new System.Drawing.Point(866, 0);
             this.buttonScreenShot.Name = "buttonScreenShot";
             this.buttonScreenShot.Size = new System.Drawing.Size(48, 48);
             this.buttonScreenShot.TabIndex = 42;
@@ -273,7 +273,7 @@
             this.buttonConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConfig.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.buttonConfig.ForeColor = System.Drawing.Color.White;
-            this.buttonConfig.Location = new System.Drawing.Point(32, 929);
+            this.buttonConfig.Location = new System.Drawing.Point(0, 929);
             this.buttonConfig.Name = "buttonConfig";
             this.buttonConfig.Size = new System.Drawing.Size(101, 48);
             this.buttonConfig.TabIndex = 43;
@@ -295,9 +295,9 @@
             this.panelFormation.Controls.Add(this.labelGroupName);
             this.panelFormation.Controls.Add(this.panel2);
             this.panelFormation.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelFormation.Location = new System.Drawing.Point(139, 663);
+            this.panelFormation.Location = new System.Drawing.Point(107, 663);
             this.panelFormation.Name = "panelFormation";
-            this.panelFormation.Size = new System.Drawing.Size(853, 320);
+            this.panelFormation.Size = new System.Drawing.Size(800, 314);
             this.panelFormation.TabIndex = 44;
             // 
             // radioButtonDeck5
@@ -1334,7 +1334,6 @@
             // 
             // panelConfig
             // 
-            this.panelConfig.AutoScroll = true;
             this.panelConfig.Controls.Add(this.buttonModifyWebPosition);
             this.panelConfig.Controls.Add(this.label1);
             this.panelConfig.Controls.Add(this.buttonScreenshotPathExlorer);
@@ -1347,10 +1346,116 @@
             this.panelConfig.Controls.Add(this.label6);
             this.panelConfig.Controls.Add(this.textBoxScreenshotPath);
             this.panelConfig.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelConfig.Location = new System.Drawing.Point(139, 663);
+            this.panelConfig.Location = new System.Drawing.Point(107, 663);
             this.panelConfig.Name = "panelConfig";
-            this.panelConfig.Size = new System.Drawing.Size(853, 320);
+            this.panelConfig.Size = new System.Drawing.Size(800, 314);
             this.panelConfig.TabIndex = 59;
+            // 
+            // buttonModifyWebPosition
+            // 
+            this.buttonModifyWebPosition.AutoSize = true;
+            this.buttonModifyWebPosition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.buttonModifyWebPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModifyWebPosition.ForeColor = System.Drawing.Color.White;
+            this.buttonModifyWebPosition.Location = new System.Drawing.Point(5, 104);
+            this.buttonModifyWebPosition.Name = "buttonModifyWebPosition";
+            this.buttonModifyWebPosition.Size = new System.Drawing.Size(65, 24);
+            this.buttonModifyWebPosition.TabIndex = 10;
+            this.buttonModifyWebPosition.Text = "位置修正";
+            this.buttonModifyWebPosition.UseVisualStyleBackColor = true;
+            this.buttonModifyWebPosition.Click += new System.EventHandler(this.buttonModifyWebPosition_Click);
+            // 
+            // panelItem
+            // 
+            this.panelItem.Controls.Add(this.dataGridViewItem);
+            this.panelItem.Controls.Add(this.label16);
+            this.panelItem.ForeColor = System.Drawing.Color.Firebrick;
+            this.panelItem.Location = new System.Drawing.Point(107, 663);
+            this.panelItem.Name = "panelItem";
+            this.panelItem.Size = new System.Drawing.Size(800, 314);
+            this.panelItem.TabIndex = 60;
+            // 
+            // dataGridViewItem
+            // 
+            this.dataGridViewItem.AllowUserToAddRows = false;
+            this.dataGridViewItem.AllowUserToDeleteRows = false;
+            this.dataGridViewItem.AllowUserToResizeColumns = false;
+            this.dataGridViewItem.AllowUserToResizeRows = false;
+            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnItemImage,
+            this.ColumnItemName,
+            this.ColumnItemNum});
+            this.dataGridViewItem.EnableHeadersVisualStyles = false;
+            this.dataGridViewItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.dataGridViewItem.Location = new System.Drawing.Point(3, 18);
+            this.dataGridViewItem.MultiSelect = false;
+            this.dataGridViewItem.Name = "dataGridViewItem";
+            this.dataGridViewItem.ReadOnly = true;
+            this.dataGridViewItem.RowHeadersVisible = false;
+            this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewItem.RowTemplate.Height = 21;
+            this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewItem.Size = new System.Drawing.Size(256, 283);
+            this.dataGridViewItem.TabIndex = 3;
+            // 
+            // ColumnItemImage
+            // 
+            this.ColumnItemImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnItemImage.HeaderText = "絵";
+            this.ColumnItemImage.Name = "ColumnItemImage";
+            this.ColumnItemImage.ReadOnly = true;
+            this.ColumnItemImage.Visible = false;
+            // 
+            // ColumnItemName
+            // 
+            this.ColumnItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnItemName.HeaderText = "名前";
+            this.ColumnItemName.Name = "ColumnItemName";
+            this.ColumnItemName.ReadOnly = true;
+            this.ColumnItemName.Width = 53;
+            // 
+            // ColumnItemNum
+            // 
+            this.ColumnItemNum.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnItemNum.HeaderText = "所持数";
+            this.ColumnItemNum.Name = "ColumnItemNum";
+            this.ColumnItemNum.ReadOnly = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 3);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 12);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "所持品一覧";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(272, 12);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "※ゲーム画面の表示位置がずれている時に押してください";
             // 
             // buttonScreenshotPathExlorer
             // 
@@ -1514,9 +1619,9 @@
             this.panelCommonInfo.Controls.Add(this.labelVegetableCount);
             this.panelCommonInfo.Controls.Add(this.labelMeatCount);
             this.panelCommonInfo.Controls.Add(this.buttonScreenShot);
-            this.panelCommonInfo.Location = new System.Drawing.Point(32, 609);
+            this.panelCommonInfo.Location = new System.Drawing.Point(23, 609);
             this.panelCommonInfo.Name = "panelCommonInfo";
-            this.panelCommonInfo.Size = new System.Drawing.Size(960, 48);
+            this.panelCommonInfo.Size = new System.Drawing.Size(914, 48);
             this.panelCommonInfo.TabIndex = 58;
             // 
             // labelRuby
@@ -1643,89 +1748,6 @@
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
-            // panelItem
-            // 
-            this.panelItem.AutoScroll = true;
-            this.panelItem.Controls.Add(this.dataGridViewItem);
-            this.panelItem.Controls.Add(this.label16);
-            this.panelItem.ForeColor = System.Drawing.Color.Firebrick;
-            this.panelItem.Location = new System.Drawing.Point(139, 663);
-            this.panelItem.Name = "panelItem";
-            this.panelItem.Size = new System.Drawing.Size(853, 320);
-            this.panelItem.TabIndex = 60;
-            // 
-            // dataGridViewItem
-            // 
-            this.dataGridViewItem.AllowUserToAddRows = false;
-            this.dataGridViewItem.AllowUserToDeleteRows = false;
-            this.dataGridViewItem.AllowUserToResizeColumns = false;
-            this.dataGridViewItem.AllowUserToResizeRows = false;
-            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnItemImage,
-            this.ColumnItemName,
-            this.ColumnItemNum});
-            this.dataGridViewItem.EnableHeadersVisualStyles = false;
-            this.dataGridViewItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.dataGridViewItem.Location = new System.Drawing.Point(3, 18);
-            this.dataGridViewItem.MultiSelect = false;
-            this.dataGridViewItem.Name = "dataGridViewItem";
-            this.dataGridViewItem.ReadOnly = true;
-            this.dataGridViewItem.RowHeadersVisible = false;
-            this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewItem.RowTemplate.Height = 21;
-            this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewItem.Size = new System.Drawing.Size(256, 299);
-            this.dataGridViewItem.TabIndex = 3;
-            // 
-            // ColumnItemImage
-            // 
-            this.ColumnItemImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnItemImage.HeaderText = "絵";
-            this.ColumnItemImage.Name = "ColumnItemImage";
-            this.ColumnItemImage.ReadOnly = true;
-            this.ColumnItemImage.Visible = false;
-            // 
-            // ColumnItemName
-            // 
-            this.ColumnItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnItemName.HeaderText = "名前";
-            this.ColumnItemName.Name = "ColumnItemName";
-            this.ColumnItemName.ReadOnly = true;
-            this.ColumnItemName.Width = 53;
-            // 
-            // ColumnItemNum
-            // 
-            this.ColumnItemNum.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnItemNum.HeaderText = "所持数";
-            this.ColumnItemNum.Name = "ColumnItemNum";
-            this.ColumnItemNum.ReadOnly = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(3, 3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 12);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "所持品一覧";
-            // 
             // buttonItem
             // 
             this.buttonItem.BackColor = System.Drawing.Color.Transparent;
@@ -1734,7 +1756,7 @@
             this.buttonItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonItem.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.buttonItem.ForeColor = System.Drawing.Color.White;
-            this.buttonItem.Location = new System.Drawing.Point(32, 717);
+            this.buttonItem.Location = new System.Drawing.Point(0, 717);
             this.buttonItem.Name = "buttonItem";
             this.buttonItem.Size = new System.Drawing.Size(101, 48);
             this.buttonItem.TabIndex = 61;
@@ -1742,35 +1764,11 @@
             this.buttonItem.UseVisualStyleBackColor = false;
             this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 12);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "※ゲーム画面の表示位置がずれている時に押してください";
-            // 
-            // buttonModifyWebPosition
-            // 
-            this.buttonModifyWebPosition.AutoSize = true;
-            this.buttonModifyWebPosition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.buttonModifyWebPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModifyWebPosition.ForeColor = System.Drawing.Color.White;
-            this.buttonModifyWebPosition.Location = new System.Drawing.Point(5, 104);
-            this.buttonModifyWebPosition.Name = "buttonModifyWebPosition";
-            this.buttonModifyWebPosition.Size = new System.Drawing.Size(65, 24);
-            this.buttonModifyWebPosition.TabIndex = 10;
-            this.buttonModifyWebPosition.Text = "位置修正";
-            this.buttonModifyWebPosition.UseVisualStyleBackColor = true;
-            this.buttonModifyWebPosition.Click += new System.EventHandler(this.buttonModifyWebPosition_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 1024);
+            this.ClientSize = new System.Drawing.Size(960, 980);
             this.Controls.Add(this.buttonItem);
             this.Controls.Add(this.panelItem);
             this.Controls.Add(this.panelConfig);
@@ -1809,15 +1807,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).EndInit();
             this.panelConfig.ResumeLayout(false);
             this.panelConfig.PerformLayout();
+            this.panelItem.ResumeLayout(false);
+            this.panelItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.panelCommonInfo.ResumeLayout(false);
             this.panelCommonInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelItem.ResumeLayout(false);
-            this.panelItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
