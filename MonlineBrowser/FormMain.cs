@@ -401,7 +401,15 @@ namespace MonlineBrowser
 
                 // WebBrowserのWindow位置をスクロールする
                 ScrollWebWindowToGame();
+
+                // スクロールバーを非表示にする
+                webBrowser1.ScrollBarsEnabled = false;
             }
+        }
+
+        private void buttonReload_Click(object sender, EventArgs e)
+        {
+            DoNavigation(sender, e);
         }
         #endregion
 

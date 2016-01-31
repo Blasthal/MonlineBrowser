@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
@@ -172,6 +172,7 @@
             this.labelBreadCount = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonItem = new System.Windows.Forms.Button();
+            this.buttonReload = new System.Windows.Forms.Button();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).BeginInit();
@@ -215,7 +216,6 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.ScrollBarsEnabled = false;
             this.webBrowser1.Size = new System.Drawing.Size(960, 540);
             this.webBrowser1.TabIndex = 2;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
@@ -241,9 +241,9 @@
             // 
             this.textBoxUrl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUrl.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUrl.Location = new System.Drawing.Point(201, 30);
+            this.textBoxUrl.Location = new System.Drawing.Point(340, 28);
             this.textBoxUrl.Name = "textBoxUrl";
-            this.textBoxUrl.Size = new System.Drawing.Size(455, 18);
+            this.textBoxUrl.Size = new System.Drawing.Size(322, 18);
             this.textBoxUrl.TabIndex = 39;
             this.textBoxUrl.Text = "http://www.dmm.com/netgame/social/-/gadgets/=/app_id=365723/";
             // 
@@ -1712,13 +1712,13 @@
             this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnItemImage,
@@ -1732,10 +1732,10 @@
             this.dataGridViewItem.ReadOnly = true;
             this.dataGridViewItem.RowHeadersVisible = false;
             this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewItem.RowTemplate.Height = 21;
             this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewItem.Size = new System.Drawing.Size(256, 283);
@@ -1959,11 +1959,28 @@
             this.buttonItem.UseVisualStyleBackColor = false;
             this.buttonItem.Click += new System.EventHandler(this.buttonItem_Click);
             // 
+            // buttonReload
+            // 
+            this.buttonReload.BackColor = System.Drawing.Color.Transparent;
+            this.buttonReload.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
+            this.buttonReload.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.buttonReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReload.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.buttonReload.ForeColor = System.Drawing.Color.YellowGreen;
+            this.buttonReload.Location = new System.Drawing.Point(232, 26);
+            this.buttonReload.Name = "buttonReload";
+            this.buttonReload.Size = new System.Drawing.Size(84, 24);
+            this.buttonReload.TabIndex = 69;
+            this.buttonReload.Text = "Reload";
+            this.buttonReload.UseVisualStyleBackColor = false;
+            this.buttonReload.Click += new System.EventHandler(this.buttonReload_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 980);
+            this.Controls.Add(this.buttonReload);
             this.Controls.Add(this.buttonItem);
             this.Controls.Add(this.panelItem);
             this.Controls.Add(this.panelConfig);
@@ -2175,6 +2192,7 @@
         private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth33;
         private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth32;
         private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth31;
+        private System.Windows.Forms.Button buttonReload;
     }
 }
 
