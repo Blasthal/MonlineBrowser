@@ -17,9 +17,52 @@ namespace MonlineBrowser
         /// </summary>
         public enum FoodType
         {
+            /// <summary>
+            /// 野菜
+            /// </summary>
             Vegetable = 20001,
+
+            /// <summary>
+            /// 肉
+            /// </summary>
             Meat,
+
+            /// <summary>
+            /// パン
+            /// </summary>
             Bread,
+        }
+
+        /// <summary>
+        /// 属性の種類
+        /// 実際に取得できる値に対応させる
+        /// </summary>
+        public enum ElementType
+        {
+            /// <summary>
+            /// キュート
+            /// </summary>
+            Cute = 1,
+
+            /// <summary>
+            /// クール
+            /// </summary>
+            Cool,
+
+            /// <summary>
+            /// パッション
+            /// </summary>
+            Passion,
+
+            /// <summary>
+            /// ピュア
+            /// </summary>
+            Pure,
+
+            /// <summary>
+            /// ダーク
+            /// </summary>
+            Devil,
         }
         #endregion
 
@@ -86,6 +129,27 @@ namespace MonlineBrowser
             {
                 return Properties.Resources.RebirthOff;
             }
+        }
+        #endregion
+
+        #region 属性
+        /// <summary>
+        /// 属性の種類に対応した画像を取得する
+        /// </summary>
+        /// <param name="elementType">属性の種類</param>
+        /// <returns>対応した画像</returns>
+        public static Bitmap GetPictureElement(ElementType elementType)
+        {
+            switch (elementType)
+            {
+                case ElementType.Cute: return Properties.Resources.Element_Cute;
+                case ElementType.Cool: return Properties.Resources.Element_Cool;
+                case ElementType.Passion: return Properties.Resources.Element_Passion;
+                case ElementType.Pure: return Properties.Resources.Element_Pure;
+                case ElementType.Devil: return Properties.Resources.Element_Devil;
+            }
+
+            return null;
         }
         #endregion
 

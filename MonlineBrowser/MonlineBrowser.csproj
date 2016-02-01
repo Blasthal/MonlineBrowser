@@ -190,6 +190,11 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Monline_Icon.ico" />
+    <None Include="Resources\job[1][100].png" />
+    <None Include="Resources\job[1][99].png" />
+    <None Include="Resources\job[1][98].png" />
+    <None Include="Resources\job[1][97].png" />
+    <None Include="Resources\job[1][96].png" />
     <None Include="Resources\outing[1][394].png" />
     <None Include="Resources\outing[1][393].png" />
     <None Include="Resources\navigation[64].png" />

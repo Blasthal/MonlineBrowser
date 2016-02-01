@@ -42,6 +42,7 @@ namespace MonlineBrowser
             public Label rarity;
             public Label name;
             public Label race;
+            public PictureBox element;
             public Label hpValue;
             public ProgressBar hpBar;
             public Label tensionValue;
@@ -129,6 +130,7 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[0].rarity = labelDeckMonmusuRarityName1;
             mDeckMonmusuInfos[0].name = labelDeckMonmusuName1;
             mDeckMonmusuInfos[0].race = labelDeckMonmusuRaceName1;
+            mDeckMonmusuInfos[0].element = pictureBoxDeckMonmusuElement1;
             mDeckMonmusuInfos[0].hpValue = labelDeckMonmusuHPValue1;
             mDeckMonmusuInfos[0].hpBar = progressBarDeckMonmusuHP1;
             mDeckMonmusuInfos[0].tensionValue = labelDeckMonmusuTensionValue1;
@@ -145,6 +147,7 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[1].rarity = labelDeckMonmusuRarityName2;
             mDeckMonmusuInfos[1].name = labelDeckMonmusuName2;
             mDeckMonmusuInfos[1].race = labelDeckMonmusuRaceName2;
+            mDeckMonmusuInfos[1].element = pictureBoxDeckMonmusuElement2;
             mDeckMonmusuInfos[1].hpValue = labelDeckMonmusuHPValue2;
             mDeckMonmusuInfos[1].hpBar = progressBarDeckMonmusuHP2;
             mDeckMonmusuInfos[1].tensionValue = labelDeckMonmusuTensionValue2;
@@ -161,6 +164,7 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[2].rarity = labelDeckMonmusuRarityName3;
             mDeckMonmusuInfos[2].name = labelDeckMonmusuName3;
             mDeckMonmusuInfos[2].race = labelDeckMonmusuRaceName3;
+            mDeckMonmusuInfos[2].element = pictureBoxDeckMonmusuElement3;
             mDeckMonmusuInfos[2].hpValue = labelDeckMonmusuHPValue3;
             mDeckMonmusuInfos[2].hpBar = progressBarDeckMonmusuHP3;
             mDeckMonmusuInfos[2].tensionValue = labelDeckMonmusuTensionValue3;
@@ -177,6 +181,7 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[3].rarity = labelDeckMonmusuRarityName4;
             mDeckMonmusuInfos[3].name = labelDeckMonmusuName4;
             mDeckMonmusuInfos[3].race = labelDeckMonmusuRaceName4;
+            mDeckMonmusuInfos[3].element = pictureBoxDeckMonmusuElement4;
             mDeckMonmusuInfos[3].hpValue = labelDeckMonmusuHPValue4;
             mDeckMonmusuInfos[3].hpBar = progressBarDeckMonmusuHP4;
             mDeckMonmusuInfos[3].tensionValue = labelDeckMonmusuTensionValue4;
@@ -193,6 +198,7 @@ namespace MonlineBrowser
             mDeckMonmusuInfos[4].rarity = labelDeckMonmusuRarityName5;
             mDeckMonmusuInfos[4].name = labelDeckMonmusuName5;
             mDeckMonmusuInfos[4].race = labelDeckMonmusuRaceName5;
+            mDeckMonmusuInfos[4].element = pictureBoxDeckMonmusuElement5;
             mDeckMonmusuInfos[4].hpValue = labelDeckMonmusuHPValue5;
             mDeckMonmusuInfos[4].hpBar = progressBarDeckMonmusuHP5;
             mDeckMonmusuInfos[4].tensionValue = labelDeckMonmusuTensionValue5;
@@ -388,17 +394,6 @@ namespace MonlineBrowser
             HtmlDocument doc = webBrowser1.Document;
             if (doc != null && doc.Body != null)
             {
-                // 不要な要素を消すstyleを埋め込む
-                // どちらにしろ表示位置をずらして当て込むので処理しないでおく
-                //HtmlElement elem = doc.CreateElement("style");
-                //elem.SetAttribute("type", "text/css");
-                //elem.InnerHtml =
-                //    ".clearfix{display:none;}" +
-                //    ".naviapp{display:none;}" +
-                //    "#foot{display:none;}";
-
-                //doc.Body.InsertAdjacentElement(HtmlElementInsertionOrientation.BeforeEnd, elem);
-
                 // WebBrowserのWindow位置をスクロールする
                 ScrollWebWindowToGame();
 
@@ -509,6 +504,14 @@ namespace MonlineBrowser
             if (info.race != null)
             {
                 info.race.Text = UserDataUtil.GetRaceName(deckId, monmusuIndex);
+            }
+
+            // 属性
+            if (info.element != null)
+            {
+                Int32 element = UserDataUtil.GetMonmusuElement(deckId, monmusuIndex);
+                ResourceUtil.ElementType elementType = (ResourceUtil.ElementType)element;
+                info.element.Image = ResourceUtil.GetPictureElement(elementType);
             }
 
             // レベル

@@ -154,6 +154,24 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の属性
+        /// <summary>
+        /// モン娘の属性を取得する
+        /// </summary>
+        /// <param name="cardMstId">マスターID</param>
+        /// <returns>モン娘の属性の値</returns>
+        public static Int32 GetMonmusuElement(Int32 cardMstId)
+        {
+            CardMstData mstData = GetCardMstData(cardMstId);
+            if (mstData != null)
+            {
+                return mstData.type;
+            }
+
+            return 0;
+        }
+        #endregion
+
         #region メッセージ
         /// <summary>
         /// メモリアルで表示するメッセージ情報を取得する

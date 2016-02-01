@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonFormation = new System.Windows.Forms.Button();
@@ -41,10 +41,6 @@
             this.panelFormation = new System.Windows.Forms.Panel();
             this.radioButtonDeck5 = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuRebirth53 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth52 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth51 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuLikeFood5 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue5 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName5 = new System.Windows.Forms.Label();
@@ -62,10 +58,6 @@
             this.radioButtonDeck4 = new System.Windows.Forms.RadioButton();
             this.radioButtonDeck3 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuRebirth43 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth42 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth41 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuLikeFood4 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName4 = new System.Windows.Forms.Label();
@@ -83,10 +75,6 @@
             this.radioButtonDeck1 = new System.Windows.Forms.RadioButton();
             this.radioButtonDeck2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuRebirth13 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth12 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuLikeFood1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth11 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuName1 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuHPValue1 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRarityName1 = new System.Windows.Forms.Label();
@@ -102,10 +90,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuTensionValue1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuRebirth33 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth32 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth31 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuLikeFood3 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName3 = new System.Windows.Forms.Label();
@@ -122,10 +106,6 @@
             this.labelDeckMonmusuTensionValue3 = new System.Windows.Forms.Label();
             this.labelGroupName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxDeckMonmusuRebirth23 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth22 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuRebirth21 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDeckMonmusuLikeFood2 = new System.Windows.Forms.PictureBox();
             this.labelDeckMonmusuHPValue2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelDeckMonmusuRaceName2 = new System.Windows.Forms.Label();
@@ -162,44 +142,49 @@
             this.labelMeatCount = new System.Windows.Forms.Label();
             this.panelCommonInfo = new System.Windows.Forms.Panel();
             this.labelRuby = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelPlayerExp = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.labelPlayerLevel = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.labelPlayerName = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelBreadCount = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonItem = new System.Windows.Forms.Button();
             this.buttonReload = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth53 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth52 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth51 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood5 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth43 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth42 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth41 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuElement1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth13 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth12 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth11 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth33 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth32 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth31 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth23 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth22 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuRebirth21 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuLikeFood2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuElement2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuElement3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuElement4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeckMonmusuElement5 = new System.Windows.Forms.PictureBox();
             this.panelFormation.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
             this.panelConfig.SuspendLayout();
             this.panelItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
@@ -208,6 +193,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement5)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -217,7 +227,6 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.ScrollBarsEnabled = false;
             this.webBrowser1.Size = new System.Drawing.Size(960, 540);
             this.webBrowser1.TabIndex = 2;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
@@ -352,6 +361,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.pictureBoxDeckMonmusuElement5);
             this.panel5.Controls.Add(this.pictureBoxDeckMonmusuRebirth53);
             this.panel5.Controls.Add(this.pictureBoxDeckMonmusuRebirth52);
             this.panel5.Controls.Add(this.pictureBoxDeckMonmusuRebirth51);
@@ -373,54 +383,14 @@
             this.panel5.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.panel5.Location = new System.Drawing.Point(0, 266);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(628, 48);
+            this.panel5.Size = new System.Drawing.Size(650, 48);
             this.panel5.TabIndex = 59;
-            // 
-            // pictureBoxDeckMonmusuRebirth53
-            // 
-            this.pictureBoxDeckMonmusuRebirth53.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth53.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth53.Name = "pictureBoxDeckMonmusuRebirth53";
-            this.pictureBoxDeckMonmusuRebirth53.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth53.TabIndex = 79;
-            this.pictureBoxDeckMonmusuRebirth53.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth52
-            // 
-            this.pictureBoxDeckMonmusuRebirth52.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth52.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth52.Name = "pictureBoxDeckMonmusuRebirth52";
-            this.pictureBoxDeckMonmusuRebirth52.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth52.TabIndex = 78;
-            this.pictureBoxDeckMonmusuRebirth52.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth51
-            // 
-            this.pictureBoxDeckMonmusuRebirth51.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth51.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth51.Name = "pictureBoxDeckMonmusuRebirth51";
-            this.pictureBoxDeckMonmusuRebirth51.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth51.TabIndex = 77;
-            this.pictureBoxDeckMonmusuRebirth51.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuLikeFood5
-            // 
-            this.pictureBoxDeckMonmusuLikeFood5.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood5.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood5.Name = "pictureBoxDeckMonmusuLikeFood5";
-            this.pictureBoxDeckMonmusuLikeFood5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood5.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood5.TabStop = false;
             // 
             // labelDeckMonmusuHPValue5
             // 
             this.labelDeckMonmusuHPValue5.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuHPValue5.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuHPValue5.Location = new System.Drawing.Point(335, 10);
+            this.labelDeckMonmusuHPValue5.Location = new System.Drawing.Point(363, 10);
             this.labelDeckMonmusuHPValue5.Name = "labelDeckMonmusuHPValue5";
             this.labelDeckMonmusuHPValue5.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuHPValue5.TabIndex = 54;
@@ -432,7 +402,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(264, 10);
+            this.label21.Location = new System.Drawing.Point(292, 10);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(31, 15);
             this.label21.TabIndex = 53;
@@ -451,7 +421,7 @@
             // 
             // progressBarDeckMonmusuHP5
             // 
-            this.progressBarDeckMonmusuHP5.Location = new System.Drawing.Point(267, 27);
+            this.progressBarDeckMonmusuHP5.Location = new System.Drawing.Point(295, 27);
             this.progressBarDeckMonmusuHP5.Name = "progressBarDeckMonmusuHP5";
             this.progressBarDeckMonmusuHP5.Size = new System.Drawing.Size(96, 10);
             this.progressBarDeckMonmusuHP5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -460,7 +430,7 @@
             // 
             // progressBarDeckMonmusuTension5
             // 
-            this.progressBarDeckMonmusuTension5.Location = new System.Drawing.Point(369, 27);
+            this.progressBarDeckMonmusuTension5.Location = new System.Drawing.Point(397, 27);
             this.progressBarDeckMonmusuTension5.Maximum = 200;
             this.progressBarDeckMonmusuTension5.Name = "progressBarDeckMonmusuTension5";
             this.progressBarDeckMonmusuTension5.Size = new System.Drawing.Size(96, 10);
@@ -483,7 +453,7 @@
             // 
             this.labelDeckMonmusuSatietyValue5.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuSatietyValue5.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuSatietyValue5.Location = new System.Drawing.Point(518, 10);
+            this.labelDeckMonmusuSatietyValue5.Location = new System.Drawing.Point(546, 10);
             this.labelDeckMonmusuSatietyValue5.Name = "labelDeckMonmusuSatietyValue5";
             this.labelDeckMonmusuSatietyValue5.Size = new System.Drawing.Size(54, 15);
             this.labelDeckMonmusuSatietyValue5.TabIndex = 51;
@@ -507,7 +477,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(469, 10);
+            this.label28.Location = new System.Drawing.Point(497, 10);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(43, 15);
             this.label28.TabIndex = 50;
@@ -527,7 +497,7 @@
             // 
             // progressBarDeckMonmusuSatiety5
             // 
-            this.progressBarDeckMonmusuSatiety5.Location = new System.Drawing.Point(471, 27);
+            this.progressBarDeckMonmusuSatiety5.Location = new System.Drawing.Point(499, 27);
             this.progressBarDeckMonmusuSatiety5.Maximum = 200;
             this.progressBarDeckMonmusuSatiety5.Name = "progressBarDeckMonmusuSatiety5";
             this.progressBarDeckMonmusuSatiety5.Size = new System.Drawing.Size(96, 10);
@@ -552,7 +522,7 @@
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(366, 10);
+            this.label30.Location = new System.Drawing.Point(394, 10);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(50, 15);
             this.label30.TabIndex = 47;
@@ -562,7 +532,7 @@
             // 
             this.labelDeckMonmusuTensionValue5.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuTensionValue5.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuTensionValue5.Location = new System.Drawing.Point(437, 10);
+            this.labelDeckMonmusuTensionValue5.Location = new System.Drawing.Point(465, 10);
             this.labelDeckMonmusuTensionValue5.Name = "labelDeckMonmusuTensionValue5";
             this.labelDeckMonmusuTensionValue5.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuTensionValue5.TabIndex = 48;
@@ -606,6 +576,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.pictureBoxDeckMonmusuElement4);
             this.panel4.Controls.Add(this.pictureBoxDeckMonmusuRebirth43);
             this.panel4.Controls.Add(this.pictureBoxDeckMonmusuRebirth42);
             this.panel4.Controls.Add(this.pictureBoxDeckMonmusuRebirth41);
@@ -627,54 +598,14 @@
             this.panel4.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.panel4.Location = new System.Drawing.Point(0, 212);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(628, 48);
+            this.panel4.Size = new System.Drawing.Size(650, 48);
             this.panel4.TabIndex = 58;
-            // 
-            // pictureBoxDeckMonmusuRebirth43
-            // 
-            this.pictureBoxDeckMonmusuRebirth43.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth43.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth43.Name = "pictureBoxDeckMonmusuRebirth43";
-            this.pictureBoxDeckMonmusuRebirth43.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth43.TabIndex = 79;
-            this.pictureBoxDeckMonmusuRebirth43.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth42
-            // 
-            this.pictureBoxDeckMonmusuRebirth42.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth42.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth42.Name = "pictureBoxDeckMonmusuRebirth42";
-            this.pictureBoxDeckMonmusuRebirth42.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth42.TabIndex = 78;
-            this.pictureBoxDeckMonmusuRebirth42.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth41
-            // 
-            this.pictureBoxDeckMonmusuRebirth41.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth41.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth41.Name = "pictureBoxDeckMonmusuRebirth41";
-            this.pictureBoxDeckMonmusuRebirth41.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth41.TabIndex = 77;
-            this.pictureBoxDeckMonmusuRebirth41.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuLikeFood4
-            // 
-            this.pictureBoxDeckMonmusuLikeFood4.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood4.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood4.Name = "pictureBoxDeckMonmusuLikeFood4";
-            this.pictureBoxDeckMonmusuLikeFood4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood4.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood4.TabStop = false;
             // 
             // labelDeckMonmusuHPValue4
             // 
             this.labelDeckMonmusuHPValue4.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuHPValue4.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuHPValue4.Location = new System.Drawing.Point(335, 10);
+            this.labelDeckMonmusuHPValue4.Location = new System.Drawing.Point(363, 10);
             this.labelDeckMonmusuHPValue4.Name = "labelDeckMonmusuHPValue4";
             this.labelDeckMonmusuHPValue4.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuHPValue4.TabIndex = 54;
@@ -686,7 +617,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(264, 10);
+            this.label3.Location = new System.Drawing.Point(292, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 15);
             this.label3.TabIndex = 53;
@@ -705,7 +636,7 @@
             // 
             // progressBarDeckMonmusuHP4
             // 
-            this.progressBarDeckMonmusuHP4.Location = new System.Drawing.Point(267, 27);
+            this.progressBarDeckMonmusuHP4.Location = new System.Drawing.Point(295, 27);
             this.progressBarDeckMonmusuHP4.Name = "progressBarDeckMonmusuHP4";
             this.progressBarDeckMonmusuHP4.Size = new System.Drawing.Size(96, 10);
             this.progressBarDeckMonmusuHP4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -714,7 +645,7 @@
             // 
             // progressBarDeckMonmusuTension4
             // 
-            this.progressBarDeckMonmusuTension4.Location = new System.Drawing.Point(369, 27);
+            this.progressBarDeckMonmusuTension4.Location = new System.Drawing.Point(397, 27);
             this.progressBarDeckMonmusuTension4.Maximum = 200;
             this.progressBarDeckMonmusuTension4.Name = "progressBarDeckMonmusuTension4";
             this.progressBarDeckMonmusuTension4.Size = new System.Drawing.Size(96, 10);
@@ -737,7 +668,7 @@
             // 
             this.labelDeckMonmusuSatietyValue4.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuSatietyValue4.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuSatietyValue4.Location = new System.Drawing.Point(518, 10);
+            this.labelDeckMonmusuSatietyValue4.Location = new System.Drawing.Point(546, 10);
             this.labelDeckMonmusuSatietyValue4.Name = "labelDeckMonmusuSatietyValue4";
             this.labelDeckMonmusuSatietyValue4.Size = new System.Drawing.Size(54, 15);
             this.labelDeckMonmusuSatietyValue4.TabIndex = 51;
@@ -761,7 +692,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(469, 10);
+            this.label19.Location = new System.Drawing.Point(497, 10);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(43, 15);
             this.label19.TabIndex = 50;
@@ -781,7 +712,7 @@
             // 
             // progressBarDeckMonmusuSatiety4
             // 
-            this.progressBarDeckMonmusuSatiety4.Location = new System.Drawing.Point(471, 27);
+            this.progressBarDeckMonmusuSatiety4.Location = new System.Drawing.Point(499, 27);
             this.progressBarDeckMonmusuSatiety4.Maximum = 200;
             this.progressBarDeckMonmusuSatiety4.Name = "progressBarDeckMonmusuSatiety4";
             this.progressBarDeckMonmusuSatiety4.Size = new System.Drawing.Size(96, 10);
@@ -794,7 +725,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(366, 10);
+            this.label22.Location = new System.Drawing.Point(394, 10);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(50, 15);
             this.label22.TabIndex = 47;
@@ -816,7 +747,7 @@
             // 
             this.labelDeckMonmusuTensionValue4.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuTensionValue4.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuTensionValue4.Location = new System.Drawing.Point(437, 10);
+            this.labelDeckMonmusuTensionValue4.Location = new System.Drawing.Point(465, 10);
             this.labelDeckMonmusuTensionValue4.Name = "labelDeckMonmusuTensionValue4";
             this.labelDeckMonmusuTensionValue4.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuTensionValue4.TabIndex = 48;
@@ -862,6 +793,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBoxDeckMonmusuElement1);
             this.panel1.Controls.Add(this.pictureBoxDeckMonmusuRebirth13);
             this.panel1.Controls.Add(this.pictureBoxDeckMonmusuRebirth12);
             this.panel1.Controls.Add(this.pictureBoxDeckMonmusuLikeFood1);
@@ -882,48 +814,8 @@
             this.panel1.Controls.Add(this.labelDeckMonmusuTensionValue1);
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 48);
+            this.panel1.Size = new System.Drawing.Size(650, 48);
             this.panel1.TabIndex = 38;
-            // 
-            // pictureBoxDeckMonmusuRebirth13
-            // 
-            this.pictureBoxDeckMonmusuRebirth13.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth13.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth13.Name = "pictureBoxDeckMonmusuRebirth13";
-            this.pictureBoxDeckMonmusuRebirth13.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth13.TabIndex = 70;
-            this.pictureBoxDeckMonmusuRebirth13.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth12
-            // 
-            this.pictureBoxDeckMonmusuRebirth12.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth12.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth12.Name = "pictureBoxDeckMonmusuRebirth12";
-            this.pictureBoxDeckMonmusuRebirth12.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth12.TabIndex = 69;
-            this.pictureBoxDeckMonmusuRebirth12.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuLikeFood1
-            // 
-            this.pictureBoxDeckMonmusuLikeFood1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood1.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood1.Name = "pictureBoxDeckMonmusuLikeFood1";
-            this.pictureBoxDeckMonmusuLikeFood1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood1.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood1.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth11
-            // 
-            this.pictureBoxDeckMonmusuRebirth11.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth11.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth11.Name = "pictureBoxDeckMonmusuRebirth11";
-            this.pictureBoxDeckMonmusuRebirth11.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth11.TabIndex = 56;
-            this.pictureBoxDeckMonmusuRebirth11.TabStop = false;
             // 
             // labelDeckMonmusuName1
             // 
@@ -935,13 +827,13 @@
             this.labelDeckMonmusuName1.Name = "labelDeckMonmusuName1";
             this.labelDeckMonmusuName1.Size = new System.Drawing.Size(152, 24);
             this.labelDeckMonmusuName1.TabIndex = 26;
-            this.labelDeckMonmusuName1.Text = "★モン娘１１１１";
+            this.labelDeckMonmusuName1.Text = "★モン娘１１１世";
             // 
             // labelDeckMonmusuHPValue1
             // 
             this.labelDeckMonmusuHPValue1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuHPValue1.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuHPValue1.Location = new System.Drawing.Point(335, 10);
+            this.labelDeckMonmusuHPValue1.Location = new System.Drawing.Point(363, 10);
             this.labelDeckMonmusuHPValue1.Name = "labelDeckMonmusuHPValue1";
             this.labelDeckMonmusuHPValue1.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuHPValue1.TabIndex = 54;
@@ -964,7 +856,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(264, 10);
+            this.label11.Location = new System.Drawing.Point(292, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(31, 15);
             this.label11.TabIndex = 53;
@@ -983,7 +875,7 @@
             // 
             // progressBarDeckMonmusuHP1
             // 
-            this.progressBarDeckMonmusuHP1.Location = new System.Drawing.Point(267, 27);
+            this.progressBarDeckMonmusuHP1.Location = new System.Drawing.Point(295, 27);
             this.progressBarDeckMonmusuHP1.Name = "progressBarDeckMonmusuHP1";
             this.progressBarDeckMonmusuHP1.Size = new System.Drawing.Size(96, 10);
             this.progressBarDeckMonmusuHP1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -992,7 +884,7 @@
             // 
             // progressBarDeckMonmusuTension1
             // 
-            this.progressBarDeckMonmusuTension1.Location = new System.Drawing.Point(369, 27);
+            this.progressBarDeckMonmusuTension1.Location = new System.Drawing.Point(397, 27);
             this.progressBarDeckMonmusuTension1.Maximum = 200;
             this.progressBarDeckMonmusuTension1.Name = "progressBarDeckMonmusuTension1";
             this.progressBarDeckMonmusuTension1.Size = new System.Drawing.Size(96, 10);
@@ -1004,7 +896,7 @@
             // 
             this.labelDeckMonmusuSatietyValue1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuSatietyValue1.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuSatietyValue1.Location = new System.Drawing.Point(518, 10);
+            this.labelDeckMonmusuSatietyValue1.Location = new System.Drawing.Point(546, 10);
             this.labelDeckMonmusuSatietyValue1.Name = "labelDeckMonmusuSatietyValue1";
             this.labelDeckMonmusuSatietyValue1.Size = new System.Drawing.Size(54, 15);
             this.labelDeckMonmusuSatietyValue1.TabIndex = 51;
@@ -1028,7 +920,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(469, 10);
+            this.label10.Location = new System.Drawing.Point(497, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 15);
             this.label10.TabIndex = 50;
@@ -1048,7 +940,7 @@
             // 
             // progressBarDeckMonmusuSatiety1
             // 
-            this.progressBarDeckMonmusuSatiety1.Location = new System.Drawing.Point(471, 27);
+            this.progressBarDeckMonmusuSatiety1.Location = new System.Drawing.Point(499, 27);
             this.progressBarDeckMonmusuSatiety1.Maximum = 200;
             this.progressBarDeckMonmusuSatiety1.Name = "progressBarDeckMonmusuSatiety1";
             this.progressBarDeckMonmusuSatiety1.Size = new System.Drawing.Size(96, 10);
@@ -1061,7 +953,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(366, 10);
+            this.label9.Location = new System.Drawing.Point(394, 10);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 15);
             this.label9.TabIndex = 47;
@@ -1071,7 +963,7 @@
             // 
             this.labelDeckMonmusuTensionValue1.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuTensionValue1.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuTensionValue1.Location = new System.Drawing.Point(437, 10);
+            this.labelDeckMonmusuTensionValue1.Location = new System.Drawing.Point(465, 10);
             this.labelDeckMonmusuTensionValue1.Name = "labelDeckMonmusuTensionValue1";
             this.labelDeckMonmusuTensionValue1.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuTensionValue1.TabIndex = 48;
@@ -1081,6 +973,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.pictureBoxDeckMonmusuElement3);
             this.panel3.Controls.Add(this.pictureBoxDeckMonmusuRebirth33);
             this.panel3.Controls.Add(this.pictureBoxDeckMonmusuRebirth32);
             this.panel3.Controls.Add(this.pictureBoxDeckMonmusuRebirth31);
@@ -1102,54 +995,14 @@
             this.panel3.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.panel3.Location = new System.Drawing.Point(0, 158);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(628, 48);
+            this.panel3.Size = new System.Drawing.Size(650, 48);
             this.panel3.TabIndex = 57;
-            // 
-            // pictureBoxDeckMonmusuRebirth33
-            // 
-            this.pictureBoxDeckMonmusuRebirth33.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth33.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth33.Name = "pictureBoxDeckMonmusuRebirth33";
-            this.pictureBoxDeckMonmusuRebirth33.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth33.TabIndex = 76;
-            this.pictureBoxDeckMonmusuRebirth33.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth32
-            // 
-            this.pictureBoxDeckMonmusuRebirth32.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth32.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth32.Name = "pictureBoxDeckMonmusuRebirth32";
-            this.pictureBoxDeckMonmusuRebirth32.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth32.TabIndex = 75;
-            this.pictureBoxDeckMonmusuRebirth32.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth31
-            // 
-            this.pictureBoxDeckMonmusuRebirth31.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth31.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth31.Name = "pictureBoxDeckMonmusuRebirth31";
-            this.pictureBoxDeckMonmusuRebirth31.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth31.TabIndex = 74;
-            this.pictureBoxDeckMonmusuRebirth31.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuLikeFood3
-            // 
-            this.pictureBoxDeckMonmusuLikeFood3.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood3.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood3.Name = "pictureBoxDeckMonmusuLikeFood3";
-            this.pictureBoxDeckMonmusuLikeFood3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood3.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood3.TabStop = false;
             // 
             // labelDeckMonmusuHPValue3
             // 
             this.labelDeckMonmusuHPValue3.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuHPValue3.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuHPValue3.Location = new System.Drawing.Point(335, 10);
+            this.labelDeckMonmusuHPValue3.Location = new System.Drawing.Point(363, 10);
             this.labelDeckMonmusuHPValue3.Name = "labelDeckMonmusuHPValue3";
             this.labelDeckMonmusuHPValue3.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuHPValue3.TabIndex = 54;
@@ -1161,7 +1014,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(264, 10);
+            this.label2.Location = new System.Drawing.Point(292, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 15);
             this.label2.TabIndex = 53;
@@ -1180,7 +1033,7 @@
             // 
             // progressBarDeckMonmusuHP3
             // 
-            this.progressBarDeckMonmusuHP3.Location = new System.Drawing.Point(267, 27);
+            this.progressBarDeckMonmusuHP3.Location = new System.Drawing.Point(295, 27);
             this.progressBarDeckMonmusuHP3.Name = "progressBarDeckMonmusuHP3";
             this.progressBarDeckMonmusuHP3.Size = new System.Drawing.Size(96, 10);
             this.progressBarDeckMonmusuHP3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -1189,7 +1042,7 @@
             // 
             // progressBarDeckMonmusuTension3
             // 
-            this.progressBarDeckMonmusuTension3.Location = new System.Drawing.Point(369, 27);
+            this.progressBarDeckMonmusuTension3.Location = new System.Drawing.Point(397, 27);
             this.progressBarDeckMonmusuTension3.Maximum = 200;
             this.progressBarDeckMonmusuTension3.Name = "progressBarDeckMonmusuTension3";
             this.progressBarDeckMonmusuTension3.Size = new System.Drawing.Size(96, 10);
@@ -1212,7 +1065,7 @@
             // 
             this.labelDeckMonmusuSatietyValue3.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuSatietyValue3.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuSatietyValue3.Location = new System.Drawing.Point(518, 10);
+            this.labelDeckMonmusuSatietyValue3.Location = new System.Drawing.Point(546, 10);
             this.labelDeckMonmusuSatietyValue3.Name = "labelDeckMonmusuSatietyValue3";
             this.labelDeckMonmusuSatietyValue3.Size = new System.Drawing.Size(54, 15);
             this.labelDeckMonmusuSatietyValue3.TabIndex = 51;
@@ -1236,7 +1089,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(469, 10);
+            this.label15.Location = new System.Drawing.Point(497, 10);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(43, 15);
             this.label15.TabIndex = 50;
@@ -1256,7 +1109,7 @@
             // 
             // progressBarDeckMonmusuSatiety3
             // 
-            this.progressBarDeckMonmusuSatiety3.Location = new System.Drawing.Point(471, 27);
+            this.progressBarDeckMonmusuSatiety3.Location = new System.Drawing.Point(499, 27);
             this.progressBarDeckMonmusuSatiety3.Maximum = 200;
             this.progressBarDeckMonmusuSatiety3.Name = "progressBarDeckMonmusuSatiety3";
             this.progressBarDeckMonmusuSatiety3.Size = new System.Drawing.Size(96, 10);
@@ -1281,7 +1134,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(366, 10);
+            this.label18.Location = new System.Drawing.Point(394, 10);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(50, 15);
             this.label18.TabIndex = 47;
@@ -1291,7 +1144,7 @@
             // 
             this.labelDeckMonmusuTensionValue3.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuTensionValue3.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuTensionValue3.Location = new System.Drawing.Point(437, 10);
+            this.labelDeckMonmusuTensionValue3.Location = new System.Drawing.Point(465, 10);
             this.labelDeckMonmusuTensionValue3.Name = "labelDeckMonmusuTensionValue3";
             this.labelDeckMonmusuTensionValue3.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuTensionValue3.TabIndex = 48;
@@ -1313,6 +1166,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBoxDeckMonmusuElement2);
             this.panel2.Controls.Add(this.pictureBoxDeckMonmusuRebirth23);
             this.panel2.Controls.Add(this.pictureBoxDeckMonmusuRebirth22);
             this.panel2.Controls.Add(this.pictureBoxDeckMonmusuRebirth21);
@@ -1333,54 +1187,14 @@
             this.panel2.Controls.Add(this.labelDeckMonmusuTensionValue2);
             this.panel2.Location = new System.Drawing.Point(0, 104);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(628, 48);
+            this.panel2.Size = new System.Drawing.Size(650, 48);
             this.panel2.TabIndex = 56;
-            // 
-            // pictureBoxDeckMonmusuRebirth23
-            // 
-            this.pictureBoxDeckMonmusuRebirth23.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
-            this.pictureBoxDeckMonmusuRebirth23.Location = new System.Drawing.Point(44, 6);
-            this.pictureBoxDeckMonmusuRebirth23.Name = "pictureBoxDeckMonmusuRebirth23";
-            this.pictureBoxDeckMonmusuRebirth23.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth23.TabIndex = 73;
-            this.pictureBoxDeckMonmusuRebirth23.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth22
-            // 
-            this.pictureBoxDeckMonmusuRebirth22.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth22.Location = new System.Drawing.Point(28, 6);
-            this.pictureBoxDeckMonmusuRebirth22.Name = "pictureBoxDeckMonmusuRebirth22";
-            this.pictureBoxDeckMonmusuRebirth22.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth22.TabIndex = 72;
-            this.pictureBoxDeckMonmusuRebirth22.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuRebirth21
-            // 
-            this.pictureBoxDeckMonmusuRebirth21.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
-            this.pictureBoxDeckMonmusuRebirth21.Location = new System.Drawing.Point(12, 6);
-            this.pictureBoxDeckMonmusuRebirth21.Name = "pictureBoxDeckMonmusuRebirth21";
-            this.pictureBoxDeckMonmusuRebirth21.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxDeckMonmusuRebirth21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuRebirth21.TabIndex = 71;
-            this.pictureBoxDeckMonmusuRebirth21.TabStop = false;
-            // 
-            // pictureBoxDeckMonmusuLikeFood2
-            // 
-            this.pictureBoxDeckMonmusuLikeFood2.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBoxDeckMonmusuLikeFood2.Location = new System.Drawing.Point(581, 7);
-            this.pictureBoxDeckMonmusuLikeFood2.Name = "pictureBoxDeckMonmusuLikeFood2";
-            this.pictureBoxDeckMonmusuLikeFood2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDeckMonmusuLikeFood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxDeckMonmusuLikeFood2.TabIndex = 55;
-            this.pictureBoxDeckMonmusuLikeFood2.TabStop = false;
             // 
             // labelDeckMonmusuHPValue2
             // 
             this.labelDeckMonmusuHPValue2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuHPValue2.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuHPValue2.Location = new System.Drawing.Point(335, 10);
+            this.labelDeckMonmusuHPValue2.Location = new System.Drawing.Point(363, 10);
             this.labelDeckMonmusuHPValue2.Name = "labelDeckMonmusuHPValue2";
             this.labelDeckMonmusuHPValue2.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuHPValue2.TabIndex = 54;
@@ -1392,7 +1206,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(264, 10);
+            this.label4.Location = new System.Drawing.Point(292, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 15);
             this.label4.TabIndex = 53;
@@ -1411,7 +1225,7 @@
             // 
             // progressBarDeckMonmusuHP2
             // 
-            this.progressBarDeckMonmusuHP2.Location = new System.Drawing.Point(267, 27);
+            this.progressBarDeckMonmusuHP2.Location = new System.Drawing.Point(295, 27);
             this.progressBarDeckMonmusuHP2.Name = "progressBarDeckMonmusuHP2";
             this.progressBarDeckMonmusuHP2.Size = new System.Drawing.Size(96, 10);
             this.progressBarDeckMonmusuHP2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -1420,7 +1234,7 @@
             // 
             // progressBarDeckMonmusuTension2
             // 
-            this.progressBarDeckMonmusuTension2.Location = new System.Drawing.Point(369, 27);
+            this.progressBarDeckMonmusuTension2.Location = new System.Drawing.Point(397, 27);
             this.progressBarDeckMonmusuTension2.Maximum = 200;
             this.progressBarDeckMonmusuTension2.Name = "progressBarDeckMonmusuTension2";
             this.progressBarDeckMonmusuTension2.Size = new System.Drawing.Size(96, 10);
@@ -1443,7 +1257,7 @@
             // 
             this.labelDeckMonmusuSatietyValue2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuSatietyValue2.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuSatietyValue2.Location = new System.Drawing.Point(518, 10);
+            this.labelDeckMonmusuSatietyValue2.Location = new System.Drawing.Point(546, 10);
             this.labelDeckMonmusuSatietyValue2.Name = "labelDeckMonmusuSatietyValue2";
             this.labelDeckMonmusuSatietyValue2.Size = new System.Drawing.Size(54, 15);
             this.labelDeckMonmusuSatietyValue2.TabIndex = 51;
@@ -1467,7 +1281,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(469, 10);
+            this.label12.Location = new System.Drawing.Point(497, 10);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(43, 15);
             this.label12.TabIndex = 50;
@@ -1487,7 +1301,7 @@
             // 
             // progressBarDeckMonmusuSatiety2
             // 
-            this.progressBarDeckMonmusuSatiety2.Location = new System.Drawing.Point(471, 27);
+            this.progressBarDeckMonmusuSatiety2.Location = new System.Drawing.Point(499, 27);
             this.progressBarDeckMonmusuSatiety2.Maximum = 200;
             this.progressBarDeckMonmusuSatiety2.Name = "progressBarDeckMonmusuSatiety2";
             this.progressBarDeckMonmusuSatiety2.Size = new System.Drawing.Size(96, 10);
@@ -1512,7 +1326,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(366, 10);
+            this.label14.Location = new System.Drawing.Point(394, 10);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 15);
             this.label14.TabIndex = 47;
@@ -1522,7 +1336,7 @@
             // 
             this.labelDeckMonmusuTensionValue2.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelDeckMonmusuTensionValue2.ForeColor = System.Drawing.Color.White;
-            this.labelDeckMonmusuTensionValue2.Location = new System.Drawing.Point(437, 10);
+            this.labelDeckMonmusuTensionValue2.Location = new System.Drawing.Point(465, 10);
             this.labelDeckMonmusuTensionValue2.Name = "labelDeckMonmusuTensionValue2";
             this.labelDeckMonmusuTensionValue2.Size = new System.Drawing.Size(28, 15);
             this.labelDeckMonmusuTensionValue2.TabIndex = 48;
@@ -1714,13 +1528,13 @@
             this.dataGridViewItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridViewItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnItemImage,
@@ -1734,10 +1548,10 @@
             this.dataGridViewItem.ReadOnly = true;
             this.dataGridViewItem.RowHeadersVisible = false;
             this.dataGridViewItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewItem.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewItem.RowTemplate.Height = 21;
             this.dataGridViewItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewItem.Size = new System.Drawing.Size(256, 283);
@@ -1750,6 +1564,7 @@
             this.ColumnItemImage.Name = "ColumnItemImage";
             this.ColumnItemImage.ReadOnly = true;
             this.ColumnItemImage.Visible = false;
+            this.ColumnItemImage.Width = 22;
             // 
             // ColumnItemName
             // 
@@ -1833,16 +1648,6 @@
             this.labelRuby.Text = "[234";
             this.labelRuby.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::MonlineBrowser.Properties.Resources.Ruby;
-            this.pictureBox4.Location = new System.Drawing.Point(419, 24);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 67;
-            this.pictureBox4.TabStop = false;
-            // 
             // labelPlayerExp
             // 
             this.labelPlayerExp.AutoSize = true;
@@ -1903,26 +1708,6 @@
             this.labelPlayerName.Text = "★名前４５６７８";
             this.labelPlayerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MonlineBrowser.Properties.Resources.FoodType_3;
-            this.pictureBox3.Location = new System.Drawing.Point(659, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 61;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MonlineBrowser.Properties.Resources.FoodType_2;
-            this.pictureBox2.Location = new System.Drawing.Point(419, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 60;
-            this.pictureBox2.TabStop = false;
-            // 
             // labelBreadCount
             // 
             this.labelBreadCount.AutoSize = true;
@@ -1934,16 +1719,6 @@
             this.labelBreadCount.TabIndex = 59;
             this.labelBreadCount.Text = "[234567";
             this.labelBreadCount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
-            this.pictureBox1.Location = new System.Drawing.Point(539, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 58;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonItem
             // 
@@ -1977,6 +1752,296 @@
             this.buttonReload.UseVisualStyleBackColor = false;
             this.buttonReload.Click += new System.EventHandler(this.buttonReload_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MonlineBrowser.Properties.Resources.Ruby;
+            this.pictureBox4.Location = new System.Drawing.Point(419, 24);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 67;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MonlineBrowser.Properties.Resources.FoodType_3;
+            this.pictureBox3.Location = new System.Drawing.Point(659, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 61;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MonlineBrowser.Properties.Resources.FoodType_2;
+            this.pictureBox2.Location = new System.Drawing.Point(419, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 60;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBox1.Location = new System.Drawing.Point(539, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth53
+            // 
+            this.pictureBoxDeckMonmusuRebirth53.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth53.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth53.Name = "pictureBoxDeckMonmusuRebirth53";
+            this.pictureBoxDeckMonmusuRebirth53.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth53.TabIndex = 79;
+            this.pictureBoxDeckMonmusuRebirth53.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth52
+            // 
+            this.pictureBoxDeckMonmusuRebirth52.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth52.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth52.Name = "pictureBoxDeckMonmusuRebirth52";
+            this.pictureBoxDeckMonmusuRebirth52.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth52.TabIndex = 78;
+            this.pictureBoxDeckMonmusuRebirth52.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth51
+            // 
+            this.pictureBoxDeckMonmusuRebirth51.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth51.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth51.Name = "pictureBoxDeckMonmusuRebirth51";
+            this.pictureBoxDeckMonmusuRebirth51.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth51.TabIndex = 77;
+            this.pictureBoxDeckMonmusuRebirth51.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood5
+            // 
+            this.pictureBoxDeckMonmusuLikeFood5.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood5.Location = new System.Drawing.Point(609, 7);
+            this.pictureBoxDeckMonmusuLikeFood5.Name = "pictureBoxDeckMonmusuLikeFood5";
+            this.pictureBoxDeckMonmusuLikeFood5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood5.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood5.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth43
+            // 
+            this.pictureBoxDeckMonmusuRebirth43.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth43.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth43.Name = "pictureBoxDeckMonmusuRebirth43";
+            this.pictureBoxDeckMonmusuRebirth43.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth43.TabIndex = 79;
+            this.pictureBoxDeckMonmusuRebirth43.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth42
+            // 
+            this.pictureBoxDeckMonmusuRebirth42.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth42.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth42.Name = "pictureBoxDeckMonmusuRebirth42";
+            this.pictureBoxDeckMonmusuRebirth42.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth42.TabIndex = 78;
+            this.pictureBoxDeckMonmusuRebirth42.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth41
+            // 
+            this.pictureBoxDeckMonmusuRebirth41.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth41.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth41.Name = "pictureBoxDeckMonmusuRebirth41";
+            this.pictureBoxDeckMonmusuRebirth41.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth41.TabIndex = 77;
+            this.pictureBoxDeckMonmusuRebirth41.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood4
+            // 
+            this.pictureBoxDeckMonmusuLikeFood4.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood4.Location = new System.Drawing.Point(609, 7);
+            this.pictureBoxDeckMonmusuLikeFood4.Name = "pictureBoxDeckMonmusuLikeFood4";
+            this.pictureBoxDeckMonmusuLikeFood4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood4.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood4.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuElement1
+            // 
+            this.pictureBoxDeckMonmusuElement1.Image = global::MonlineBrowser.Properties.Resources.Element_Cool;
+            this.pictureBoxDeckMonmusuElement1.Location = new System.Drawing.Point(265, 0);
+            this.pictureBoxDeckMonmusuElement1.Name = "pictureBoxDeckMonmusuElement1";
+            this.pictureBoxDeckMonmusuElement1.Size = new System.Drawing.Size(19, 22);
+            this.pictureBoxDeckMonmusuElement1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxDeckMonmusuElement1.TabIndex = 71;
+            this.pictureBoxDeckMonmusuElement1.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth13
+            // 
+            this.pictureBoxDeckMonmusuRebirth13.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth13.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth13.Name = "pictureBoxDeckMonmusuRebirth13";
+            this.pictureBoxDeckMonmusuRebirth13.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth13.TabIndex = 70;
+            this.pictureBoxDeckMonmusuRebirth13.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth12
+            // 
+            this.pictureBoxDeckMonmusuRebirth12.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth12.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth12.Name = "pictureBoxDeckMonmusuRebirth12";
+            this.pictureBoxDeckMonmusuRebirth12.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth12.TabIndex = 69;
+            this.pictureBoxDeckMonmusuRebirth12.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood1
+            // 
+            this.pictureBoxDeckMonmusuLikeFood1.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood1.Location = new System.Drawing.Point(609, 7);
+            this.pictureBoxDeckMonmusuLikeFood1.Name = "pictureBoxDeckMonmusuLikeFood1";
+            this.pictureBoxDeckMonmusuLikeFood1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood1.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood1.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth11
+            // 
+            this.pictureBoxDeckMonmusuRebirth11.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth11.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth11.Name = "pictureBoxDeckMonmusuRebirth11";
+            this.pictureBoxDeckMonmusuRebirth11.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth11.TabIndex = 56;
+            this.pictureBoxDeckMonmusuRebirth11.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth33
+            // 
+            this.pictureBoxDeckMonmusuRebirth33.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth33.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth33.Name = "pictureBoxDeckMonmusuRebirth33";
+            this.pictureBoxDeckMonmusuRebirth33.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth33.TabIndex = 76;
+            this.pictureBoxDeckMonmusuRebirth33.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth32
+            // 
+            this.pictureBoxDeckMonmusuRebirth32.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth32.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth32.Name = "pictureBoxDeckMonmusuRebirth32";
+            this.pictureBoxDeckMonmusuRebirth32.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth32.TabIndex = 75;
+            this.pictureBoxDeckMonmusuRebirth32.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth31
+            // 
+            this.pictureBoxDeckMonmusuRebirth31.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth31.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth31.Name = "pictureBoxDeckMonmusuRebirth31";
+            this.pictureBoxDeckMonmusuRebirth31.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth31.TabIndex = 74;
+            this.pictureBoxDeckMonmusuRebirth31.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood3
+            // 
+            this.pictureBoxDeckMonmusuLikeFood3.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood3.Location = new System.Drawing.Point(609, 7);
+            this.pictureBoxDeckMonmusuLikeFood3.Name = "pictureBoxDeckMonmusuLikeFood3";
+            this.pictureBoxDeckMonmusuLikeFood3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood3.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood3.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth23
+            // 
+            this.pictureBoxDeckMonmusuRebirth23.Image = global::MonlineBrowser.Properties.Resources.RebirthOff;
+            this.pictureBoxDeckMonmusuRebirth23.Location = new System.Drawing.Point(44, 6);
+            this.pictureBoxDeckMonmusuRebirth23.Name = "pictureBoxDeckMonmusuRebirth23";
+            this.pictureBoxDeckMonmusuRebirth23.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth23.TabIndex = 73;
+            this.pictureBoxDeckMonmusuRebirth23.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth22
+            // 
+            this.pictureBoxDeckMonmusuRebirth22.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth22.Location = new System.Drawing.Point(28, 6);
+            this.pictureBoxDeckMonmusuRebirth22.Name = "pictureBoxDeckMonmusuRebirth22";
+            this.pictureBoxDeckMonmusuRebirth22.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth22.TabIndex = 72;
+            this.pictureBoxDeckMonmusuRebirth22.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuRebirth21
+            // 
+            this.pictureBoxDeckMonmusuRebirth21.Image = global::MonlineBrowser.Properties.Resources.RebirthOn;
+            this.pictureBoxDeckMonmusuRebirth21.Location = new System.Drawing.Point(12, 6);
+            this.pictureBoxDeckMonmusuRebirth21.Name = "pictureBoxDeckMonmusuRebirth21";
+            this.pictureBoxDeckMonmusuRebirth21.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxDeckMonmusuRebirth21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuRebirth21.TabIndex = 71;
+            this.pictureBoxDeckMonmusuRebirth21.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuLikeFood2
+            // 
+            this.pictureBoxDeckMonmusuLikeFood2.Image = global::MonlineBrowser.Properties.Resources.FoodType_1;
+            this.pictureBoxDeckMonmusuLikeFood2.Location = new System.Drawing.Point(609, 7);
+            this.pictureBoxDeckMonmusuLikeFood2.Name = "pictureBoxDeckMonmusuLikeFood2";
+            this.pictureBoxDeckMonmusuLikeFood2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxDeckMonmusuLikeFood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDeckMonmusuLikeFood2.TabIndex = 55;
+            this.pictureBoxDeckMonmusuLikeFood2.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuElement2
+            // 
+            this.pictureBoxDeckMonmusuElement2.Image = global::MonlineBrowser.Properties.Resources.Element_Cool;
+            this.pictureBoxDeckMonmusuElement2.Location = new System.Drawing.Point(265, 0);
+            this.pictureBoxDeckMonmusuElement2.Name = "pictureBoxDeckMonmusuElement2";
+            this.pictureBoxDeckMonmusuElement2.Size = new System.Drawing.Size(19, 22);
+            this.pictureBoxDeckMonmusuElement2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxDeckMonmusuElement2.TabIndex = 72;
+            this.pictureBoxDeckMonmusuElement2.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuElement3
+            // 
+            this.pictureBoxDeckMonmusuElement3.Image = global::MonlineBrowser.Properties.Resources.Element_Cool;
+            this.pictureBoxDeckMonmusuElement3.Location = new System.Drawing.Point(265, 0);
+            this.pictureBoxDeckMonmusuElement3.Name = "pictureBoxDeckMonmusuElement3";
+            this.pictureBoxDeckMonmusuElement3.Size = new System.Drawing.Size(19, 22);
+            this.pictureBoxDeckMonmusuElement3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxDeckMonmusuElement3.TabIndex = 74;
+            this.pictureBoxDeckMonmusuElement3.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuElement4
+            // 
+            this.pictureBoxDeckMonmusuElement4.Image = global::MonlineBrowser.Properties.Resources.Element_Cool;
+            this.pictureBoxDeckMonmusuElement4.Location = new System.Drawing.Point(265, 0);
+            this.pictureBoxDeckMonmusuElement4.Name = "pictureBoxDeckMonmusuElement4";
+            this.pictureBoxDeckMonmusuElement4.Size = new System.Drawing.Size(19, 22);
+            this.pictureBoxDeckMonmusuElement4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxDeckMonmusuElement4.TabIndex = 77;
+            this.pictureBoxDeckMonmusuElement4.TabStop = false;
+            // 
+            // pictureBoxDeckMonmusuElement5
+            // 
+            this.pictureBoxDeckMonmusuElement5.Image = global::MonlineBrowser.Properties.Resources.Element_Cool;
+            this.pictureBoxDeckMonmusuElement5.Location = new System.Drawing.Point(265, 0);
+            this.pictureBoxDeckMonmusuElement5.Name = "pictureBoxDeckMonmusuElement5";
+            this.pictureBoxDeckMonmusuElement5.Size = new System.Drawing.Size(19, 22);
+            this.pictureBoxDeckMonmusuElement5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxDeckMonmusuElement5.TabIndex = 80;
+            this.pictureBoxDeckMonmusuElement5.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2007,34 +2072,14 @@
             this.panelFormation.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).EndInit();
             this.panelConfig.ResumeLayout(false);
             this.panelConfig.PerformLayout();
             this.panelItem.ResumeLayout(false);
@@ -2046,6 +2091,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuRebirth21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuLikeFood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeckMonmusuElement5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2196,6 +2266,11 @@
         private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth32;
         private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuRebirth31;
         private System.Windows.Forms.Button buttonReload;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuElement1;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuElement5;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuElement4;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuElement3;
+        private System.Windows.Forms.PictureBox pictureBoxDeckMonmusuElement2;
     }
 }
 

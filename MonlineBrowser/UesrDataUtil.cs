@@ -599,6 +599,31 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の属性
+        /// <summary>
+        /// モン娘の属性を取得する
+        /// </summary>
+        /// <param name="deckId">デッキID</param>
+        /// <param name="index">デッキ内の順番</param>
+        /// <returns>属性</returns>
+        public static Int32 GetMonmusuElement(Int32 deckId, Int32 index)
+        {
+            Int32 cardId = GetCardId(deckId, index);
+            return GetMonmusuElement(cardId);
+        }
+
+        /// <summary>
+        /// モン娘の属性を取得する
+        /// </summary>
+        /// <param name="cardId">カードID</param>
+        /// <returns>属性</returns>
+        public static Int32 GetMonmusuElement(Int32 cardId)
+        {
+            Int32 cardMstId = GetCardMstId(cardId);
+            return DBMstUtil.GetMonmusuElement(cardMstId);
+        }
+        #endregion
+
         #region レアリティの色
         private struct RarityNameColorData
         {
