@@ -18,6 +18,7 @@ namespace MonlineBrowser
             CARD,
             DECK,
             ITEM,
+            MISC,
             // ADD
         }
 
@@ -123,6 +124,9 @@ namespace MonlineBrowser
                                 form.Invoke(new FormMain.UpdateDelegate1(form.UpdateDeck), deckId);
                             }
                         }
+
+                        // モン娘の総数表示を更新する
+                        form.Invoke(new FormMain.UpdateDelegate0(form.UpdateLabelMonmusuWholeCount));
 
                         // 道具情報を更新する
                         // 別スレッドなのでinvokeが必要になる

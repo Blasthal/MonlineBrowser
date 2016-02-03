@@ -79,6 +79,7 @@ namespace MonlineBrowser
             // ADD:
         }
 
+        #region アイテム
         private void ParseItem(FluorineFx.ASObject asObject)
         {
             Object itemObj = null;
@@ -115,20 +116,7 @@ namespace MonlineBrowser
                     {
                         // お使いから帰ってきた場合、増加値が返る。
                         // 結果の値はプレイヤー情報に入っているので、ここでは処理しない。
-                        // ひとまずこの判断をmiscの情報があるかどうかで行うことにする。
-                        bool isOverride = true;
-                        Object miscObj = null;
-                        if (asObject.TryGetValue("misc", out miscObj) && miscObj != null)
-                        {
-                            FluorineFx.ASObject miscAsObj = (FluorineFx.ASObject)miscObj;
-                            Int32 finishType = -1;
-                            AMFUtil.GetInt32Value(miscAsObj, "finishType", out finishType);
-                            if (finishType == 0)    // お使いから帰ってくると0が入っている
-                            {
-                                isOverride = false;
-                            }
-                        }
-
+                        bool isOverride = !IsReturnHome(asObject);
                         if (isOverride)
                         {
                             mItemDatas[findDataIndex] = data;
@@ -142,7 +130,9 @@ namespace MonlineBrowser
                 }
             }
         }
+        #endregion
 
+        #region デッキ
         private void ParseDeck(FluorineFx.ASObject asObject)
         {
             // 配列の時と、そうでない時がある。
@@ -201,7 +191,9 @@ namespace MonlineBrowser
                     );
             }
         }
+        #endregion
 
+        #region リフレッシュ
         private void ParseRefresh(FluorineFx.ASObject asObject)
         {
             Object refreshObj = null;
@@ -223,7 +215,13 @@ namespace MonlineBrowser
                 }
             }
         }
+        #endregion
 
+        #region カード
+        /// <summary>
+        /// card情報をパースする
+        /// </summary>
+        /// <param name="asObject"></param>
         private void ParseCard(FluorineFx.ASObject asObject)
         {
             Object cardObj = null;
@@ -241,6 +239,16 @@ namespace MonlineBrowser
                 else if (varType == typeof(Object[]))
                 {
                     cardObjs = (Object[])cardObj;
+
+                    // cardは強化合成や限界突破によって容易く減る機会が多い
+                    // 配列の場合、全情報が入っていると思いたいが食事の時は対象となるモン娘の情報しかない
+                    // この違いを"misc"があるかどうかで判断する。あればクリアする。
+                    if (FiddlerUtil.IsExistObject(asObject, FiddlerUtil.KeyNameType.MISC) &&
+                        // "misc"があってもお使いからの帰宅時は対象外
+                        !IsReturnHome(asObject))
+                    {
+                        mCardDatas.Clear();
+                    }
                 }
 
                 for (int i = 0; i < cardObjs.Length; ++i)
@@ -279,7 +287,9 @@ namespace MonlineBrowser
                     );
             }
         }
+        #endregion
 
+        #region プレイヤー
         private void ParsePlayer(FluorineFx.ASObject asObject)
         {
             Object playerObj = null;
@@ -302,6 +312,31 @@ namespace MonlineBrowser
                     }
                 }
             }
+        }
+        #endregion
+
+        /// <summary>
+        /// 帰宅したかどうかを取得する
+        /// </summary>
+        /// <returns>帰宅したかどうか</returns>
+        private bool IsReturnHome(FluorineFx.ASObject asObject)
+        {
+            Object miscObj = null;
+            if (asObject.TryGetValue("misc", out miscObj) && miscObj != null)
+            {
+                FluorineFx.ASObject miscAsObj = (FluorineFx.ASObject)miscObj;
+                Int32 finishType = -1;
+                if (FiddlerUtil.IsExistObject(miscAsObj, "finishType"))
+                {
+                    AMFUtil.GetInt32Value(miscAsObj, "finishType", out finishType);
+                    if (finishType == 0)    // お使いから帰ってくると0が入っている
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
         }
 
         /// <summary>

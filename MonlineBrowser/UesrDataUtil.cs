@@ -697,6 +697,26 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の総数
+        /// <summary>
+        /// 現在のモン娘の総数を取得します
+        /// </summary>
+        /// <returns>現在のモン娘の総数</returns>
+        public static Int32 GetMonmusuWholeCountCurrent()
+        {
+            return UserData.Instance.CardDatas.Count;
+        }
+
+        /// <summary>
+        /// モン娘の最大総数を取得します
+        /// </summary>
+        /// <returns>モン娘の最大総数</returns>
+        public static Int32 GetMonmusuWholeCountMax()
+        {
+            return UserData.Instance.PlayerData.cardMax;
+        }
+        #endregion
+
         #endregion
     }
 }

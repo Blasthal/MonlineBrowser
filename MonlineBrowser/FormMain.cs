@@ -89,6 +89,7 @@ namespace MonlineBrowser
             UpdatePlayerExp();
             UpdatePossessionMeal();
             UpdatePossessionRuby();
+            UpdateLabelMonmusuWholeCount();
             // 編成情報を更新する。初期化用。
             UpdateDeck(0);
             // 初期表示するパネルを編成情報にする
@@ -400,11 +401,6 @@ namespace MonlineBrowser
                 // スクロールバーを非表示にする
                 webBrowser1.ScrollBarsEnabled = false;
             }
-        }
-
-        private void buttonReload_Click(object sender, EventArgs e)
-        {
-            DoNavigation(sender, e);
         }
         #endregion
 
@@ -849,6 +845,28 @@ namespace MonlineBrowser
         private void buttonModifyWebPosition_Click(object sender, EventArgs e)
         {
             ScrollWebWindowToGame();
+        }
+        #endregion
+
+        #region モン娘一覧
+        /// <summary>
+        /// モン娘の総数表示を更新する
+        /// </summary>
+        public void UpdateLabelMonmusuWholeCount()
+        {
+            // テキストを設定する
+            Int32 wholeCountNow = UserDataUtil.GetMonmusuWholeCountCurrent();
+            Int32 wholeCountMax = UserDataUtil.GetMonmusuWholeCountMax();
+            String text = String.Format("{0}/{1}", wholeCountNow, wholeCountMax);
+            labelMonmusuWholeCount.Text = text;
+
+            // 最大値を超えていたら色を変更する
+            System.Drawing.Color color = System.Drawing.Color.White;
+            if (wholeCountMax <= wholeCountNow)
+            {
+                color = System.Drawing.Color.Red;
+            }
+            labelMonmusuWholeCount.ForeColor = color;
         }
         #endregion
 
