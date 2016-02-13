@@ -489,20 +489,30 @@ namespace MonlineBrowser
         }
 
         /// <summary>
-        /// モン娘の満腹度表示文字列を取得する。
+        /// モン娘の満腹度表示文字列を取得する
         /// </summary>
         /// <param name="deckId">デッキID</param>
         /// <param name="index">デッキ内の順番</param>
         /// <returns>モン娘の満腹度表示文字列</returns>
         public static String GetMonmusuSatietyText(Int32 deckId, Int32 index)
         {
-            Int32 satiety = GetMonmusuSatiety(deckId, index);
-            Int32 satietyMax = GetMonmusuSatietyMax(deckId, index);
-            String text = String.Format("{0}/{1}", satiety, satietyMax);
-
+            Int32 cardId = GetCardId(deckId, index);
+            String text = GetMonmusuSatietyText(cardId);
             return text;
         }
 
+        /// <summary>
+        /// モン娘の満腹度表示文字列を取得する
+        /// </summary>
+        /// <param name="cardId">カードID</param>
+        /// <returns>モン娘の満腹度表示文字列</returns>
+        public static String GetMonmusuSatietyText(Int32 cardId)
+        {
+            Int32 satiety = GetMonmusuSatiety(cardId);
+            Int32 satietyMax = GetMonmusuSatietyMax(cardId);
+            String text = String.Format("{0}/{1}", satiety, satietyMax);
+            return text;
+        }
         #endregion
 
         #region モン娘のレアリティ名
@@ -621,6 +631,31 @@ namespace MonlineBrowser
         {
             Int32 cardMstId = GetCardMstId(cardId);
             return DBMstUtil.GetMonmusuElement(cardMstId);
+        }
+
+        /// <summary>
+        /// モン娘の属性の画像を取得する
+        /// </summary>
+        /// <param name="deckId">デッキID</param>
+        /// <param name="index">デッキ内の順番</param>
+        /// <returns>属性の画像</returns>
+        public static Bitmap GetMonmusuElementPicture(Int32 deckId, Int32 index)
+        {
+            Int32 cardId = GetCardId(deckId, index);
+            return GetMonmusuElementPicture(cardId);
+        }
+        
+        /// <summary>
+        /// モン娘の属性の画像を取得する
+        /// </summary>
+        /// <param name="cardId">カードID</param>
+        /// <returns>属性の画像</returns>
+        public static Bitmap GetMonmusuElementPicture(Int32 cardId)
+        {
+            Int32 element = UserDataUtil.GetMonmusuElement(cardId);
+            ResourceUtil.ElementType elementType = (ResourceUtil.ElementType)element;
+            Bitmap image = ResourceUtil.GetPictureElement(elementType);
+            return image;
         }
         #endregion
 

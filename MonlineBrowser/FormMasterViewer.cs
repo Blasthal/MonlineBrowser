@@ -29,8 +29,7 @@ namespace MonlineBrowser
                 return mInstance;
             }
         }
-        private static FormMasterViewer mInstance;
-
+        private static FormMasterViewer mInstance = null;
         #endregion
 
         #region Method

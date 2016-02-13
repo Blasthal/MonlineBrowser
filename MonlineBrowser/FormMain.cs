@@ -280,9 +280,6 @@ namespace MonlineBrowser
             //Fiddlerを終了させる
             Fiddler.FiddlerApplication.Shutdown();
 
-            // インターネット一時ファイルを削除する
-            System.Diagnostics.Process process = ClearTemporaryFiles(false);
-
             // 設定を保存する
             Properties.Settings.Default.ScreenshotPath = this.textBoxScreenshotPath.Text;
 
@@ -298,11 +295,8 @@ namespace MonlineBrowser
 
             Properties.Settings.Default.Save();
 
-            // プロセスの終了を待つ
-            while (!process.HasExited)
-            {
-                process.WaitForExit(100);
-            }
+            // インターネット一時ファイルを削除する
+            System.Diagnostics.Process process = ClearTemporaryFiles(true);
         }
 
         /// <summary>
@@ -318,7 +312,7 @@ namespace MonlineBrowser
             {
                 while (!process.HasExited)
                 {
-                    process.WaitForExit(100);
+                    process.WaitForExit(10);
                 }
             }
 
@@ -849,6 +843,20 @@ namespace MonlineBrowser
         #endregion
 
         #region モン娘一覧
+        /// <summary>
+        /// モン娘一覧のフォームを開く
+        /// </summary>
+        private void OpenFormMonmusuList()
+        {
+            FormMonmusuList form = FormMonmusuList.Instance;
+            form.Show(); 
+        }
+
+        private void buttonMonmusuList_Click(object sender, EventArgs e)
+        {
+            OpenFormMonmusuList();
+        }
+
         /// <summary>
         /// モン娘の総数表示を更新する
         /// </summary>
