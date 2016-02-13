@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewMonmusuList = new System.Windows.Forms.DataGridView();
             this.buttonRefreshMonmusuList = new System.Windows.Forms.Button();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.ColumnMonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonRebirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +43,6 @@
             this.ColumnMonTension = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonSatiety = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonFood = new System.Windows.Forms.DataGridViewImageColumn();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMonmusuList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,13 +56,13 @@
             this.dataGridViewMonmusuList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewMonmusuList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridViewMonmusuList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMonmusuList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMonmusuList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewMonmusuList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMonmusuList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnMonID,
@@ -83,15 +83,16 @@
             this.dataGridViewMonmusuList.ReadOnly = true;
             this.dataGridViewMonmusuList.RowHeadersVisible = false;
             this.dataGridViewMonmusuList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dataGridViewMonmusuList.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dataGridViewMonmusuList.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewMonmusuList.RowTemplate.Height = 21;
             this.dataGridViewMonmusuList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewMonmusuList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMonmusuList.Size = new System.Drawing.Size(409, 714);
             this.dataGridViewMonmusuList.TabIndex = 4;
+            this.dataGridViewMonmusuList.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dataGridViewMonmusuList_SortCompare);
             // 
             // buttonRefreshMonmusuList
             // 
@@ -109,12 +110,24 @@
             this.buttonRefreshMonmusuList.UseVisualStyleBackColor = false;
             this.buttonRefreshMonmusuList.Click += new System.EventHandler(this.buttonRefreshMonmusuList_Click);
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(285, 31);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(323, 19);
+            this.metroLabel1.TabIndex = 71;
+            this.metroLabel1.Text = "※リストの横幅、フォームの横幅は自動調整されます。";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Visible = false;
+            // 
             // ColumnMonID
             // 
+            this.ColumnMonID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ColumnMonID.HeaderText = "*";
             this.ColumnMonID.Name = "ColumnMonID";
             this.ColumnMonID.ReadOnly = true;
-            this.ColumnMonID.Width = 25;
+            this.ColumnMonID.Width = 35;
             // 
             // ColumnMonLevel
             // 
@@ -192,17 +205,6 @@
             this.ColumnMonFood.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.ColumnMonFood.Width = 53;
             // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(285, 31);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(323, 19);
-            this.metroLabel1.TabIndex = 71;
-            this.metroLabel1.Text = "※リストの横幅、フォームの横幅は自動調整されます。";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel1.Visible = false;
-            // 
             // FormMonmusuList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -227,6 +229,7 @@
 
         private System.Windows.Forms.DataGridView dataGridViewMonmusuList;
         private System.Windows.Forms.Button buttonRefreshMonmusuList;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonRebirth;
@@ -237,6 +240,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonTension;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonSatiety;
         private System.Windows.Forms.DataGridViewImageColumn ColumnMonFood;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

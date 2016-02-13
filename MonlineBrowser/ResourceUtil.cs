@@ -76,19 +76,30 @@ namespace MonlineBrowser
         /// <returns>食べ物の画像</returns>
         public static Bitmap GetPictureFoodType(FoodType foodType)
         {
+            Bitmap img = null;
+
             switch (foodType)
             {
                 case FoodType.Vegetable:
-                    return Properties.Resources.FoodType_1;
+                    img = Properties.Resources.FoodType_1;
+                    img.Tag = (Int32)FoodType.Vegetable;
+                    break;
 
                 case FoodType.Meat:
-                    return Properties.Resources.FoodType_2;
+                    img = Properties.Resources.FoodType_2;
+                    img.Tag = (Int32)FoodType.Meat;
+                    break;
 
                 case FoodType.Bread:
-                    return Properties.Resources.FoodType_3;
+                    img = Properties.Resources.FoodType_3;
+                    img.Tag = (Int32)FoodType.Bread;
+                    break;
+
+                default:
+                    break;
             }
 
-            return null;
+            return img;
         }
         #endregion
 
@@ -140,16 +151,39 @@ namespace MonlineBrowser
         /// <returns>対応した画像</returns>
         public static Bitmap GetPictureElement(ElementType elementType)
         {
+            Bitmap img = null;
             switch (elementType)
             {
-                case ElementType.Cute: return Properties.Resources.Element_Cute;
-                case ElementType.Cool: return Properties.Resources.Element_Cool;
-                case ElementType.Passion: return Properties.Resources.Element_Passion;
-                case ElementType.Pure: return Properties.Resources.Element_Pure;
-                case ElementType.Devil: return Properties.Resources.Element_Devil;
+                case ElementType.Cute:
+                    img = Properties.Resources.Element_Cute;
+                    img.Tag = (Int32)ElementType.Cute;
+                    break;
+
+                case ElementType.Cool:
+                    img = Properties.Resources.Element_Cool;
+                    img.Tag = (Int32)ElementType.Cool;
+                    break;
+
+                case ElementType.Passion:
+                    img = Properties.Resources.Element_Passion;
+                    img.Tag = (Int32)ElementType.Passion;
+                    break;
+
+                case ElementType.Pure:
+                    img = Properties.Resources.Element_Pure;
+                    img.Tag = (Int32)ElementType.Pure;
+                    break;
+
+                case ElementType.Devil:
+                    img = Properties.Resources.Element_Devil;
+                    img.Tag = (Int32)ElementType.Devil;
+                    break;
+
+                default:
+                    break;
             }
 
-            return null;
+            return img;
         }
         #endregion
 
