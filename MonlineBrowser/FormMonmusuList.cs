@@ -68,6 +68,7 @@ namespace MonlineBrowser
         }
         private static FormMonmusuList mInstance = null;
 
+
         /// <summary>
         /// コンストラクタ
         /// </summary>
@@ -149,7 +150,7 @@ namespace MonlineBrowser
 
         private void dataGridViewMonmusuList_SortCompare(object sender, DataGridViewSortCompareEventArgs e)
         {
-            // 数値関連
+            // 数値関連の場合
             if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.ID] ||
                 e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Level] ||
                 e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.HP] ||
@@ -165,6 +166,7 @@ namespace MonlineBrowser
                 Int32 int2 = 0;
                 if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Satiety])
                 {
+                    // 満腹度は現在値と最大値が表示されているので、現在値だけで判定する
                     Int32 idx1 = str1.IndexOf('/');
                     Int32 idx2 = str2.IndexOf('/');
                     Int32.TryParse(str1.Substring(0, idx1), out int1);
@@ -181,6 +183,7 @@ namespace MonlineBrowser
                 //処理したことを知らせる
                 e.Handled = true;
             }
+            // 画像関連の場合
             else if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Element] ||
                 e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Food]
                 )
@@ -199,6 +202,21 @@ namespace MonlineBrowser
                 }
 
                 e.SortResult = tag1 - tag2;
+
+                // 同じ画像なら名前も考慮する
+                if (e.SortResult == 0)
+                {
+                    DataGridView view = (DataGridView)sender;
+                    if (view != null)
+                    {
+                        DataGridViewRow row1 = view.Rows[e.RowIndex1];
+                        DataGridViewRow row2 = view.Rows[e.RowIndex2];
+                        String str1 = (string)row1.Cells[(int)ColumnHeaderMonList.Name].Value;
+                        String str2 = (string)row2.Cells[(int)ColumnHeaderMonList.Name].Value;
+                        Int32 comRet = str1.CompareTo(str2);
+                        e.SortResult += comRet;
+                    }
+                }
 
                 e.Handled = true;
             }
