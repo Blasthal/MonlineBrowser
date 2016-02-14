@@ -35,7 +35,7 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.ColumnMonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMonRebirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMonRebirth = new MonlineBrowser.DGVRebirthColumn();
             this.ColumnMonName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonRace = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonElement = new System.Windows.Forms.DataGridViewImageColumn();
@@ -143,7 +143,7 @@
             this.ColumnMonRebirth.HeaderText = "限界凸破";
             this.ColumnMonRebirth.Name = "ColumnMonRebirth";
             this.ColumnMonRebirth.ReadOnly = true;
-            this.ColumnMonRebirth.Width = 77;
+            this.ColumnMonRebirth.Width = 58;
             // 
             // ColumnMonName
             // 
@@ -232,7 +232,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonLevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonRebirth;
+        private DGVRebirthColumn ColumnMonRebirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonRace;
         private System.Windows.Forms.DataGridViewImageColumn ColumnMonElement;

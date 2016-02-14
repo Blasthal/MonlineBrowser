@@ -118,6 +118,8 @@
   <ItemGroup>
     <Compile Include="AMFUtil.cs" />
     <Compile Include="DBItemMst.cs" />
+    <Compile Include="DGVRebirthCell.cs" />
+    <Compile Include="DGVRebirthColumn.cs" />
     <Compile Include="FormMasterViewer.cs">
       <SubType>Form</SubType>
     </Compile>

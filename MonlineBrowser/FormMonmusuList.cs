@@ -80,6 +80,13 @@ namespace MonlineBrowser
         private void FormMonmusuList_Load(object sender, EventArgs e)
         {
             UpdateMonmusuList();
+
+#if DEBUG
+            for (Int32 i = 0; i < 10; ++i)
+            {
+                dataGridViewMonmusuList.Rows.Add();
+            }
+#endif
         }
 
         #region モン娘リスト
@@ -103,7 +110,7 @@ namespace MonlineBrowser
                 Int32 colIndex = 0;
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = (i + 1).ToString();
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuLevel(data.cardId);
-                colIndex++;
+                dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuRebirthCount(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuName(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetRaceName(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuElementPicture(data.cardId);
@@ -148,6 +155,7 @@ namespace MonlineBrowser
             UpdateMonmusuList();
         }
 
+        #region ソート
         private void dataGridViewMonmusuList_SortCompare(object sender, DataGridViewSortCompareEventArgs e)
         {
             // 数値関連の場合
@@ -213,6 +221,9 @@ namespace MonlineBrowser
                         DataGridViewRow row2 = view.Rows[e.RowIndex2];
                         String str1 = (string)row1.Cells[(int)ColumnHeaderMonList.Name].Value;
                         String str2 = (string)row2.Cells[(int)ColumnHeaderMonList.Name].Value;
+                        str1 = (str1 == null) ? string.Empty : str1;
+                        str2 = (str1 == null) ? string.Empty : str2;
+
                         Int32 comRet = str1.CompareTo(str2);
                         e.SortResult += comRet;
                     }
@@ -221,6 +232,8 @@ namespace MonlineBrowser
                 e.Handled = true;
             }
         }
+        #endregion
+
         #endregion
 
     }
