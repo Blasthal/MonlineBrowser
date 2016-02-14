@@ -849,7 +849,8 @@ namespace MonlineBrowser
         private void OpenFormMonmusuList()
         {
             FormMonmusuList form = FormMonmusuList.Instance;
-            form.Show(); 
+            form.Show();
+            form.Focus();
         }
 
         private void buttonMonmusuList_Click(object sender, EventArgs e)
