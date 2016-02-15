@@ -879,5 +879,13 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region Wiki
+        private void button1_Click(object sender, EventArgs e)
+        {
+            const String url = "http://wikiwiki.jp/mon-musu/";
+            System.Diagnostics.Process.Start(url);
+        }
+        #endregion
+
     }
 }
