@@ -127,7 +127,11 @@ namespace MonlineBrowser
             Int32 widthAllCol = 0;
             for (Int32 i = 0; i < dataGridViewMonmusuList.Columns.Count; ++i)
             {
-                widthAllCol += dataGridViewMonmusuList.Columns[i].HeaderCell.Size.Width;
+                DataGridViewColumn col = dataGridViewMonmusuList.Columns[i];
+                if (col != null && col.Visible)
+                {
+                    widthAllCol += col.HeaderCell.Size.Width;
+                }
             }
 
             System.Reflection.PropertyInfo pi = dataGridViewMonmusuList.GetType().GetProperty("VerticalScrollBar", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
