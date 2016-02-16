@@ -20,6 +20,7 @@ namespace MonlineBrowser
             Level,
             Rebirth,
             Name,
+            Kana,
             Race,
             Element,
             HP,
@@ -40,6 +41,7 @@ namespace MonlineBrowser
             "ColumnMonLevel",
             "ColumnMonRebirth",
             "ColumnMonName",
+            "ColumnMonKana",
             "ColumnMonRace",
             "ColumnMonElement",
             "ColumnMonHP",
@@ -112,6 +114,7 @@ namespace MonlineBrowser
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuLevel(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuRebirthCount(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuName(data.cardId);
+                dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuKana(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetRaceName(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuElementPicture(data.cardId);
                 dataGridViewMonmusuList[COLUMN_HEADER_NAMES[colIndex++], rowIndex].Value = UserDataUtil.GetMonmusuHP(data.cardId);
@@ -158,8 +161,29 @@ namespace MonlineBrowser
         #region ソート
         private void dataGridViewMonmusuList_SortCompare(object sender, DataGridViewSortCompareEventArgs e)
         {
+            // 名前の場合
+            if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Name])
+            {
+                // 仮名でソートする
+                DataGridView view = (DataGridView)sender;
+                Int32 conRet = GetSortResultViewString(view, (Int32)ColumnHeaderMonList.Kana, e.RowIndex1, e.RowIndex2);
+                e.SortResult = conRet;
+
+                e.Handled = true;
+
+                return;
+            }
+            // 種族の場合
+            else if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Race])
+            {
+                DataGridView view = (DataGridView)sender;
+                Int32 conRet = GetSortResultViewString(view, (Int32)ColumnHeaderMonList.Race, e.RowIndex1, e.RowIndex2);
+                e.SortResult = conRet;
+
+                e.Handled = true;
+            }
             // 数値関連の場合
-            if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.ID] ||
+            else if (e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.ID] ||
                 e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Level] ||
                 e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.HP] ||
                 e.Column.Name == COLUMN_HEADER_NAMES[(int)ColumnHeaderMonList.Tension] ||
@@ -177,6 +201,8 @@ namespace MonlineBrowser
                     // 満腹度は現在値と最大値が表示されているので、現在値だけで判定する
                     Int32 idx1 = str1.IndexOf('/');
                     Int32 idx2 = str2.IndexOf('/');
+                    if (idx1 < 0) idx1 = 0;
+                    if (idx2 < 0) idx2 = 0;
                     Int32.TryParse(str1.Substring(0, idx1), out int1);
                     Int32.TryParse(str2.Substring(0, idx2), out int2);
                 }
@@ -211,26 +237,39 @@ namespace MonlineBrowser
 
                 e.SortResult = tag1 - tag2;
 
-                // 同じ画像なら名前も考慮する
-                if (e.SortResult == 0)
-                {
-                    DataGridView view = (DataGridView)sender;
-                    if (view != null)
-                    {
-                        DataGridViewRow row1 = view.Rows[e.RowIndex1];
-                        DataGridViewRow row2 = view.Rows[e.RowIndex2];
-                        String str1 = (string)row1.Cells[(int)ColumnHeaderMonList.Name].Value;
-                        String str2 = (string)row2.Cells[(int)ColumnHeaderMonList.Name].Value;
-                        str1 = (str1 == null) ? string.Empty : str1;
-                        str2 = (str1 == null) ? string.Empty : str2;
-
-                        Int32 comRet = str1.CompareTo(str2);
-                        e.SortResult += comRet;
-                    }
-                }
-
                 e.Handled = true;
             }
+
+            // ソート結果が不動なら仮名を考慮する
+            if (e.SortResult == 0 && e.Handled)
+            {
+                DataGridView view = (DataGridView)sender;
+                e.SortResult = GetSortResultViewString(view, (Int32)ColumnHeaderMonList.Kana, e.RowIndex1, e.RowIndex2);
+            }
+        }
+
+        private Int32 GetSortResultString(String str1, String str2)
+        {
+            str1 = (str1 == null) ? string.Empty : str1;
+            str2 = (str1 == null) ? string.Empty : str2;
+
+            Int32 comRet = str1.CompareTo(str2);
+            return comRet;
+        }
+
+        private Int32 GetSortResultViewString(DataGridView view, Int32 columnIndex, Int32 rowIndex1, Int32 rowIndex2)
+        {
+            if (view != null)
+            {
+                DataGridViewRow row1 = view.Rows[rowIndex1];
+                DataGridViewRow row2 = view.Rows[rowIndex2];
+                String str1 = (string)row1.Cells[columnIndex].Value;
+                String str2 = (string)row2.Cells[columnIndex].Value;
+                Int32 comRet = GetSortResultString(str1, str2);
+                return comRet;
+            }
+
+            return 0;
         }
         #endregion
 

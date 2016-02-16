@@ -198,6 +198,63 @@ namespace MonlineBrowser
         }
         #endregion
 
+        #region モン娘の仮名
+        /// <summary>
+        /// モン娘の仮名を取得する
+        /// </summary>
+        /// <param name="deckId">デッキID</param>
+        /// <param name="index">モン娘の順番</param>
+        /// <returns>モン娘の仮名。無い場合は"-----"を返す</returns>
+        public static String GetMonmusuKana(Int32 deckId, Int32 index)
+        {
+            String name = "-----";
+
+            DeckData findDeckData = GetDeckData(deckId);
+            if (findDeckData != null)
+            {
+                switch (index)
+                {
+                    case 0: name = GetMonmusuKana(findDeckData.cardId1); break;
+                    case 1: name = GetMonmusuKana(findDeckData.cardId2); break;
+                    case 2: name = GetMonmusuKana(findDeckData.cardId3); break;
+                    case 3: name = GetMonmusuKana(findDeckData.cardId4); break;
+                    case 4: name = GetMonmusuKana(findDeckData.cardId5); break;
+                }
+            }
+
+            return name;
+        }
+
+        /// <summary>
+        /// モン娘の仮名を取得する
+        /// </summary>
+        /// <param name="cardId">カードID</param>
+        /// <returns>モン娘の仮名</returns>
+        public static String GetMonmusuKana(Int32 cardId)
+        {
+            String kana = "-----";
+
+            // ユーザーのカード情報を探す
+            CardData findData = UserData.Instance.CardDatas.Find(
+                delegate(CardData inData)
+                {
+                    return (inData.cardId == cardId);
+                }
+                );
+
+            if (findData == null)
+            {
+                return kana;
+            }
+
+            // 名前を取得する
+            kana = DBMstUtil.GetMonmusuKana(findData.cardMstId);
+
+            return kana;
+        }
+
+        #endregion
+
         #region モン娘の限界突破回数
         /// <summary>
         /// モン娘の限界突破回数を取得する

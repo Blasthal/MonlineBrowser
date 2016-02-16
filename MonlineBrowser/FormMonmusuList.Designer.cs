@@ -33,10 +33,20 @@
             this.dataGridViewMonmusuList = new System.Windows.Forms.DataGridView();
             this.buttonRefreshMonmusuList = new System.Windows.Forms.Button();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvRebirthColumn1 = new MonlineBrowser.DGVRebirthColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonRebirth = new MonlineBrowser.DGVRebirthColumn();
             this.ColumnMonName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMonKana = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonRace = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMonElement = new System.Windows.Forms.DataGridViewImageColumn();
             this.ColumnMonHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +79,7 @@
             this.ColumnMonLevel,
             this.ColumnMonRebirth,
             this.ColumnMonName,
+            this.ColumnMonKana,
             this.ColumnMonRace,
             this.ColumnMonElement,
             this.ColumnMonHP,
@@ -121,6 +132,60 @@
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel1.Visible = false;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "*";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.HeaderText = "レベル";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dgvRebirthColumn1
+            // 
+            this.dgvRebirthColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvRebirthColumn1.HeaderText = "限界凸破";
+            this.dgvRebirthColumn1.Name = "dgvRebirthColumn1";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.HeaderText = "名前";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "仮名";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn5.HeaderText = "種族";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn6.HeaderText = "気力";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn7.HeaderText = "テンション";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn8.HeaderText = "満腹度";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // ColumnMonID
             // 
             this.ColumnMonID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -152,6 +217,15 @@
             this.ColumnMonName.Name = "ColumnMonName";
             this.ColumnMonName.ReadOnly = true;
             this.ColumnMonName.Width = 53;
+            // 
+            // ColumnMonKana
+            // 
+            this.ColumnMonKana.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColumnMonKana.HeaderText = "仮名";
+            this.ColumnMonKana.Name = "ColumnMonKana";
+            this.ColumnMonKana.ReadOnly = true;
+            this.ColumnMonKana.Visible = false;
+            this.ColumnMonKana.Width = 53;
             // 
             // ColumnMonRace
             // 
@@ -230,10 +304,20 @@
         private System.Windows.Forms.DataGridView dataGridViewMonmusuList;
         private System.Windows.Forms.Button buttonRefreshMonmusuList;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DGVRebirthColumn dgvRebirthColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonLevel;
         private DGVRebirthColumn ColumnMonRebirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonKana;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonRace;
         private System.Windows.Forms.DataGridViewImageColumn ColumnMonElement;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMonHP;

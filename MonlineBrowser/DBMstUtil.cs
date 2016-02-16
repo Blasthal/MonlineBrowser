@@ -82,21 +82,23 @@ namespace MonlineBrowser
 
             return "名を知らぬ娘";
         }
+        #endregion
 
+        #region モン娘の仮名
         /// <summary>
-        /// IDからモン娘の最大満腹度を取得する
+        /// IDからモン娘の仮名を取得する。
         /// </summary>
-        /// <param name="cardMstId">モン娘のマスターID</param>
-        /// <returns>モン娘の最大満腹度</returns>
-        public static Int32 GetMonmusuSatietyMax(Int32 cardMstId)
+        /// <param name="cardMstId">カードマスターID</param>
+        /// <returns>モン娘の仮名</returns>
+        public static String GetMonmusuKana(Int32 cardMstId)
         {
             CardMstData findData = GetCardMstData(cardMstId);
             if (findData != null)
             {
-                return findData.feelFullMax;
+                return findData.kana;
             }
 
-            return 0;
+            return "---";
         }
         #endregion
 
@@ -166,6 +168,24 @@ namespace MonlineBrowser
             if (mstData != null)
             {
                 return mstData.type;
+            }
+
+            return 0;
+        }
+        #endregion
+
+        #region モン娘の最大満腹度
+        /// <summary>
+        /// IDからモン娘の最大満腹度を取得する
+        /// </summary>
+        /// <param name="cardMstId">モン娘のマスターID</param>
+        /// <returns>モン娘の最大満腹度</returns>
+        public static Int32 GetMonmusuSatietyMax(Int32 cardMstId)
+        {
+            CardMstData findData = GetCardMstData(cardMstId);
+            if (findData != null)
+            {
+                return findData.feelFullMax;
             }
 
             return 0;
